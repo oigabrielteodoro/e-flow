@@ -78,7 +78,7 @@ const data = [
     hour: '10:00',
   },
   {
-    pricing: 900,
+    pricing: 920,
     hour: '10:30',
   },
   {
@@ -90,7 +90,7 @@ const data = [
     hour: '12:00',
   },
   {
-    pricing: 0,
+    pricing: 10,
     hour: '13:00',
   },
   {
