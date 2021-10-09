@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components'
-import { theme } from './theme'
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -19,7 +18,6 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: ${theme.colors.gray[50]};
     scroll-behavior: smooth;
     overflow-y: hidden;
   }

@@ -2,7 +2,6 @@
 
 exports[`<Sidebar /> should render correctly 1`] = `
 .c0 {
-  position: fixed;
   background: #ffffff;
   display: -webkit-box;
   display: -webkit-flex;
@@ -16,9 +15,7 @@ exports[`<Sidebar /> should render correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 9.6rem;
-  left: 0;
-  top: 0;
-  bottom: 0;
+  height: 100vh;
 }
 
 .c0 nav {

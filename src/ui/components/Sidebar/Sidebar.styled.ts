@@ -2,15 +2,12 @@ import styled from 'styled-components'
 import { theme } from 'ui'
 
 export const Container = styled.aside`
-  position: fixed;
   background: ${theme.colors.white};
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 9.6rem;
-  left: 0;
-  top: 0;
-  bottom: 0;
+  height: 100vh;
 
   nav {
     margin-top: 3rem;
