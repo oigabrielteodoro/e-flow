@@ -42,6 +42,165 @@ exports[`<Content /> should render correctly 1`] = `
   bottom: -0.9rem;
 }
 
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 74.8rem;
+  margin-top: 4rem;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c9 section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 button {
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  background: transparent;
+  border: 0;
+}
+
+.c9 button:hover {
+  opacity: 0.5;
+}
+
+.c9 button + button {
+  margin-left: 2rem;
+}
+
+.c9 button img {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 1.6rem;
+  max-width: 76rem;
+  overflow-x: auto;
+}
+
+.c10::-webkit-scrollbar {
+  height: 0;
+}
+
+.c10 li {
+  padding: 1.6rem;
+  border-radius: 0.8rem;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.c10 li:hover {
+  -webkit-transform: translateY(-0.5rem);
+  -ms-transform: translateY(-0.5rem);
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0.8rem 2rem -0.2rem rgba(43,37,63,0.1);
+}
+
+.c10 li + li {
+  margin-left: 1.6rem;
+}
+
+.c10 li button {
+  background: transparent;
+  border: 0;
+}
+
+.c10 li section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 1.2rem;
+  min-width: 11.5rem;
+}
+
+.c10 li section span {
+  color: #14171a;
+}
+
+.c10 li section span:last-child {
+  color: #657786;
+}
+
+.c10 li .logo {
+  margin-left: 1.6rem;
+}
+
+.c10 li .pricing {
+  margin-left: 1.2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c10 li .pricing strong {
+  font-weight: 500;
+  margin-right: 0.8rem;
+  color: #79c300;
+}
+
+.c10 li .pricing .up {
+  color: #79c300;
+}
+
+.c10 li .pricing .down {
+  color: #d64b45;
+}
+
 .c0 {
   background: #f5f8fa;
   border-radius: 2.4rem 0 0 0;
@@ -1011,6 +1170,75 @@ exports[`<Content /> should render correctly 1`] = `
           style="transform: translate(undefinedpx, undefinedpx); pointer-events: none; visibility: hidden; position: absolute; top: 0px; left: 0px;"
         />
       </div>
+    </section>
+    <section
+      class="c8"
+    >
+      <header
+        class="c9"
+      >
+        <section>
+          <img
+            alt="Icon Company"
+            src="test-file-stub"
+          />
+          <h1>
+            Empresas recentes
+          </h1>
+        </section>
+        <nav>
+          <button>
+            <img
+              alt="Icon Arrow Left"
+              src="test-file-stub"
+            />
+          </button>
+          <button>
+            <img
+              alt="Icon Arrow Right"
+              src="test-file-stub"
+            />
+          </button>
+        </nav>
+      </header>
+      <ul
+        class="c10"
+      >
+        <li>
+          <button>
+            <img
+              alt="Icon Star"
+              src="test-file-stub"
+            />
+          </button>
+          <img
+            alt="Facebook"
+            class="logo"
+            src="test-file-stub"
+          />
+          <section>
+            <span>
+              FB
+            </span>
+            <span>
+              Facebook
+            </span>
+          </section>
+          <div
+            class="pricing"
+          >
+            <strong
+              class="up"
+            >
+              +2.3%
+            </strong>
+            <img
+              alt="Icon Up Pricing"
+              src="test-file-stub"
+            />
+          </div>
+        </li>
+      </ul>
     </section>
   </main>
 </div>

@@ -10,7 +10,9 @@ export const theme = {
     red: {
       500: '#d64b45',
     },
-    green: '#79c300',
+    green: {
+      500: '#79c300',
+    },
     gray: {
       50: '#f5f8fa',
       100: '#e1e0e7',

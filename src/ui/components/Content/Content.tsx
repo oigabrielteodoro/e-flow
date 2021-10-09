@@ -7,7 +7,7 @@ import {
   ICON_DOWN_PRICING,
 } from 'assets'
 
-import { Tooltip, LineChart } from 'ui'
+import { Tooltip, LineChart, RecentCompanies } from 'ui'
 
 import * as S from './Content.styled'
 
@@ -48,6 +48,8 @@ export function Content() {
 
           <LineChart />
         </S.AnalyticsArea>
+
+        <RecentCompanies />
       </S.Container>
     </S.Wrapper>
   )
