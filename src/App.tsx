@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { GlobalStyle, Sidebar } from 'ui'
+import { GlobalStyle, Sidebar, Content } from 'ui'
 
 import * as S from './App.styled'
 
@@ -9,9 +9,7 @@ export function App() {
     <>
       <S.Container>
         <Sidebar />
-        <main>
-          <h1>Dashboard</h1>
-        </main>
+        <Content />
       </S.Container>
       <GlobalStyle />
     </>

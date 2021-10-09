@@ -13,6 +13,8 @@ export const theme = {
     green: '#79c300',
     gray: {
       50: '#f5f8fa',
+      100: '#e1e0e7',
+      300: '#acacac',
       500: '#657786',
       900: '#14171a',
     },
