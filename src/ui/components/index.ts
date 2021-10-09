@@ -1,2 +1,5 @@
+export * from './LineChart'
 export * from './Sidebar'
 export * from './Content'
+export * from './Tooltip'
+export * from './Dot'

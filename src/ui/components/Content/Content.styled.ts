@@ -33,7 +33,6 @@ export const SearchArea = styled.div`
   display: flex;
   align-items: center;
   background: ${theme.colors.white};
-
   margin-right: auto;
 
   input {
@@ -58,15 +57,21 @@ export const SearchArea = styled.div`
     background: ${theme.colors.blue[500]};
     color: ${theme.colors.white};
     margin-left: -0.8rem;
+    transition: filter 0.2s;
+
+    &:hover {
+      filter: brightness(0.85);
+    }
   }
 `
 
 export const AnalyticsArea = styled.section`
+  max-width: 74.8rem;
   margin-top: 2.4rem;
   padding: 3rem 2.3rem;
   border-radius: 0.8rem;
   background: ${theme.colors.white};
-  max-width: 74.8rem;
+  box-shadow: 0 0.5rem 1.2rem rgba(222, 222, 231, 0.4);
 `
 
 export const AnalyticsAssetArea = styled.div`
