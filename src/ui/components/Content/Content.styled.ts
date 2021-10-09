@@ -60,3 +60,55 @@ export const SearchArea = styled.div`
     margin-left: -0.8rem;
   }
 `
+
+export const AnalyticsArea = styled.section`
+  margin-top: 2.4rem;
+  padding: 3rem 2.3rem;
+  border-radius: 0.8rem;
+  background: ${theme.colors.white};
+  max-width: 74.8rem;
+`
+
+export const AnalyticsAssetArea = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`
+
+export const AssetInfo = styled.div`
+  display: flex;
+  align-items: center;
+
+  fieldset {
+    border: 0;
+    display: flex;
+    margin-left: 1.2rem;
+    flex-direction: column;
+    align-items: flex-start;
+
+    strong {
+      font-weight: 500;
+    }
+
+    span {
+      color: ${theme.colors.gray[300]};
+      font-size: 1.4rem;
+    }
+  }
+`
+
+export const AssetPricing = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  img {
+    margin-right: 0.8rem;
+  }
+
+  span {
+    margin-top: 0.8rem;
+    color: ${theme.colors.red[500]};
+    font-weight: 500;
+  }
+`
