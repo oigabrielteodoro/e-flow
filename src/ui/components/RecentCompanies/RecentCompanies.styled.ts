@@ -55,7 +55,7 @@ export const CompaniesList = styled(Carousel).attrs({
 `
 
 export const CompanyItem = styled.li`
-  display: flex !important;
+  display: flex;
   align-items: center;
   padding: 1.6rem;
   border-radius: 0.8rem;
