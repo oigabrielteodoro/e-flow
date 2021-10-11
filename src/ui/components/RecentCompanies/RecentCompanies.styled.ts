@@ -1,5 +1,10 @@
+import dynamic from 'next/dynamic'
 import styled from 'styled-components'
-import Carousel, { slidesToShowPlugin } from '@brainhubeu/react-carousel'
+import { slidesToShowPlugin } from '@brainhubeu/react-carousel'
+
+const Carousel = dynamic(import('@brainhubeu/react-carousel'), {
+  ssr: false,
+})
 
 export const Container = styled.section`
   display: flex;

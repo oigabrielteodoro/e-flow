@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "lib": [
-      "DOM",
-      "DOM.Iterable",
-      "ESNext"
-    ],
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "allowJs": false,
@@ -22,10 +18,6 @@
     "jsx": "preserve",
     "baseUrl": "src/"
   },
-  "include": [
-    "./src"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["./src"],
+  "exclude": ["node_modules"]
 }
