@@ -16,7 +16,7 @@ export const companyNormalizedCodec = t.type({
   symbol: symbolCodec,
   companyName: t.string,
   change: t.string,
-  changePercent: t.number,
+  changePercent: t.string,
 })
 
 export type CompanyNormalized = t.TypeOf<typeof companyNormalizedCodec>

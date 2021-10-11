@@ -14,3 +14,17 @@ export const decimalFromInt = (value?: number | null) =>
         }).format(value),
     ),
   )
+
+export const percentFromInt = (value?: number | null) =>
+  pipe(
+    value,
+    fromNullable,
+    fold(
+      () => '-',
+      (value) =>
+        new Intl.NumberFormat('en-US', {
+          style: 'percent',
+          maximumFractionDigits: 2,
+        }).format(value),
+    ),
+  )
