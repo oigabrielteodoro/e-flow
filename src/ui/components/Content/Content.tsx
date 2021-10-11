@@ -30,12 +30,14 @@ export function Content() {
           <S.AnalyticsAssetArea>
             <S.AssetInfo>
               <Tooltip title='Adicionar aos favoritos'>
-                <img src={ICON_STAR_OUTLINE} alt='Icon Star' />
+                <button>
+                  <img src={ICON_STAR_OUTLINE} alt='Icon Star' />
+                </button>
               </Tooltip>
-              <fieldset>
+              <section>
                 <strong>MSFT</strong>
                 <span>Microsoft</span>
-              </fieldset>
+              </section>
             </S.AssetInfo>
             <S.AssetPricing>
               <div>

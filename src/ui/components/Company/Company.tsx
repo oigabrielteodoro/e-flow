@@ -5,14 +5,14 @@ import { ICON_STAR_OUTLINE, ICON_UP_PRICING, LOGO_FACEBOOK } from 'assets'
 import * as S from './Company.styled'
 
 type Props = {
-  isFavorite?: boolean
+  disableFavorite?: boolean
   as?: ElementType
 }
 
-export function Company({ as, isFavorite = true }: Props) {
+export function Company({ as, disableFavorite = false }: Props) {
   return (
     <S.Container as={as} isPricingUp>
-      {isFavorite && (
+      {!disableFavorite && (
         <button>
           <img src={ICON_STAR_OUTLINE} alt='Icon Star' />
         </button>

@@ -10,6 +10,7 @@ import ICON_ARROW_RIGHT from './icon-arrow-right.svg'
 import ICON_UP_PRICING from './icon-up-pricing.svg'
 import ICON_DOWN_PRICING from './icon-down-pricing.svg'
 import ICON_CARET_DOWN from './icon-caret-down.svg'
+import ICON_TRASH from './icon-trash.svg'
 import LOGO_FACEBOOK from './logo-facebook.svg'
 
 export {
@@ -26,4 +27,5 @@ export {
   ICON_UP_PRICING,
   ICON_CARET_DOWN,
   ICON_DOWN_PRICING,
+  ICON_TRASH,
 }

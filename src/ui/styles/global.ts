@@ -19,7 +19,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     scroll-behavior: smooth;
-    overflow-y: hidden;
+    overflow: hidden;
   }
 
   html,

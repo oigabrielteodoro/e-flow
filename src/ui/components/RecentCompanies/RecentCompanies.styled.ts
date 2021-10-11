@@ -4,7 +4,6 @@ import Carousel, { slidesToShowPlugin } from '@brainhubeu/react-carousel'
 export const Container = styled.section`
   display: flex;
   flex-direction: column;
-  max-width: 74.8rem;
   margin-top: 4rem;
 `
 
@@ -48,6 +47,6 @@ export const CompaniesList = styled(Carousel).attrs({
     },
   ],
 })`
-  max-width: 76rem;
+  max-width: 90.5rem;
   margin-top: 1.6rem;
 `

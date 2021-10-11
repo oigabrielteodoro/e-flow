@@ -1,5 +1,8 @@
 import styled from 'styled-components'
+
 import { theme } from 'ui/styles'
+
+import { Container as CompanyContainer } from '../Company/Company.styled'
 
 export const Container = styled.aside`
   padding: 3.2rem 2rem;
@@ -48,5 +51,25 @@ export const CompaniesArea = styled.section`
 
   ul {
     margin-top: 3.2rem;
+  }
+`
+
+export const CompanyItem = styled.li`
+  display: flex;
+  align-items: center;
+
+  ${CompanyContainer} {
+    width: 100%;
+    box-shadow: 0 0.8rem 2rem -0.2rem rgba(43, 37, 63, 0.1);
+
+    .pricing {
+      margin-left: auto;
+    }
+  }
+
+  > button {
+    margin-left: 0.8rem;
+    background: transparent;
+    border: 0;
   }
 `

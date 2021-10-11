@@ -1,6 +1,8 @@
 import React from 'react'
 
-import { ICON_CARET_DOWN, ICON_STAR } from 'assets'
+import { ICON_CARET_DOWN, ICON_STAR, ICON_TRASH } from 'assets'
+
+import { Company } from 'ui'
 
 import * as S from './FavoriteCompanies.styled'
 
@@ -27,7 +29,12 @@ export function FavoriteCompanies() {
         </h1>
 
         <ul>
-          <li>Facebook</li>
+          <S.CompanyItem>
+            <Company disableFavorite />
+            <button>
+              <img src={ICON_TRASH} alt='Icon Trash' />
+            </button>
+          </S.CompanyItem>
         </ul>
       </S.CompaniesArea>
     </S.Container>

@@ -13,7 +13,7 @@ import { theme, Dot, Tooltip } from 'ui'
 
 export function LineChart() {
   return (
-    <ComposedChart height={274} width={702} data={data} margin={{ top: 30 }}>
+    <ComposedChart height={304} width={865} data={data} margin={{ top: 30 }}>
       <defs>
         <linearGradient id='gradient' x1='100%' y1='0%' x2='0%' y2='100%'>
           <stop
