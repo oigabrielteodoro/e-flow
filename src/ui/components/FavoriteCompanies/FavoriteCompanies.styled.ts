@@ -51,6 +51,8 @@ export const CompaniesArea = styled.section`
 
   ul {
     margin-top: 3.2rem;
+    display: grid;
+    grid-gap: 3.2rem;
   }
 `
 

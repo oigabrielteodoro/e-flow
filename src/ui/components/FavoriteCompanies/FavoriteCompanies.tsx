@@ -35,6 +35,18 @@ export function FavoriteCompanies() {
               <img src={ICON_TRASH} alt='Icon Trash' />
             </button>
           </S.CompanyItem>
+          <S.CompanyItem>
+            <Company disableFavorite />
+            <button>
+              <img src={ICON_TRASH} alt='Icon Trash' />
+            </button>
+          </S.CompanyItem>
+          <S.CompanyItem>
+            <Company disableFavorite />
+            <button>
+              <img src={ICON_TRASH} alt='Icon Trash' />
+            </button>
+          </S.CompanyItem>
         </ul>
       </S.CompaniesArea>
     </S.Container>
