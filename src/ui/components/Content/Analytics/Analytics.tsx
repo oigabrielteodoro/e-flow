@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux'
 
 import { Tooltip } from 'ui'
 import { ApplicationState, CompaniesState } from 'client'
-import { ICON_DOWN_PRICING, ICON_STAR_OUTLINE } from 'assets'
+import { ICON_DOWN_PRICING, ICON_STAR_OUTLINE, ICON_UP_PRICING } from 'assets'
 
 import * as S from './Analytics.styled'
 
@@ -22,6 +22,8 @@ export function Analytics() {
     return null
   }
 
+  const isPricingUp = company.value.price_direction === 'up'
+
   return (
     <S.Container>
       <S.AnalyticsAssetArea>
@@ -33,16 +35,19 @@ export function Analytics() {
           </Tooltip>
           <section>
             <strong>{company.value.symbol}</strong>
-            <span>{company.value.companyName}</span>
+            <span>{company.value.company_name}</span>
           </section>
         </S.AssetInfo>
-        <S.AssetPricing>
+        <S.AssetPricing isUp={isPricingUp}>
           <div>
-            <img src={ICON_DOWN_PRICING} alt='Icon Down Pricing' />
-            <strong>{company.value.latestPrice}</strong>
+            <img
+              src={isPricingUp ? ICON_UP_PRICING : ICON_DOWN_PRICING}
+              alt='Icon Pricing'
+            />
+            <strong>{company.value.latest_price}</strong>
           </div>
           <span>
-            {company.value.change} ({company.value.changePercent})
+            {company.value.change} ({company.value.change_percent})
           </span>
         </S.AssetPricing>
       </S.AnalyticsAssetArea>

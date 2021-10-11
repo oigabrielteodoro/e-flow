@@ -1,5 +1,9 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { theme } from 'ui/styles'
+
+type AssetPricingProps = {
+  isUp?: boolean
+}
 
 export const Container = styled.section`
   margin-top: 2.4rem;
@@ -41,7 +45,7 @@ export const AssetInfo = styled.div`
   }
 `
 
-export const AssetPricing = styled.div`
+export const AssetPricing = styled.div<AssetPricingProps>`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -54,5 +58,11 @@ export const AssetPricing = styled.div`
     margin-top: 0.8rem;
     color: ${theme.colors.red[500]};
     font-weight: 500;
+
+    ${({ isUp }) =>
+      isUp &&
+      css`
+        color: ${theme.colors.green[500]};
+      `}
   }
 `

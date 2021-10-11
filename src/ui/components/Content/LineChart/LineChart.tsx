@@ -8,13 +8,26 @@ import {
   Area,
   Line,
 } from 'recharts'
+import { useSelector } from 'react-redux'
+
+import { isSome } from 'fp-ts/Option'
+
 import { v4 } from 'uuid'
 
 import { theme, Tooltip } from 'ui'
+import { ApplicationState, CompaniesState } from 'client'
 
 import { Dot } from '../Dot'
 
 export default function LineChart() {
+  const { company } = useSelector<ApplicationState, CompaniesState>(
+    (state) => state.companies,
+  )
+
+  if (!isSome(company)) {
+    return <h1>Nenhum dado para ser exibido!</h1>
+  }
+
   return (
     <ComposedChart height={304} width={865} data={data} margin={{ top: 30 }}>
       <defs>

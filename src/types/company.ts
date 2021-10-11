@@ -12,11 +12,12 @@ export const companyRawCodec = t.type({
 export type CompanyRaw = t.TypeOf<typeof companyRawCodec>
 
 export const companyNormalizedCodec = t.type({
-  latestPrice: t.string,
+  latest_price: t.string,
   symbol: symbolCodec,
-  companyName: t.string,
+  company_name: t.string,
   change: t.string,
-  changePercent: t.string,
+  change_percent: t.string,
+  price_direction: t.union([t.literal('up'), t.literal('down')]),
 })
 
 export type CompanyNormalized = t.TypeOf<typeof companyNormalizedCodec>
