@@ -1,15 +1,27 @@
 import React from 'react'
 import dynamic from 'next/dynamic'
 
-import { ICON_DOWN_PRICING, ICON_STAR_OUTLINE } from 'assets'
+import { isSome } from 'fp-ts/Option'
+
+import { useSelector } from 'react-redux'
 
 import { Tooltip } from 'ui'
+import { ApplicationState, CompaniesState } from 'client'
+import { ICON_DOWN_PRICING, ICON_STAR_OUTLINE } from 'assets'
 
 import * as S from './Analytics.styled'
 
 const LineChart = dynamic(() => import('../LineChart'), { ssr: false })
 
 export function Analytics() {
+  const { company } = useSelector<ApplicationState, CompaniesState>(
+    (state) => state.companies,
+  )
+
+  if (!isSome(company)) {
+    return null
+  }
+
   return (
     <S.Container>
       <S.AnalyticsAssetArea>
@@ -20,16 +32,18 @@ export function Analytics() {
             </button>
           </Tooltip>
           <section>
-            <strong>MSFT</strong>
-            <span>Microsoft</span>
+            <strong>{company.value.symbol}</strong>
+            <span>{company.value.companyName}</span>
           </section>
         </S.AssetInfo>
         <S.AssetPricing>
           <div>
             <img src={ICON_DOWN_PRICING} alt='Icon Down Pricing' />
-            <strong>$265,42</strong>
+            <strong>{company.value.latestPrice}</strong>
           </div>
-          <span>$-0.09 (-0.03%)</span>
+          <span>
+            {company.value.change} ({company.value.changePercent})
+          </span>
         </S.AssetPricing>
       </S.AnalyticsAssetArea>
 

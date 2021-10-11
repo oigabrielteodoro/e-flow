@@ -1,10 +1,14 @@
 import { Reducer } from 'redux'
 import produce from 'immer'
+
 import { toast } from 'react-toastify'
+import { none, some } from 'fp-ts/Option'
+
 import { ActionTypes, CompaniesState } from './companies.types'
 
 const INITIAL_STATE: CompaniesState = {
   isLoading: true,
+  company: none,
 }
 
 const reducer: Reducer<CompaniesState> = (state = INITIAL_STATE, action) => {
@@ -15,7 +19,11 @@ const reducer: Reducer<CompaniesState> = (state = INITIAL_STATE, action) => {
         break
       }
       case ActionTypes.getCompanySuccess: {
+        const { company } = action.payload
+
         draft.isLoading = false
+        draft.company = some(company)
+
         break
       }
       case ActionTypes.getCompanyFailure: {

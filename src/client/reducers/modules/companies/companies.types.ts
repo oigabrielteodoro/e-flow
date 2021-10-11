@@ -1,3 +1,7 @@
+import { Option } from 'fp-ts/Option'
+
+import { CompanyRaw } from 'types'
+
 export enum ActionTypes {
   getCompanyRequest = '@companies/GET_COMPANY_REQUEST',
   getCompanySuccess = '@companies/GET_COMPANY_SUCCESS',
@@ -5,6 +9,6 @@ export enum ActionTypes {
 }
 
 export type CompaniesState = {
-  isLoading?: boolean
-  company?: unknown
+  company: Option<CompanyRaw>
+  isLoading: boolean
 }
