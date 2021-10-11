@@ -9,7 +9,9 @@ import {
   Line,
 } from 'recharts'
 
-import { theme, Dot, Tooltip } from 'ui'
+import { theme, Tooltip } from 'ui'
+
+import { Dot } from '../Dot'
 
 export function LineChart() {
   return (
