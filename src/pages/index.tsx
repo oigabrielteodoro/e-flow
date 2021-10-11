@@ -1,12 +1,20 @@
 import React from 'react'
+import Head from 'next/head'
+
 import { Sidebar, Content, FavoriteCompanies, Layout } from 'ui'
 
 export default function Dashboard() {
   return (
-    <Layout>
-      <Sidebar />
-      <Content />
-      <FavoriteCompanies />
-    </Layout>
+    <>
+      <Head>
+        <title>Monetus</title>
+      </Head>
+
+      <Layout>
+        <Sidebar />
+        <Content />
+        <FavoriteCompanies />
+      </Layout>
+    </>
   )
 }
