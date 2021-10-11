@@ -40,13 +40,6 @@ export function Dot({ key, cx, cy, active = false }: Props) {
   }
 
   return (
-    <circle
-      key={key}
-      cx={cx}
-      cy={cy}
-      r={3}
-      strokeWidth={3}
-      fill={theme.colors.blue[500]}
-    />
+    <circle key={key} cx={cx} cy={cy} r={3} fill={theme.colors.blue[500]} />
   )
 }

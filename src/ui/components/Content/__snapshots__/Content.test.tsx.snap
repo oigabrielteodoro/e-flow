@@ -101,57 +101,44 @@ exports[`<Content /> should render correctly 1`] = `
 }
 
 .c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  max-width: 76rem;
+  margin-top: 1.6rem;
+}
+
+.c11 {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 1.6rem;
-  max-width: 76rem;
-  overflow-x: auto;
-}
-
-.c10::-webkit-scrollbar {
-  height: 0;
-}
-
-.c10 li {
   padding: 1.6rem;
   border-radius: 0.8rem;
   background: #ffffff;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   cursor: pointer;
 }
 
-.c10 li:hover {
+.c11:hover {
   -webkit-transform: translateY(-0.5rem);
   -ms-transform: translateY(-0.5rem);
   transform: translateY(-0.5rem);
   box-shadow: 0 0.8rem 2rem -0.2rem rgba(43,37,63,0.1);
 }
 
-.c10 li + li {
+.c11 + div {
   margin-left: 1.6rem;
 }
 
-.c10 li button {
+.c11 button {
   background: transparent;
   border: 0;
 }
 
-.c10 li section {
+.c11 section {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -163,19 +150,19 @@ exports[`<Content /> should render correctly 1`] = `
   min-width: 11.5rem;
 }
 
-.c10 li section span {
+.c11 section span {
   color: #14171a;
 }
 
-.c10 li section span:last-child {
+.c11 section span:last-child {
   color: #657786;
 }
 
-.c10 li .logo {
+.c11 .logo {
   margin-left: 1.6rem;
 }
 
-.c10 li .pricing {
+.c11 .pricing {
   margin-left: 1.2rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -187,17 +174,17 @@ exports[`<Content /> should render correctly 1`] = `
   align-items: center;
 }
 
-.c10 li .pricing strong {
+.c11 .pricing strong {
   font-weight: 500;
   margin-right: 0.8rem;
   color: #79c300;
 }
 
-.c10 li .pricing .up {
+.c11 .pricing .up {
   color: #79c300;
 }
 
-.c10 li .pricing .down {
+.c11 .pricing .down {
   color: #d64b45;
 }
 
@@ -1201,44 +1188,187 @@ exports[`<Content /> should render correctly 1`] = `
           </button>
         </nav>
       </header>
-      <ul
-        class="c10"
+      <div
+        class="BrainhubCarousel__container"
       >
-        <li>
-          <button>
-            <img
-              alt="Icon Star"
-              src="test-file-stub"
-            />
-          </button>
-          <img
-            alt="Facebook"
-            class="logo"
-            src="test-file-stub"
-          />
-          <section>
-            <span>
-              FB
-            </span>
-            <span>
-              Facebook
-            </span>
-          </section>
+        <div
+          class="BrainhubCarousel c10"
+        >
           <div
-            class="pricing"
+            class="BrainhubCarousel__trackContainer"
           >
-            <strong
-              class="up"
+            <ul
+              class="BrainhubCarousel__track BrainhubCarousel__track--draggable"
+              style="width: 0px; transform: translateX(0px); margin-left: 0px;"
             >
-              +2.3%
-            </strong>
-            <img
-              alt="Icon Up Pricing"
-              src="test-file-stub"
-            />
+              <li
+                class="BrainhubCarouselItem BrainhubCarouselItem--active"
+                style="margin-right: 0px; margin-left: 0px; width: 338.3px; max-width: 338.3px; min-width: 338.3px;"
+              >
+                <li
+                  class="c11"
+                >
+                  <button>
+                    <img
+                      alt="Icon Star"
+                      src="test-file-stub"
+                    />
+                  </button>
+                  <img
+                    alt="Facebook"
+                    class="logo"
+                    src="test-file-stub"
+                  />
+                  <section>
+                    <span>
+                      FB
+                    </span>
+                    <span>
+                      Facebook
+                    </span>
+                  </section>
+                  <div
+                    class="pricing"
+                  >
+                    <strong
+                      class="up"
+                    >
+                      +2.3%
+                    </strong>
+                    <img
+                      alt="Icon Up Pricing"
+                      src="test-file-stub"
+                    />
+                  </div>
+                </li>
+              </li>
+              <li
+                class="BrainhubCarouselItem"
+                style="margin-right: 0px; margin-left: 0px; width: 338.3px; max-width: 338.3px; min-width: 338.3px;"
+              >
+                <li
+                  class="c11"
+                >
+                  <button>
+                    <img
+                      alt="Icon Star"
+                      src="test-file-stub"
+                    />
+                  </button>
+                  <img
+                    alt="Facebook"
+                    class="logo"
+                    src="test-file-stub"
+                  />
+                  <section>
+                    <span>
+                      FB
+                    </span>
+                    <span>
+                      Facebook
+                    </span>
+                  </section>
+                  <div
+                    class="pricing"
+                  >
+                    <strong
+                      class="up"
+                    >
+                      +2.3%
+                    </strong>
+                    <img
+                      alt="Icon Up Pricing"
+                      src="test-file-stub"
+                    />
+                  </div>
+                </li>
+              </li>
+              <li
+                class="BrainhubCarouselItem"
+                style="margin-right: 0px; margin-left: 0px; width: 338.3px; max-width: 338.3px; min-width: 338.3px;"
+              >
+                <li
+                  class="c11"
+                >
+                  <button>
+                    <img
+                      alt="Icon Star"
+                      src="test-file-stub"
+                    />
+                  </button>
+                  <img
+                    alt="Facebook"
+                    class="logo"
+                    src="test-file-stub"
+                  />
+                  <section>
+                    <span>
+                      FB
+                    </span>
+                    <span>
+                      Facebook
+                    </span>
+                  </section>
+                  <div
+                    class="pricing"
+                  >
+                    <strong
+                      class="up"
+                    >
+                      +2.3%
+                    </strong>
+                    <img
+                      alt="Icon Up Pricing"
+                      src="test-file-stub"
+                    />
+                  </div>
+                </li>
+              </li>
+              <li
+                class="BrainhubCarouselItem"
+                style="margin-right: 0px; margin-left: 0px; width: 338.3px; max-width: 338.3px; min-width: 338.3px;"
+              >
+                <li
+                  class="c11"
+                >
+                  <button>
+                    <img
+                      alt="Icon Star"
+                      src="test-file-stub"
+                    />
+                  </button>
+                  <img
+                    alt="Facebook"
+                    class="logo"
+                    src="test-file-stub"
+                  />
+                  <section>
+                    <span>
+                      FB
+                    </span>
+                    <span>
+                      Facebook
+                    </span>
+                  </section>
+                  <div
+                    class="pricing"
+                  >
+                    <strong
+                      class="up"
+                    >
+                      +2.3%
+                    </strong>
+                    <img
+                      alt="Icon Up Pricing"
+                      src="test-file-stub"
+                    />
+                  </div>
+                </li>
+              </li>
+            </ul>
           </div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </section>
   </main>
 </div>

@@ -1,5 +1,7 @@
 import React from 'react'
 
+import '@brainhubeu/react-carousel/lib/style.css'
+
 import { GlobalStyle, Sidebar, Content } from 'ui'
 
 import * as S from './App.styled'
