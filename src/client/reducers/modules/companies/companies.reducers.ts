@@ -4,6 +4,7 @@ import produce from 'immer'
 import { toast } from 'react-toastify'
 import { none, some } from 'fp-ts/Option'
 
+import { normalizeCompany } from 'client'
 import { ActionTypes, CompaniesState } from './companies.types'
 
 const INITIAL_STATE: CompaniesState = {
@@ -22,7 +23,7 @@ const reducer: Reducer<CompaniesState> = (state = INITIAL_STATE, action) => {
         const { company } = action.payload
 
         draft.isLoading = false
-        draft.company = some(company)
+        draft.company = some(normalizeCompany(company))
 
         break
       }

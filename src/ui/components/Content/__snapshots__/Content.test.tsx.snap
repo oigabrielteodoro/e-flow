@@ -198,6 +198,7 @@ exports[`<Content /> should render correctly 1`] = `
   border: 0.1rem solid #e1e0e7;
   border-right-color: transparent;
   padding: 0 1.6rem;
+  min-width: 32.4rem;
 }
 
 .c2 input::-webkit-input-placeholder {

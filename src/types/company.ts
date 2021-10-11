@@ -10,3 +10,13 @@ export const companyRawCodec = t.type({
 })
 
 export type CompanyRaw = t.TypeOf<typeof companyRawCodec>
+
+export const companyNormalizedCodec = t.type({
+  latestPrice: t.string,
+  symbol: symbolCodec,
+  companyName: t.string,
+  change: t.string,
+  changePercent: t.number,
+})
+
+export type CompanyNormalized = t.TypeOf<typeof companyNormalizedCodec>

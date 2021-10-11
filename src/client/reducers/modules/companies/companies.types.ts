@@ -1,6 +1,6 @@
 import { Option } from 'fp-ts/Option'
 
-import { CompanyRaw } from 'types'
+import { CompanyNormalized } from 'types'
 
 export enum ActionTypes {
   getCompanyRequest = '@companies/GET_COMPANY_REQUEST',
@@ -9,6 +9,6 @@ export enum ActionTypes {
 }
 
 export type CompaniesState = {
-  company: Option<CompanyRaw>
+  company: Option<CompanyNormalized>
   isLoading: boolean
 }

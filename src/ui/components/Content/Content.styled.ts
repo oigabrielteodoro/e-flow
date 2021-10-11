@@ -43,6 +43,7 @@ export const SearchArea = styled.form`
     border: 0.1rem solid ${theme.colors.gray[100]};
     border-right-color: transparent;
     padding: 0 1.6rem;
+    min-width: 32.4rem;
 
     &::placeholder {
       color: ${theme.colors.gray[300]};
