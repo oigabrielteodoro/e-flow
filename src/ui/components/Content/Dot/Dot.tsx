@@ -1,18 +1,17 @@
 import React from 'react'
+
 import { theme } from 'ui/styles'
 
 type Props = {
-  key?: string
   cx: number
   cy: number
   active?: boolean
 }
 
-export function Dot({ key, cx, cy, active = false }: Props) {
+export function Dot({ cx, cy, active = false }: Props) {
   if (active) {
     return (
       <svg
-        key={key}
         xmlns='http://www.w3.org/2000/svg'
         width='19'
         height='20'
@@ -39,7 +38,5 @@ export function Dot({ key, cx, cy, active = false }: Props) {
     )
   }
 
-  return (
-    <circle key={key} cx={cx} cy={cy} r={3} fill={theme.colors.blue[500]} />
-  )
+  return <circle cx={cx} cy={cy} r={3} fill={theme.colors.blue[500]} />
 }

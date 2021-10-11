@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Carousel, { slidesToShowPlugin } from '@brainhubeu/react-carousel'
+import Carousel from 'react-multi-carousel'
 
 export const Container = styled.section`
   display: flex;
@@ -37,16 +37,11 @@ export const Header = styled.header`
   }
 `
 
-export const CompaniesList = styled(Carousel).attrs({
-  plugins: [
-    {
-      resolve: slidesToShowPlugin,
-      options: {
-        numberOfSlides: 3,
-      },
-    },
-  ],
-})`
+export const CompaniesList = styled(Carousel)`
   max-width: 90.5rem;
   margin-top: 1.6rem;
+
+  li + li {
+    padding-left: 1.6rem;
+  }
 `
