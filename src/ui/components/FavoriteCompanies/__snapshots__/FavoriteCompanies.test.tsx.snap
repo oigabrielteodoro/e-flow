@@ -178,7 +178,7 @@ exports[`<FavoriteCompanies /> should render correctly 1`] = `
     <button>
       <img
         alt="Icon Caret Down"
-        src="test-file-stub"
+        src="/img/icon-caret-down.svg"
       />
     </button>
   </header>
@@ -188,7 +188,7 @@ exports[`<FavoriteCompanies /> should render correctly 1`] = `
     <h1>
       <img
         alt="Icon Star"
-        src="test-file-stub"
+        src="/img/icon-star.svg"
       />
       Empresas favoritas
     </h1>
@@ -202,7 +202,7 @@ exports[`<FavoriteCompanies /> should render correctly 1`] = `
           <img
             alt="Facebook"
             class="logo"
-            src="test-file-stub"
+            src="/img/logo-facebook.svg"
           />
           <section>
             <span>
@@ -220,14 +220,14 @@ exports[`<FavoriteCompanies /> should render correctly 1`] = `
             </strong>
             <img
               alt="Icon Up Pricing"
-              src="test-file-stub"
+              src="/img/icon-up-pricing.svg"
             />
           </div>
         </div>
         <button>
           <img
             alt="Icon Trash"
-            src="test-file-stub"
+            src="/img/icon-trash.svg"
           />
         </button>
       </li>
@@ -240,7 +240,7 @@ exports[`<FavoriteCompanies /> should render correctly 1`] = `
           <img
             alt="Facebook"
             class="logo"
-            src="test-file-stub"
+            src="/img/logo-facebook.svg"
           />
           <section>
             <span>
@@ -258,14 +258,14 @@ exports[`<FavoriteCompanies /> should render correctly 1`] = `
             </strong>
             <img
               alt="Icon Up Pricing"
-              src="test-file-stub"
+              src="/img/icon-up-pricing.svg"
             />
           </div>
         </div>
         <button>
           <img
             alt="Icon Trash"
-            src="test-file-stub"
+            src="/img/icon-trash.svg"
           />
         </button>
       </li>
@@ -278,7 +278,7 @@ exports[`<FavoriteCompanies /> should render correctly 1`] = `
           <img
             alt="Facebook"
             class="logo"
-            src="test-file-stub"
+            src="/img/logo-facebook.svg"
           />
           <section>
             <span>
@@ -296,14 +296,14 @@ exports[`<FavoriteCompanies /> should render correctly 1`] = `
             </strong>
             <img
               alt="Icon Up Pricing"
-              src="test-file-stub"
+              src="/img/icon-up-pricing.svg"
             />
           </div>
         </div>
         <button>
           <img
             alt="Icon Trash"
-            src="test-file-stub"
+            src="/img/icon-trash.svg"
           />
         </button>
       </li>

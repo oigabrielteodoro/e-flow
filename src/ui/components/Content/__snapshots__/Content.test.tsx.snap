@@ -364,7 +364,7 @@ exports[`<Content /> should render correctly 1`] = `
   <header>
     <img
       alt="Icon Dashboard"
-      src="test-file-stub"
+      src="/img/icon-dashboard.svg"
     />
     <h1>
       Dashboard
@@ -382,7 +382,7 @@ exports[`<Content /> should render correctly 1`] = `
       <button>
         <img
           alt="Icon Search"
-          src="test-file-stub"
+          src="/img/icon-search.svg"
         />
       </button>
     </div>
@@ -404,7 +404,7 @@ exports[`<Content /> should render correctly 1`] = `
             <button>
               <img
                 alt="Icon Star"
-                src="test-file-stub"
+                src="/img/icon-star-outline.svg"
               />
             </button>
           </div>
@@ -423,7 +423,7 @@ exports[`<Content /> should render correctly 1`] = `
           <div>
             <img
               alt="Icon Down Pricing"
-              src="test-file-stub"
+              src="/img/icon-down-pricing.svg"
             />
             <strong>
               $265,42
@@ -1160,7 +1160,7 @@ exports[`<Content /> should render correctly 1`] = `
         <section>
           <img
             alt="Icon Company"
-            src="test-file-stub"
+            src="/img/icon-company.svg"
           />
           <h1>
             Empresas recentes
@@ -1170,13 +1170,13 @@ exports[`<Content /> should render correctly 1`] = `
           <button>
             <img
               alt="Icon Arrow Left"
-              src="test-file-stub"
+              src="/img/icon-arrow-left.svg"
             />
           </button>
           <button>
             <img
               alt="Icon Arrow Right"
-              src="test-file-stub"
+              src="/img/icon-arrow-right.svg"
             />
           </button>
         </nav>
@@ -1204,13 +1204,13 @@ exports[`<Content /> should render correctly 1`] = `
                   <button>
                     <img
                       alt="Icon Star"
-                      src="test-file-stub"
+                      src="/img/icon-star-outline.svg"
                     />
                   </button>
                   <img
                     alt="Facebook"
                     class="logo"
-                    src="test-file-stub"
+                    src="/img/logo-facebook.svg"
                   />
                   <section>
                     <span>
@@ -1228,7 +1228,7 @@ exports[`<Content /> should render correctly 1`] = `
                     </strong>
                     <img
                       alt="Icon Up Pricing"
-                      src="test-file-stub"
+                      src="/img/icon-up-pricing.svg"
                     />
                   </div>
                 </li>
@@ -1243,13 +1243,13 @@ exports[`<Content /> should render correctly 1`] = `
                   <button>
                     <img
                       alt="Icon Star"
-                      src="test-file-stub"
+                      src="/img/icon-star-outline.svg"
                     />
                   </button>
                   <img
                     alt="Facebook"
                     class="logo"
-                    src="test-file-stub"
+                    src="/img/logo-facebook.svg"
                   />
                   <section>
                     <span>
@@ -1267,7 +1267,7 @@ exports[`<Content /> should render correctly 1`] = `
                     </strong>
                     <img
                       alt="Icon Up Pricing"
-                      src="test-file-stub"
+                      src="/img/icon-up-pricing.svg"
                     />
                   </div>
                 </li>
@@ -1282,13 +1282,13 @@ exports[`<Content /> should render correctly 1`] = `
                   <button>
                     <img
                       alt="Icon Star"
-                      src="test-file-stub"
+                      src="/img/icon-star-outline.svg"
                     />
                   </button>
                   <img
                     alt="Facebook"
                     class="logo"
-                    src="test-file-stub"
+                    src="/img/logo-facebook.svg"
                   />
                   <section>
                     <span>
@@ -1306,7 +1306,7 @@ exports[`<Content /> should render correctly 1`] = `
                     </strong>
                     <img
                       alt="Icon Up Pricing"
-                      src="test-file-stub"
+                      src="/img/icon-up-pricing.svg"
                     />
                   </div>
                 </li>
@@ -1321,13 +1321,13 @@ exports[`<Content /> should render correctly 1`] = `
                   <button>
                     <img
                       alt="Icon Star"
-                      src="test-file-stub"
+                      src="/img/icon-star-outline.svg"
                     />
                   </button>
                   <img
                     alt="Facebook"
                     class="logo"
-                    src="test-file-stub"
+                    src="/img/logo-facebook.svg"
                   />
                   <section>
                     <span>
@@ -1345,7 +1345,7 @@ exports[`<Content /> should render correctly 1`] = `
                     </strong>
                     <img
                       alt="Icon Up Pricing"
-                      src="test-file-stub"
+                      src="/img/icon-up-pricing.svg"
                     />
                   </div>
                 </li>

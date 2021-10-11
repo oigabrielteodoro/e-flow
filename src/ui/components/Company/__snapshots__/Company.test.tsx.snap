@@ -79,13 +79,13 @@ exports[`<Company /> should render correctly 1`] = `
   <button>
     <img
       alt="Icon Star"
-      src="test-file-stub"
+      src="/img/icon-star-outline.svg"
     />
   </button>
   <img
     alt="Facebook"
     class="logo"
-    src="test-file-stub"
+    src="/img/logo-facebook.svg"
   />
   <section>
     <span>
@@ -103,7 +103,7 @@ exports[`<Company /> should render correctly 1`] = `
     </strong>
     <img
       alt="Icon Up Pricing"
-      src="test-file-stub"
+      src="/img/icon-up-pricing.svg"
     />
   </div>
 </div>

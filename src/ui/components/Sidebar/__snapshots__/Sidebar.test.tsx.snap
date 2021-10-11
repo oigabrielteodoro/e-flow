@@ -50,7 +50,7 @@ exports[`<Sidebar /> should render correctly 1`] = `
   <img
     alt="Monetus Logo"
     class="c1"
-    src="test-file-stub"
+    src="/img/logo.svg"
   />
   <nav>
     <ul>
@@ -58,7 +58,7 @@ exports[`<Sidebar /> should render correctly 1`] = `
         <img
           alt="Home Icon"
           height="32"
-          src="test-file-stub"
+          src="/img/icon-home.svg"
         />
       </li>
     </ul>
