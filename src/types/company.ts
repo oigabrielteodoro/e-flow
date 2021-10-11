@@ -21,3 +21,28 @@ export const companyNormalizedCodec = t.type({
 })
 
 export type CompanyNormalized = t.TypeOf<typeof companyNormalizedCodec>
+
+export const companyPriceRaw = t.type({
+  close: t.number,
+  updated: t.number,
+})
+
+export type CompanyPriceRaw = t.TypeOf<typeof companyPriceRaw>
+
+export const companyPriceNormalized = t.type({
+  pricing: t.number,
+  pricing_formatted: t.string,
+  updated_at: t.string,
+})
+
+export type CompanyPriceNormalized = t.TypeOf<typeof companyPriceNormalized>
+
+export const companyHistoryPriceRaw = t.array(companyPriceRaw)
+
+export type CompanyHistoryPriceRaw = t.TypeOf<typeof companyHistoryPriceRaw>
+
+export const companyHistoryPriceNormalized = t.array(companyPriceNormalized)
+
+export type CompanyHistoryPriceNormalized = t.TypeOf<
+  typeof companyHistoryPriceNormalized
+>

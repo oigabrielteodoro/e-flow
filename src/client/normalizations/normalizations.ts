@@ -1,9 +1,15 @@
 import * as R from 'ramda'
+import { format } from 'date-fns'
 import { pipe } from 'fp-ts/function'
 
 import { unsafe } from '__helpers__'
 
-import { CompanyNormalized, CompanyRaw } from 'types'
+import {
+  CompanyNormalized,
+  CompanyPriceNormalized,
+  CompanyPriceRaw,
+  CompanyRaw,
+} from 'types'
 import { decimalFromInt, percentFromInt } from 'lib'
 
 export const normalizeCompany = (raw: CompanyRaw): CompanyNormalized =>
@@ -18,5 +24,18 @@ export const normalizeCompany = (raw: CompanyRaw): CompanyNormalized =>
       price_direction: unsafe<'up' | 'down'>(
         raw.changePercent > 0 ? 'up' : 'down',
       ),
+    }),
+  )
+
+export const normalizeCompanyPrice = (
+  raw: CompanyPriceRaw,
+): CompanyPriceNormalized =>
+  pipe(
+    raw,
+    R.omit(['close', 'update']),
+    R.mergeRight({
+      pricing: raw.close,
+      pricing_formatted: decimalFromInt(raw.close),
+      updated_at: format(new Date(raw.updated), 'HH:mm'),
     }),
   )
