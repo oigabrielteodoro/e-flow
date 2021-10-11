@@ -1,3 +1,7 @@
 import { combineReducers } from 'redux'
 
-export const rootReducer = combineReducers({})
+import companiesReducer from './companies/companies.reducers'
+
+export const rootReducer = combineReducers({
+  companies: companiesReducer,
+})

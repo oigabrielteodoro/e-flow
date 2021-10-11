@@ -1,5 +1,7 @@
 import { all, AllEffect } from 'redux-saga/effects'
 
-export function* rootSaga(): Generator<AllEffect<never>> {
-  return yield all([])
+import { companiesSagas } from '.'
+
+export function* rootSaga(): Generator<AllEffect<unknown>> {
+  return yield all([companiesSagas])
 }
