@@ -99,6 +99,86 @@ exports[`<Content /> should render correctly 1`] = `
   height: 1.6rem;
 }
 
+.c10 {
+  max-width: 90.5rem;
+  margin-top: 1.6rem;
+}
+
+.c10 li + li {
+  padding-left: 1.6rem;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1.6rem;
+  border-radius: 0.8rem;
+  background: #ffffff;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.c11:hover {
+  -webkit-transform: translateY(-0.5rem);
+  -ms-transform: translateY(-0.5rem);
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0.8rem 2rem -0.2rem rgba(43,37,63,0.1);
+}
+
+.c11 button {
+  background: transparent;
+  border: 0;
+}
+
+.c11 button + .logo {
+  margin-left: 1.6rem;
+}
+
+.c11 section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 1.2rem;
+}
+
+.c11 section span {
+  color: #14171a;
+}
+
+.c11 section span:last-child {
+  color: #657786;
+}
+
+.c11 .pricing {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c11 .pricing strong {
+  font-weight: 500;
+  margin-right: 0.8rem;
+  color: #d64b45;
+  color: #79c300;
+}
+
 .c3 {
   margin-top: 2.4rem;
   padding: 3rem 2.3rem;
@@ -357,722 +437,6 @@ exports[`<Content /> should render correctly 1`] = `
           </span>
         </div>
       </div>
-      <div
-        class="recharts-wrapper"
-        style="position: relative; cursor: default; width: 865px; height: 304px;"
-      >
-        <svg
-          class="recharts-surface"
-          height="304"
-          version="1.1"
-          viewBox="0 0 865 304"
-          width="865"
-        >
-          <defs>
-            <clippath
-              id="recharts1-clip"
-            >
-              <rect
-                height="244"
-                width="805"
-                x="60"
-                y="30"
-              />
-            </clippath>
-          </defs>
-          <defs>
-            <lineargradient
-              id="gradient"
-              x1="100%"
-              x2="0%"
-              y1="0%"
-              y2="100%"
-            >
-              <stop
-                offset="40%"
-                stop-color="#0047BB"
-                stop-opacity="0.1"
-              />
-              <stop
-                offset="80%"
-                stop-color="#ffffff"
-                stop-opacity="0.1"
-              />
-            </lineargradient>
-          </defs>
-          <g
-            class="recharts-cartesian-grid"
-          >
-            <g
-              class="recharts-cartesian-grid-horizontal"
-            >
-              <line
-                fill="none"
-                height="244"
-                offset="[object Object]"
-                stroke="#f5f8fa"
-                width="805"
-                x="60"
-                x1="60"
-                x2="865"
-                y="30"
-                y1="274"
-                y2="274"
-              />
-              <line
-                fill="none"
-                height="244"
-                offset="[object Object]"
-                stroke="#f5f8fa"
-                width="805"
-                x="60"
-                x1="60"
-                x2="865"
-                y="30"
-                y1="213"
-                y2="213"
-              />
-              <line
-                fill="none"
-                height="244"
-                offset="[object Object]"
-                stroke="#f5f8fa"
-                width="805"
-                x="60"
-                x1="60"
-                x2="865"
-                y="30"
-                y1="152"
-                y2="152"
-              />
-              <line
-                fill="none"
-                height="244"
-                offset="[object Object]"
-                stroke="#f5f8fa"
-                width="805"
-                x="60"
-                x1="60"
-                x2="865"
-                y="30"
-                y1="91"
-                y2="91"
-              />
-              <line
-                fill="none"
-                height="244"
-                offset="[object Object]"
-                stroke="#f5f8fa"
-                width="805"
-                x="60"
-                x1="60"
-                x2="865"
-                y="30"
-                y1="30"
-                y2="30"
-              />
-            </g>
-            <g
-              class="recharts-cartesian-grid-vertical"
-            >
-              <line
-                fill="none"
-                height="244"
-                offset="[object Object]"
-                stroke="#f5f8fa"
-                width="805"
-                x="60"
-                x1="60"
-                x2="60"
-                y="30"
-                y1="30"
-                y2="274"
-              />
-              <line
-                fill="none"
-                height="244"
-                offset="[object Object]"
-                stroke="#f5f8fa"
-                width="805"
-                x="60"
-                x1="149.44444444444446"
-                x2="149.44444444444446"
-                y="30"
-                y1="30"
-                y2="274"
-              />
-              <line
-                fill="none"
-                height="244"
-                offset="[object Object]"
-                stroke="#f5f8fa"
-                width="805"
-                x="60"
-                x1="238.88888888888889"
-                x2="238.88888888888889"
-                y="30"
-                y1="30"
-                y2="274"
-              />
-              <line
-                fill="none"
-                height="244"
-                offset="[object Object]"
-                stroke="#f5f8fa"
-                width="805"
-                x="60"
-                x1="328.3333333333333"
-                x2="328.3333333333333"
-                y="30"
-                y1="30"
-                y2="274"
-              />
-              <line
-                fill="none"
-                height="244"
-                offset="[object Object]"
-                stroke="#f5f8fa"
-                width="805"
-                x="60"
-                x1="417.77777777777777"
-                x2="417.77777777777777"
-                y="30"
-                y1="30"
-                y2="274"
-              />
-              <line
-                fill="none"
-                height="244"
-                offset="[object Object]"
-                stroke="#f5f8fa"
-                width="805"
-                x="60"
-                x1="507.22222222222223"
-                x2="507.22222222222223"
-                y="30"
-                y1="30"
-                y2="274"
-              />
-              <line
-                fill="none"
-                height="244"
-                offset="[object Object]"
-                stroke="#f5f8fa"
-                width="805"
-                x="60"
-                x1="596.6666666666666"
-                x2="596.6666666666666"
-                y="30"
-                y1="30"
-                y2="274"
-              />
-              <line
-                fill="none"
-                height="244"
-                offset="[object Object]"
-                stroke="#f5f8fa"
-                width="805"
-                x="60"
-                x1="686.1111111111111"
-                x2="686.1111111111111"
-                y="30"
-                y1="30"
-                y2="274"
-              />
-              <line
-                fill="none"
-                height="244"
-                offset="[object Object]"
-                stroke="#f5f8fa"
-                width="805"
-                x="60"
-                x1="775.5555555555555"
-                x2="775.5555555555555"
-                y="30"
-                y1="30"
-                y2="274"
-              />
-              <line
-                fill="none"
-                height="244"
-                offset="[object Object]"
-                stroke="#f5f8fa"
-                width="805"
-                x="60"
-                x1="865"
-                x2="865"
-                y="30"
-                y1="30"
-                y2="274"
-              />
-            </g>
-          </g>
-          <g
-            class="recharts-layer recharts-cartesian-axis recharts-yAxis yAxis"
-          >
-            <g
-              class="recharts-cartesian-axis-ticks"
-            >
-              <g
-                class="recharts-layer recharts-cartesian-axis-tick"
-              >
-                <text
-                  class="recharts-text recharts-cartesian-axis-tick-value"
-                  color="#657786"
-                  fill="#666"
-                  font-size="11"
-                  height="244"
-                  orientation="left"
-                  stroke="none"
-                  text-anchor="end"
-                  type="number"
-                  width="60"
-                  x="48"
-                  y="274"
-                >
-                  <tspan
-                    dy="0.355em"
-                    x="48"
-                  >
-                    $0
-                  </tspan>
-                </text>
-              </g>
-              <g
-                class="recharts-layer recharts-cartesian-axis-tick"
-              >
-                <text
-                  class="recharts-text recharts-cartesian-axis-tick-value"
-                  color="#657786"
-                  fill="#666"
-                  font-size="11"
-                  height="244"
-                  orientation="left"
-                  stroke="none"
-                  text-anchor="end"
-                  type="number"
-                  width="60"
-                  x="48"
-                  y="213"
-                >
-                  <tspan
-                    dy="0.355em"
-                    x="48"
-                  >
-                    $250
-                  </tspan>
-                </text>
-              </g>
-              <g
-                class="recharts-layer recharts-cartesian-axis-tick"
-              >
-                <text
-                  class="recharts-text recharts-cartesian-axis-tick-value"
-                  color="#657786"
-                  fill="#666"
-                  font-size="11"
-                  height="244"
-                  orientation="left"
-                  stroke="none"
-                  text-anchor="end"
-                  type="number"
-                  width="60"
-                  x="48"
-                  y="152"
-                >
-                  <tspan
-                    dy="0.355em"
-                    x="48"
-                  >
-                    $500
-                  </tspan>
-                </text>
-              </g>
-              <g
-                class="recharts-layer recharts-cartesian-axis-tick"
-              >
-                <text
-                  class="recharts-text recharts-cartesian-axis-tick-value"
-                  color="#657786"
-                  fill="#666"
-                  font-size="11"
-                  height="244"
-                  orientation="left"
-                  stroke="none"
-                  text-anchor="end"
-                  type="number"
-                  width="60"
-                  x="48"
-                  y="91"
-                >
-                  <tspan
-                    dy="0.355em"
-                    x="48"
-                  >
-                    $750
-                  </tspan>
-                </text>
-              </g>
-              <g
-                class="recharts-layer recharts-cartesian-axis-tick"
-              >
-                <text
-                  class="recharts-text recharts-cartesian-axis-tick-value"
-                  color="#657786"
-                  fill="#666"
-                  font-size="11"
-                  height="244"
-                  orientation="left"
-                  stroke="none"
-                  text-anchor="end"
-                  type="number"
-                  width="60"
-                  x="48"
-                  y="30"
-                >
-                  <tspan
-                    dy="0.355em"
-                    x="48"
-                  >
-                    $1000
-                  </tspan>
-                </text>
-              </g>
-            </g>
-          </g>
-          <g
-            class="recharts-layer recharts-cartesian-axis recharts-xAxis xAxis"
-          >
-            <g
-              class="recharts-cartesian-axis-ticks"
-            >
-              <g
-                class="recharts-layer recharts-cartesian-axis-tick"
-              >
-                <text
-                  class="recharts-text recharts-cartesian-axis-tick-value"
-                  color="#657786"
-                  fill="#666"
-                  font-size="11"
-                  height="30"
-                  orientation="bottom"
-                  stroke="none"
-                  text-anchor="left"
-                  type="category"
-                  width="805"
-                  x="60"
-                  y="290"
-                >
-                  <tspan
-                    dy="0.71em"
-                    x="60"
-                  >
-                    09:00
-                  </tspan>
-                </text>
-              </g>
-              <g
-                class="recharts-layer recharts-cartesian-axis-tick"
-              >
-                <text
-                  class="recharts-text recharts-cartesian-axis-tick-value"
-                  color="#657786"
-                  fill="#666"
-                  font-size="11"
-                  height="30"
-                  orientation="bottom"
-                  stroke="none"
-                  text-anchor="left"
-                  type="category"
-                  width="805"
-                  x="149.44444444444446"
-                  y="290"
-                >
-                  <tspan
-                    dy="0.71em"
-                    x="149.44444444444446"
-                  >
-                    10:00
-                  </tspan>
-                </text>
-              </g>
-              <g
-                class="recharts-layer recharts-cartesian-axis-tick"
-              >
-                <text
-                  class="recharts-text recharts-cartesian-axis-tick-value"
-                  color="#657786"
-                  fill="#666"
-                  font-size="11"
-                  height="30"
-                  orientation="bottom"
-                  stroke="none"
-                  text-anchor="left"
-                  type="category"
-                  width="805"
-                  x="238.88888888888889"
-                  y="290"
-                >
-                  <tspan
-                    dy="0.71em"
-                    x="238.88888888888889"
-                  >
-                    10:30
-                  </tspan>
-                </text>
-              </g>
-              <g
-                class="recharts-layer recharts-cartesian-axis-tick"
-              >
-                <text
-                  class="recharts-text recharts-cartesian-axis-tick-value"
-                  color="#657786"
-                  fill="#666"
-                  font-size="11"
-                  height="30"
-                  orientation="bottom"
-                  stroke="none"
-                  text-anchor="left"
-                  type="category"
-                  width="805"
-                  x="328.3333333333333"
-                  y="290"
-                >
-                  <tspan
-                    dy="0.71em"
-                    x="328.3333333333333"
-                  >
-                    11:00
-                  </tspan>
-                </text>
-              </g>
-              <g
-                class="recharts-layer recharts-cartesian-axis-tick"
-              >
-                <text
-                  class="recharts-text recharts-cartesian-axis-tick-value"
-                  color="#657786"
-                  fill="#666"
-                  font-size="11"
-                  height="30"
-                  orientation="bottom"
-                  stroke="none"
-                  text-anchor="left"
-                  type="category"
-                  width="805"
-                  x="417.77777777777777"
-                  y="290"
-                >
-                  <tspan
-                    dy="0.71em"
-                    x="417.77777777777777"
-                  >
-                    12:00
-                  </tspan>
-                </text>
-              </g>
-              <g
-                class="recharts-layer recharts-cartesian-axis-tick"
-              >
-                <text
-                  class="recharts-text recharts-cartesian-axis-tick-value"
-                  color="#657786"
-                  fill="#666"
-                  font-size="11"
-                  height="30"
-                  orientation="bottom"
-                  stroke="none"
-                  text-anchor="left"
-                  type="category"
-                  width="805"
-                  x="507.22222222222223"
-                  y="290"
-                >
-                  <tspan
-                    dy="0.71em"
-                    x="507.22222222222223"
-                  >
-                    13:00
-                  </tspan>
-                </text>
-              </g>
-              <g
-                class="recharts-layer recharts-cartesian-axis-tick"
-              >
-                <text
-                  class="recharts-text recharts-cartesian-axis-tick-value"
-                  color="#657786"
-                  fill="#666"
-                  font-size="11"
-                  height="30"
-                  orientation="bottom"
-                  stroke="none"
-                  text-anchor="left"
-                  type="category"
-                  width="805"
-                  x="596.6666666666666"
-                  y="290"
-                >
-                  <tspan
-                    dy="0.71em"
-                    x="596.6666666666666"
-                  >
-                    14:00
-                  </tspan>
-                </text>
-              </g>
-              <g
-                class="recharts-layer recharts-cartesian-axis-tick"
-              >
-                <text
-                  class="recharts-text recharts-cartesian-axis-tick-value"
-                  color="#657786"
-                  fill="#666"
-                  font-size="11"
-                  height="30"
-                  orientation="bottom"
-                  stroke="none"
-                  text-anchor="left"
-                  type="category"
-                  width="805"
-                  x="686.1111111111111"
-                  y="290"
-                >
-                  <tspan
-                    dy="0.71em"
-                    x="686.1111111111111"
-                  >
-                    15:00
-                  </tspan>
-                </text>
-              </g>
-              <g
-                class="recharts-layer recharts-cartesian-axis-tick"
-              >
-                <text
-                  class="recharts-text recharts-cartesian-axis-tick-value"
-                  color="#657786"
-                  fill="#666"
-                  font-size="11"
-                  height="30"
-                  orientation="bottom"
-                  stroke="none"
-                  text-anchor="left"
-                  type="category"
-                  width="805"
-                  x="775.5555555555555"
-                  y="290"
-                >
-                  <tspan
-                    dy="0.71em"
-                    x="775.5555555555555"
-                  >
-                    16:30
-                  </tspan>
-                </text>
-              </g>
-              <g
-                class="recharts-layer recharts-cartesian-axis-tick"
-              >
-                <text
-                  class="recharts-text recharts-cartesian-axis-tick-value"
-                  color="#657786"
-                  fill="#666"
-                  font-size="11"
-                  height="30"
-                  orientation="bottom"
-                  stroke="none"
-                  text-anchor="left"
-                  type="category"
-                  width="805"
-                  x="865"
-                  y="290"
-                >
-                  <tspan
-                    dy="0.71em"
-                    x="865"
-                  >
-                    17:00
-                  </tspan>
-                </text>
-              </g>
-            </g>
-          </g>
-          <g
-            class="recharts-layer recharts-line"
-          >
-            <path
-              class="recharts-curve recharts-line-curve"
-              d="M60,274C89.81481481481482,219.50666666666666,119.62962962962963,165.01333333333335,149.44444444444446,127.60000000000001C179.25925925925927,90.1866666666667,209.07407407407408,49.51999999999999,238.88888888888889,49.51999999999999C268.7037037037037,49.51999999999999,298.5185185185185,78.79999999999998,328.3333333333333,78.79999999999998C358.14814814814815,78.79999999999998,387.96296296296293,54.39999999999999,417.77777777777777,54.39999999999999C447.5925925925926,54.39999999999999,477.4074074074074,271.56,507.22222222222223,271.56C537.0370370370371,271.56,566.8518518518518,222.76000000000002,596.6666666666666,222.76000000000002C626.4814814814814,222.76000000000002,656.2962962962963,237.4,686.1111111111111,237.4C715.9259259259259,237.4,745.7407407407408,200.79999999999998,775.5555555555555,200.79999999999998C805.3703703703703,200.79999999999998,835.1851851851852,210.56,865,220.32"
-              fill="none"
-              height="244"
-              points="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
-              stroke="#0047BB"
-              stroke-dasharray="0px 0px"
-              stroke-width="1"
-              type="monotone"
-              width="805"
-            />
-          </g>
-          <g
-            class="recharts-layer recharts-area"
-          >
-            <g
-              class="recharts-layer"
-            >
-              <defs>
-                <clippath
-                  id="animationClipPath-recharts-area-5"
-                >
-                  <rect
-                    height="276"
-                    width="0"
-                    x="60"
-                    y="0"
-                  />
-                </clippath>
-              </defs>
-              <g
-                class="recharts-layer"
-                clip-path="url(#animationClipPath-recharts-area-5)"
-              >
-                <g
-                  class="recharts-layer"
-                >
-                  <path
-                    class="recharts-curve recharts-area-area"
-                    d="M60,274C89.81481481481482,219.50666666666666,119.62962962962963,165.01333333333335,149.44444444444446,127.60000000000001C179.25925925925927,90.1866666666667,209.07407407407408,49.51999999999999,238.88888888888889,49.51999999999999C268.7037037037037,49.51999999999999,298.5185185185185,78.79999999999998,328.3333333333333,78.79999999999998C358.14814814814815,78.79999999999998,387.96296296296293,54.39999999999999,417.77777777777777,54.39999999999999C447.5925925925926,54.39999999999999,477.4074074074074,271.56,507.22222222222223,271.56C537.0370370370371,271.56,566.8518518518518,222.76000000000002,596.6666666666666,222.76000000000002C626.4814814814814,222.76000000000002,656.2962962962963,237.4,686.1111111111111,237.4C715.9259259259259,237.4,745.7407407407408,200.79999999999998,775.5555555555555,200.79999999999998C805.3703703703703,200.79999999999998,835.1851851851852,210.56,865,220.32L865,274C835.1851851851852,274,805.3703703703703,274,775.5555555555555,274C745.7407407407408,274,715.9259259259259,274,686.1111111111111,274C656.2962962962963,274,626.4814814814814,274,596.6666666666666,274C566.8518518518518,274,537.0370370370371,274,507.22222222222223,274C477.4074074074074,274,447.5925925925926,274,417.77777777777777,274C387.96296296296293,274,358.14814814814815,274,328.3333333333333,274C298.5185185185185,274,268.7037037037037,274,238.88888888888889,274C209.07407407407408,274,179.25925925925927,274,149.44444444444446,274C119.62962962962963,274,89.81481481481482,274,60,274Z"
-                    fill="url(#gradient)"
-                    fill-opacity="1"
-                    height="244"
-                    points="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
-                    stroke="none"
-                    stroke-width="2"
-                    type="monotone"
-                    width="805"
-                  />
-                  <path
-                    class="recharts-curve recharts-area-curve"
-                    d="M60,274C89.81481481481482,219.50666666666666,119.62962962962963,165.01333333333335,149.44444444444446,127.60000000000001C179.25925925925927,90.1866666666667,209.07407407407408,49.51999999999999,238.88888888888889,49.51999999999999C268.7037037037037,49.51999999999999,298.5185185185185,78.79999999999998,328.3333333333333,78.79999999999998C358.14814814814815,78.79999999999998,387.96296296296293,54.39999999999999,417.77777777777777,54.39999999999999C447.5925925925926,54.39999999999999,477.4074074074074,271.56,507.22222222222223,271.56C537.0370370370371,271.56,566.8518518518518,222.76000000000002,596.6666666666666,222.76000000000002C626.4814814814814,222.76000000000002,656.2962962962963,237.4,686.1111111111111,237.4C715.9259259259259,237.4,745.7407407407408,200.79999999999998,775.5555555555555,200.79999999999998C805.3703703703703,200.79999999999998,835.1851851851852,210.56,865,220.32"
-                    fill="none"
-                    fill-opacity="1"
-                    height="244"
-                    points="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
-                    stroke="#3182bd"
-                    stroke-width="2"
-                    type="monotone"
-                    width="805"
-                  />
-                </g>
-              </g>
-            </g>
-          </g>
-        </svg>
-        <div
-          class="recharts-tooltip-wrapper"
-          style="transform: translate(undefinedpx, undefinedpx); pointer-events: none; visibility: hidden; position: absolute; top: 0px; left: 0px;"
-        />
-      </div>
     </section>
     <section
       class="c8"
@@ -1104,6 +468,261 @@ exports[`<Content /> should render correctly 1`] = `
           </button>
         </nav>
       </header>
+      <div
+        class="react-multi-carousel-list  c10"
+      >
+        <ul
+          class="react-multi-carousel-track "
+          style="transition: none; overflow: hidden; transform: translate3d(0px,0,0);"
+        >
+          <li
+            aria-hidden="false"
+            class="react-multi-carousel-item react-multi-carousel-item--active "
+            data-index="0"
+            style="flex: 1 0 33.3%; position: relative; width: auto;"
+          >
+            <div
+              class="c11"
+            >
+              <button>
+                <img
+                  alt="Icon Star"
+                  src="/img/icon-star-outline.svg"
+                />
+              </button>
+              <img
+                alt="Facebook"
+                class="logo"
+                src="/img/logo-facebook.svg"
+              />
+              <section>
+                <span>
+                  FB
+                </span>
+                <span>
+                  Facebook
+                </span>
+              </section>
+              <div
+                class="pricing"
+              >
+                <strong>
+                  +2.3%
+                </strong>
+                <img
+                  alt="Icon Up Pricing"
+                  src="/img/icon-up-pricing.svg"
+                />
+              </div>
+            </div>
+          </li>
+          <li
+            aria-hidden="false"
+            class="react-multi-carousel-item react-multi-carousel-item--active "
+            data-index="1"
+            style="flex: 1 0 33.3%; position: relative; width: auto;"
+          >
+            <div
+              class="c11"
+            >
+              <button>
+                <img
+                  alt="Icon Star"
+                  src="/img/icon-star-outline.svg"
+                />
+              </button>
+              <img
+                alt="Facebook"
+                class="logo"
+                src="/img/logo-facebook.svg"
+              />
+              <section>
+                <span>
+                  FB
+                </span>
+                <span>
+                  Facebook
+                </span>
+              </section>
+              <div
+                class="pricing"
+              >
+                <strong>
+                  +2.3%
+                </strong>
+                <img
+                  alt="Icon Up Pricing"
+                  src="/img/icon-up-pricing.svg"
+                />
+              </div>
+            </div>
+          </li>
+          <li
+            aria-hidden="false"
+            class="react-multi-carousel-item react-multi-carousel-item--active "
+            data-index="2"
+            style="flex: 1 0 33.3%; position: relative; width: auto;"
+          >
+            <div
+              class="c11"
+            >
+              <button>
+                <img
+                  alt="Icon Star"
+                  src="/img/icon-star-outline.svg"
+                />
+              </button>
+              <img
+                alt="Facebook"
+                class="logo"
+                src="/img/logo-facebook.svg"
+              />
+              <section>
+                <span>
+                  FB
+                </span>
+                <span>
+                  Facebook
+                </span>
+              </section>
+              <div
+                class="pricing"
+              >
+                <strong>
+                  +2.3%
+                </strong>
+                <img
+                  alt="Icon Up Pricing"
+                  src="/img/icon-up-pricing.svg"
+                />
+              </div>
+            </div>
+          </li>
+          <li
+            aria-hidden="true"
+            class="react-multi-carousel-item  "
+            data-index="3"
+            style="flex: 1 0 33.3%; position: relative; width: auto;"
+          >
+            <div
+              class="c11"
+            >
+              <button>
+                <img
+                  alt="Icon Star"
+                  src="/img/icon-star-outline.svg"
+                />
+              </button>
+              <img
+                alt="Facebook"
+                class="logo"
+                src="/img/logo-facebook.svg"
+              />
+              <section>
+                <span>
+                  FB
+                </span>
+                <span>
+                  Facebook
+                </span>
+              </section>
+              <div
+                class="pricing"
+              >
+                <strong>
+                  +2.3%
+                </strong>
+                <img
+                  alt="Icon Up Pricing"
+                  src="/img/icon-up-pricing.svg"
+                />
+              </div>
+            </div>
+          </li>
+          <li
+            aria-hidden="true"
+            class="react-multi-carousel-item  "
+            data-index="4"
+            style="flex: 1 0 33.3%; position: relative; width: auto;"
+          >
+            <div
+              class="c11"
+            >
+              <button>
+                <img
+                  alt="Icon Star"
+                  src="/img/icon-star-outline.svg"
+                />
+              </button>
+              <img
+                alt="Facebook"
+                class="logo"
+                src="/img/logo-facebook.svg"
+              />
+              <section>
+                <span>
+                  FB
+                </span>
+                <span>
+                  Facebook
+                </span>
+              </section>
+              <div
+                class="pricing"
+              >
+                <strong>
+                  +2.3%
+                </strong>
+                <img
+                  alt="Icon Up Pricing"
+                  src="/img/icon-up-pricing.svg"
+                />
+              </div>
+            </div>
+          </li>
+          <li
+            aria-hidden="true"
+            class="react-multi-carousel-item  "
+            data-index="5"
+            style="flex: 1 0 33.3%; position: relative; width: auto;"
+          >
+            <div
+              class="c11"
+            >
+              <button>
+                <img
+                  alt="Icon Star"
+                  src="/img/icon-star-outline.svg"
+                />
+              </button>
+              <img
+                alt="Facebook"
+                class="logo"
+                src="/img/logo-facebook.svg"
+              />
+              <section>
+                <span>
+                  FB
+                </span>
+                <span>
+                  Facebook
+                </span>
+              </section>
+              <div
+                class="pricing"
+              >
+                <strong>
+                  +2.3%
+                </strong>
+                <img
+                  alt="Icon Up Pricing"
+                  src="/img/icon-up-pricing.svg"
+                />
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
 </div>

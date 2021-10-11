@@ -1,12 +1,13 @@
 import React from 'react'
+import dynamic from 'next/dynamic'
 
 import { ICON_DOWN_PRICING, ICON_STAR_OUTLINE } from 'assets'
 
 import { Tooltip } from 'ui'
 
-import { LineChart } from '../LineChart'
-
 import * as S from './Analytics.styled'
+
+const LineChart = dynamic(() => import('../LineChart'), { ssr: false })
 
 export function Analytics() {
   return (

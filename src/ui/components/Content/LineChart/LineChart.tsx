@@ -8,12 +8,13 @@ import {
   Area,
   Line,
 } from 'recharts'
+import { v4 } from 'uuid'
 
 import { theme, Tooltip } from 'ui'
 
 import { Dot } from '../Dot'
 
-export function LineChart() {
+export default function LineChart() {
   return (
     <ComposedChart height={304} width={865} data={data} margin={{ top: 30 }}>
       <defs>
@@ -64,7 +65,7 @@ export function LineChart() {
         strokeWidth={2}
         fillOpacity={1}
         fill='url(#gradient)'
-        dot={Dot}
+        dot={(props) => <Dot {...props} key={v4()} />}
         activeDot={(props) => <Dot active {...props} />}
       />
     </ComposedChart>

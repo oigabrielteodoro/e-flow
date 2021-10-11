@@ -32,7 +32,6 @@ export const Container = styled.div<ContainerProps>`
     display: flex;
     flex-direction: column;
     margin-left: 1.2rem;
-    min-width: 11.5rem;
 
     span {
       color: ${theme.colors.gray[900]};
@@ -44,7 +43,7 @@ export const Container = styled.div<ContainerProps>`
   }
 
   .pricing {
-    margin-left: 1.2rem;
+    margin-left: auto;
     display: flex;
     align-items: center;
 

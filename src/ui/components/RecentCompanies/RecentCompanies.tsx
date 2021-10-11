@@ -1,4 +1,5 @@
-import React, { useCallback, useState } from 'react'
+import React, { useCallback, useRef } from 'react'
+import Carousel, { ResponsiveType } from 'react-multi-carousel'
 
 import { ICON_COMPANY, ICON_ARROW_LEFT, ICON_ARROW_RIGHT } from 'assets'
 
@@ -6,18 +7,31 @@ import { Company } from 'ui'
 
 import * as S from './RecentCompanies.styled'
 
+const responsive: ResponsiveType = {
+  desktop: {
+    breakpoint: {
+      max: 3000,
+      min: 1024,
+    },
+    items: 3,
+  },
+}
+
 export function RecentCompanies() {
-  const [page, setPage] = useState(0)
+  const companiesList = useRef<Carousel>(null)
+  const page = useRef<number>(0)
 
   const handleNext = useCallback(() => {
-    setPage((prevState) => prevState + 1)
+    companiesList.current?.next(page.current + 1)
+    page.current += 1
   }, [])
 
   const handlePrevious = useCallback(() => {
-    if (page > 0) {
-      setPage((prevState) => prevState - 1)
-    }
-  }, [page])
+    if (page.current <= 0) return
+
+    companiesList.current?.previous(page.current - 1)
+    page.current -= 1
+  }, [])
 
   return (
     <S.Container>
@@ -36,14 +50,18 @@ export function RecentCompanies() {
         </nav>
       </S.Header>
       <S.CompaniesList
-        value={page}
-        onChange={(value) => setPage(value)}
-        itemWidth={338.3}
+        ref={companiesList}
+        arrows={false}
+        responsive={responsive}
+        deviceType='desktop'
+        ssr
       >
-        <Company as='li' />
-        <Company as='li' />
-        <Company as='li' />
-        <Company as='li' />
+        <Company />
+        <Company />
+        <Company />
+        <Company />
+        <Company />
+        <Company />
       </S.CompaniesList>
     </S.Container>
   )
