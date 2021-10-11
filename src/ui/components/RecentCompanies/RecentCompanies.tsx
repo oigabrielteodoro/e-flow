@@ -54,6 +54,7 @@ export function RecentCompanies() {
         arrows={false}
         responsive={responsive}
         deviceType='desktop'
+        additionalTransfrom={-16}
         ssr
       >
         <Company />

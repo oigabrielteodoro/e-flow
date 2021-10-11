@@ -104,7 +104,7 @@ exports[`<Content /> should render correctly 1`] = `
   margin-top: 1.6rem;
 }
 
-.c10 li + li {
+.c10 li {
   padding-left: 1.6rem;
 }
 
@@ -473,7 +473,7 @@ exports[`<Content /> should render correctly 1`] = `
       >
         <ul
           class="react-multi-carousel-track "
-          style="transition: none; overflow: hidden; transform: translate3d(0px,0,0);"
+          style="transition: none; overflow: hidden; transform: translate3d(-16px,0,0);"
         >
           <li
             aria-hidden="false"
