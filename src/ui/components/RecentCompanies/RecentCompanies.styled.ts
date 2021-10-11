@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 import Carousel, { slidesToShowPlugin } from '@brainhubeu/react-carousel'
 
-import { theme } from 'ui/styles'
-
 export const Container = styled.section`
   display: flex;
   flex-direction: column;
@@ -52,67 +50,4 @@ export const CompaniesList = styled(Carousel).attrs({
 })`
   max-width: 76rem;
   margin-top: 1.6rem;
-`
-
-export const CompanyItem = styled.li`
-  display: flex;
-  align-items: center;
-  padding: 1.6rem;
-  border-radius: 0.8rem;
-  background: ${theme.colors.white};
-  transition: all 0.2s;
-  cursor: pointer;
-
-  &:hover {
-    transform: translateY(-0.5rem);
-    box-shadow: 0 0.8rem 2rem -0.2rem rgba(43, 37, 63, 0.1);
-  }
-
-  & + div {
-    margin-left: 1.6rem;
-  }
-
-  button {
-    background: transparent;
-    border: 0;
-  }
-
-  section {
-    display: flex;
-    flex-direction: column;
-    margin-left: 1.2rem;
-    min-width: 11.5rem;
-
-    span {
-      color: ${theme.colors.gray[900]};
-
-      &:last-child {
-        color: ${theme.colors.gray[500]};
-      }
-    }
-  }
-
-  .logo {
-    margin-left: 1.6rem;
-  }
-
-  .pricing {
-    margin-left: 1.2rem;
-    display: flex;
-    align-items: center;
-
-    strong {
-      font-weight: 500;
-      margin-right: 0.8rem;
-      color: ${theme.colors.green[500]};
-    }
-
-    .up {
-      color: ${theme.colors.green[500]};
-    }
-
-    .down {
-      color: ${theme.colors.red[500]};
-    }
-  }
 `

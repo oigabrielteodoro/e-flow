@@ -3,7 +3,7 @@ import React from 'react'
 import {
   ICON_DASHBOARD,
   ICON_SEARCH,
-  ICON_STAR,
+  ICON_STAR_OUTLINE,
   ICON_DOWN_PRICING,
 } from 'assets'
 
@@ -30,7 +30,7 @@ export function Content() {
           <S.AnalyticsAssetArea>
             <S.AssetInfo>
               <Tooltip title='Adicionar aos favoritos'>
-                <img src={ICON_STAR} alt='Icon Star' />
+                <img src={ICON_STAR_OUTLINE} alt='Icon Star' />
               </Tooltip>
               <fieldset>
                 <strong>MSFT</strong>

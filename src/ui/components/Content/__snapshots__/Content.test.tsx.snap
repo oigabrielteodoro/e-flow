@@ -129,13 +129,13 @@ exports[`<Content /> should render correctly 1`] = `
   box-shadow: 0 0.8rem 2rem -0.2rem rgba(43,37,63,0.1);
 }
 
-.c11 + div {
-  margin-left: 1.6rem;
-}
-
 .c11 button {
   background: transparent;
   border: 0;
+}
+
+.c11 button + .logo {
+  margin-left: 1.6rem;
 }
 
 .c11 section {
@@ -158,10 +158,6 @@ exports[`<Content /> should render correctly 1`] = `
   color: #657786;
 }
 
-.c11 .logo {
-  margin-left: 1.6rem;
-}
-
 .c11 .pricing {
   margin-left: 1.2rem;
   display: -webkit-box;
@@ -177,15 +173,8 @@ exports[`<Content /> should render correctly 1`] = `
 .c11 .pricing strong {
   font-weight: 500;
   margin-right: 0.8rem;
-  color: #79c300;
-}
-
-.c11 .pricing .up {
-  color: #79c300;
-}
-
-.c11 .pricing .down {
   color: #d64b45;
+  color: #79c300;
 }
 
 .c0 {
@@ -1230,9 +1219,7 @@ exports[`<Content /> should render correctly 1`] = `
                   <div
                     class="pricing"
                   >
-                    <strong
-                      class="up"
-                    >
+                    <strong>
                       +2.3%
                     </strong>
                     <img
@@ -1271,9 +1258,7 @@ exports[`<Content /> should render correctly 1`] = `
                   <div
                     class="pricing"
                   >
-                    <strong
-                      class="up"
-                    >
+                    <strong>
                       +2.3%
                     </strong>
                     <img
@@ -1312,9 +1297,7 @@ exports[`<Content /> should render correctly 1`] = `
                   <div
                     class="pricing"
                   >
-                    <strong
-                      class="up"
-                    >
+                    <strong>
                       +2.3%
                     </strong>
                     <img
@@ -1353,9 +1336,7 @@ exports[`<Content /> should render correctly 1`] = `
                   <div
                     class="pricing"
                   >
-                    <strong
-                      class="up"
-                    >
+                    <strong>
                       +2.3%
                     </strong>
                     <img
