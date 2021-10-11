@@ -1,10 +1,11 @@
 import { all, call, put, takeLatest } from 'redux-saga/effects'
+import { AxiosResponse } from 'axios'
 
-import { toError } from 'fp-ts/Either'
-import { pipe } from 'fp-ts/function'
-import { tryCatch, map, mapLeft } from 'fp-ts/IOEither'
+import { fold } from 'fp-ts/Either'
+import { constFalse, constTrue, pipe } from 'fp-ts/function'
 
-import { api } from 'client/fetcher'
+import { api } from 'client'
+import { CompanyRaw, companyRawCodec } from 'types'
 
 import {
   ActionTypes,
@@ -12,16 +13,30 @@ import {
   getCompanyFailure,
   getCompanySuccess,
 } from '.'
+
+function isValid(data: unknown) {
+  return pipe(data, companyRawCodec.decode, fold(constFalse, constTrue))
+}
+
 function* getCompany({ payload }: ReturnType<typeof getCompanyRequest>) {
   const { inputValue } = payload
 
-  yield pipe(
-    tryCatch(() => call(api.get, `/stock/${inputValue}/company`), toError),
-    map(() => {
-      put(getCompanySuccess())
-    }),
-    mapLeft(({ message }) => put(getCompanyFailure(message))),
-  )()
+  try {
+    const response: AxiosResponse<CompanyRaw> = yield call(
+      api.get,
+      `/stock/${inputValue}/quote`,
+    )
+
+    if (isValid(response.data)) {
+      yield put(getCompanySuccess(response.data))
+    } else {
+      yield put(
+        getCompanyFailure('Os dados devoldidos da api estão inválidos!'),
+      )
+    }
+  } catch (error) {
+    yield put(getCompanyFailure('Não encontramos um ativo com esse nome!'))
+  }
 }
 
 export const companiesSagas = all([

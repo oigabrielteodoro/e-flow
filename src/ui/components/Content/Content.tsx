@@ -1,14 +1,29 @@
-import React from 'react'
+import React, { FormEvent, useCallback } from 'react'
+import { useDispatch } from 'react-redux'
 
 import { ICON_DASHBOARD, ICON_SEARCH } from 'assets'
 
 import { RecentCompanies } from 'ui'
+import { getCompanyRequest } from 'client'
 
 import { Analytics } from './Analytics'
 
 import * as S from './Content.styled'
 
 export function Content() {
+  const dispatch = useDispatch()
+
+  const handleSubmit = useCallback(
+    (event: FormEvent<HTMLFormElement>) => {
+      event.preventDefault()
+
+      const { value } = event.currentTarget[0] as HTMLInputElement
+
+      dispatch(getCompanyRequest(value))
+    },
+    [dispatch],
+  )
+
   return (
     <S.Wrapper>
       <header>
@@ -17,9 +32,9 @@ export function Content() {
       </header>
 
       <S.Container>
-        <S.SearchArea>
+        <S.SearchArea onSubmit={handleSubmit}>
           <input placeholder='Buscar empresa' />
-          <button>
+          <button type='submit'>
             <img src={ICON_SEARCH} alt='Icon Search' />
           </button>
         </S.SearchArea>

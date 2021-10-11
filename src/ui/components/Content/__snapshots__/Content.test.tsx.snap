@@ -376,19 +376,21 @@ exports[`<Content /> should render correctly 1`] = `
   <main
     class="c1"
   >
-    <div
+    <form
       class="c2"
     >
       <input
         placeholder="Buscar empresa"
       />
-      <button>
+      <button
+        type="submit"
+      >
         <img
           alt="Icon Search"
           src="/img/icon-search.svg"
         />
       </button>
-    </div>
+    </form>
     <section
       class="c3"
     >

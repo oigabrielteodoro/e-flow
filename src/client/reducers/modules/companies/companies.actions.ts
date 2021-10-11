@@ -1,3 +1,4 @@
+import { CompanyRaw } from 'types'
 import { ActionTypes } from '.'
 
 export const getCompanyRequest = (inputValue: string) => ({
@@ -7,9 +8,11 @@ export const getCompanyRequest = (inputValue: string) => ({
   },
 })
 
-export const getCompanySuccess = () => ({
+export const getCompanySuccess = (company: CompanyRaw) => ({
   type: ActionTypes.getCompanySuccess,
-  payload: {},
+  payload: {
+    company,
+  },
 })
 
 export const getCompanyFailure = (error: string) => ({
