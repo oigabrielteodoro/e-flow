@@ -66,7 +66,6 @@ export const SearchArea = styled.div`
 `
 
 export const AnalyticsArea = styled.section`
-  max-width: 74.8rem;
   margin-top: 2.4rem;
   padding: 3rem 2.3rem;
   border-radius: 0.8rem;
@@ -84,8 +83,12 @@ export const AssetInfo = styled.div`
   display: flex;
   align-items: center;
 
-  fieldset {
+  button {
+    background: transparent;
     border: 0;
+  }
+
+  section {
     display: flex;
     margin-left: 1.2rem;
     flex-direction: column;

@@ -42,6 +42,227 @@ exports[`<Content /> should render correctly 1`] = `
   bottom: -0.9rem;
 }
 
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c9 section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 button {
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  background: transparent;
+  border: 0;
+}
+
+.c9 button:hover {
+  opacity: 0.5;
+}
+
+.c9 button + button {
+  margin-left: 2rem;
+}
+
+.c9 button img {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.c10 {
+  max-width: 90.5rem;
+  margin-top: 1.6rem;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1.6rem;
+  border-radius: 0.8rem;
+  background: #ffffff;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.c11:hover {
+  -webkit-transform: translateY(-0.5rem);
+  -ms-transform: translateY(-0.5rem);
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0.8rem 2rem -0.2rem rgba(43,37,63,0.1);
+}
+
+.c11 button {
+  background: transparent;
+  border: 0;
+}
+
+.c11 button + .logo {
+  margin-left: 1.6rem;
+}
+
+.c11 section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 1.2rem;
+  min-width: 11.5rem;
+}
+
+.c11 section span {
+  color: #14171a;
+}
+
+.c11 section span:last-child {
+  color: #657786;
+}
+
+.c11 .pricing {
+  margin-left: 1.2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c11 .pricing strong {
+  font-weight: 500;
+  margin-right: 0.8rem;
+  color: #d64b45;
+  color: #79c300;
+}
+
+.c3 {
+  margin-top: 2.4rem;
+  padding: 3rem 2.3rem;
+  border-radius: 0.8rem;
+  background: #ffffff;
+  box-shadow: 0 0.5rem 1.2rem rgba(222,222,231,0.4);
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 button {
+  background: transparent;
+  border: 0;
+}
+
+.c5 section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 1.2rem;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c5 section strong {
+  font-weight: 500;
+}
+
+.c5 section span {
+  color: #acacac;
+  font-size: 1.4rem;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c7 img {
+  margin-right: 0.8rem;
+}
+
+.c7 span {
+  margin-top: 0.8rem;
+  color: #d64b45;
+  font-weight: 500;
+}
+
 .c0 {
   background: #f5f8fa;
   border-radius: 2.4rem 0 0 0;
@@ -137,90 +358,6 @@ exports[`<Content /> should render correctly 1`] = `
   filter: brightness(0.85);
 }
 
-.c3 {
-  max-width: 74.8rem;
-  margin-top: 2.4rem;
-  padding: 3rem 2.3rem;
-  border-radius: 0.8rem;
-  background: #ffffff;
-  box-shadow: 0 0.5rem 1.2rem rgba(222,222,231,0.4);
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5 fieldset {
-  border: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 1.2rem;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-}
-
-.c5 fieldset strong {
-  font-weight: 500;
-}
-
-.c5 fieldset span {
-  color: #acacac;
-  font-size: 1.4rem;
-}
-
-.c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-}
-
-.c7 img {
-  margin-right: 0.8rem;
-}
-
-.c7 span {
-  margin-top: 0.8rem;
-  color: #d64b45;
-  font-weight: 500;
-}
-
 <div
   class="c0"
 >
@@ -264,19 +401,21 @@ exports[`<Content /> should render correctly 1`] = `
             <span>
               Adicionar aos favoritos
             </span>
-            <img
-              alt="Icon Star"
-              src="test-file-stub"
-            />
+            <button>
+              <img
+                alt="Icon Star"
+                src="test-file-stub"
+              />
+            </button>
           </div>
-          <fieldset>
+          <section>
             <strong>
               MSFT
             </strong>
             <span>
               Microsoft
             </span>
-          </fieldset>
+          </section>
         </div>
         <div
           class="c7"
@@ -297,22 +436,22 @@ exports[`<Content /> should render correctly 1`] = `
       </div>
       <div
         class="recharts-wrapper"
-        style="position: relative; cursor: default; width: 702px; height: 274px;"
+        style="position: relative; cursor: default; width: 865px; height: 304px;"
       >
         <svg
           class="recharts-surface"
-          height="274"
+          height="304"
           version="1.1"
-          viewBox="0 0 702 274"
-          width="702"
+          viewBox="0 0 865 304"
+          width="865"
         >
           <defs>
             <clippath
               id="recharts1-clip"
             >
               <rect
-                height="214"
-                width="642"
+                height="244"
+                width="805"
                 x="60"
                 y="30"
               />
@@ -346,65 +485,65 @@ exports[`<Content /> should render correctly 1`] = `
             >
               <line
                 fill="none"
-                height="214"
+                height="244"
                 offset="[object Object]"
                 stroke="#f5f8fa"
-                width="642"
+                width="805"
                 x="60"
                 x1="60"
-                x2="702"
+                x2="865"
                 y="30"
-                y1="244"
-                y2="244"
+                y1="274"
+                y2="274"
               />
               <line
                 fill="none"
-                height="214"
+                height="244"
                 offset="[object Object]"
                 stroke="#f5f8fa"
-                width="642"
+                width="805"
                 x="60"
                 x1="60"
-                x2="702"
+                x2="865"
                 y="30"
-                y1="190.5"
-                y2="190.5"
+                y1="213"
+                y2="213"
               />
               <line
                 fill="none"
-                height="214"
+                height="244"
                 offset="[object Object]"
                 stroke="#f5f8fa"
-                width="642"
+                width="805"
                 x="60"
                 x1="60"
-                x2="702"
+                x2="865"
                 y="30"
-                y1="137"
-                y2="137"
+                y1="152"
+                y2="152"
               />
               <line
                 fill="none"
-                height="214"
+                height="244"
                 offset="[object Object]"
                 stroke="#f5f8fa"
-                width="642"
+                width="805"
                 x="60"
                 x1="60"
-                x2="702"
+                x2="865"
                 y="30"
-                y1="83.5"
-                y2="83.5"
+                y1="91"
+                y2="91"
               />
               <line
                 fill="none"
-                height="214"
+                height="244"
                 offset="[object Object]"
                 stroke="#f5f8fa"
-                width="642"
+                width="805"
                 x="60"
                 x1="60"
-                x2="702"
+                x2="865"
                 y="30"
                 y1="30"
                 y2="30"
@@ -415,133 +554,133 @@ exports[`<Content /> should render correctly 1`] = `
             >
               <line
                 fill="none"
-                height="214"
+                height="244"
                 offset="[object Object]"
                 stroke="#f5f8fa"
-                width="642"
+                width="805"
                 x="60"
                 x1="60"
                 x2="60"
                 y="30"
                 y1="30"
-                y2="244"
+                y2="274"
               />
               <line
                 fill="none"
-                height="214"
+                height="244"
                 offset="[object Object]"
                 stroke="#f5f8fa"
-                width="642"
+                width="805"
                 x="60"
-                x1="131.33333333333331"
-                x2="131.33333333333331"
+                x1="149.44444444444446"
+                x2="149.44444444444446"
                 y="30"
                 y1="30"
-                y2="244"
+                y2="274"
               />
               <line
                 fill="none"
-                height="214"
+                height="244"
                 offset="[object Object]"
                 stroke="#f5f8fa"
-                width="642"
+                width="805"
                 x="60"
-                x1="202.66666666666666"
-                x2="202.66666666666666"
+                x1="238.88888888888889"
+                x2="238.88888888888889"
                 y="30"
                 y1="30"
-                y2="244"
+                y2="274"
               />
               <line
                 fill="none"
-                height="214"
+                height="244"
                 offset="[object Object]"
                 stroke="#f5f8fa"
-                width="642"
+                width="805"
                 x="60"
-                x1="274"
-                x2="274"
+                x1="328.3333333333333"
+                x2="328.3333333333333"
                 y="30"
                 y1="30"
-                y2="244"
+                y2="274"
               />
               <line
                 fill="none"
-                height="214"
+                height="244"
                 offset="[object Object]"
                 stroke="#f5f8fa"
-                width="642"
+                width="805"
                 x="60"
-                x1="345.3333333333333"
-                x2="345.3333333333333"
+                x1="417.77777777777777"
+                x2="417.77777777777777"
                 y="30"
                 y1="30"
-                y2="244"
+                y2="274"
               />
               <line
                 fill="none"
-                height="214"
+                height="244"
                 offset="[object Object]"
                 stroke="#f5f8fa"
-                width="642"
+                width="805"
                 x="60"
-                x1="416.66666666666663"
-                x2="416.66666666666663"
+                x1="507.22222222222223"
+                x2="507.22222222222223"
                 y="30"
                 y1="30"
-                y2="244"
+                y2="274"
               />
               <line
                 fill="none"
-                height="214"
+                height="244"
                 offset="[object Object]"
                 stroke="#f5f8fa"
-                width="642"
+                width="805"
                 x="60"
-                x1="488"
-                x2="488"
+                x1="596.6666666666666"
+                x2="596.6666666666666"
                 y="30"
                 y1="30"
-                y2="244"
+                y2="274"
               />
               <line
                 fill="none"
-                height="214"
+                height="244"
                 offset="[object Object]"
                 stroke="#f5f8fa"
-                width="642"
+                width="805"
                 x="60"
-                x1="559.3333333333333"
-                x2="559.3333333333333"
+                x1="686.1111111111111"
+                x2="686.1111111111111"
                 y="30"
                 y1="30"
-                y2="244"
+                y2="274"
               />
               <line
                 fill="none"
-                height="214"
+                height="244"
                 offset="[object Object]"
                 stroke="#f5f8fa"
-                width="642"
+                width="805"
                 x="60"
-                x1="630.6666666666666"
-                x2="630.6666666666666"
+                x1="775.5555555555555"
+                x2="775.5555555555555"
                 y="30"
                 y1="30"
-                y2="244"
+                y2="274"
               />
               <line
                 fill="none"
-                height="214"
+                height="244"
                 offset="[object Object]"
                 stroke="#f5f8fa"
-                width="642"
+                width="805"
                 x="60"
-                x1="702"
-                x2="702"
+                x1="865"
+                x2="865"
                 y="30"
                 y1="30"
-                y2="244"
+                y2="274"
               />
             </g>
           </g>
@@ -559,14 +698,14 @@ exports[`<Content /> should render correctly 1`] = `
                   color="#657786"
                   fill="#666"
                   font-size="11"
-                  height="214"
+                  height="244"
                   orientation="left"
                   stroke="none"
                   text-anchor="end"
                   type="number"
                   width="60"
                   x="48"
-                  y="244"
+                  y="274"
                 >
                   <tspan
                     dy="0.355em"
@@ -584,14 +723,14 @@ exports[`<Content /> should render correctly 1`] = `
                   color="#657786"
                   fill="#666"
                   font-size="11"
-                  height="214"
+                  height="244"
                   orientation="left"
                   stroke="none"
                   text-anchor="end"
                   type="number"
                   width="60"
                   x="48"
-                  y="190.5"
+                  y="213"
                 >
                   <tspan
                     dy="0.355em"
@@ -609,14 +748,14 @@ exports[`<Content /> should render correctly 1`] = `
                   color="#657786"
                   fill="#666"
                   font-size="11"
-                  height="214"
+                  height="244"
                   orientation="left"
                   stroke="none"
                   text-anchor="end"
                   type="number"
                   width="60"
                   x="48"
-                  y="137"
+                  y="152"
                 >
                   <tspan
                     dy="0.355em"
@@ -634,14 +773,14 @@ exports[`<Content /> should render correctly 1`] = `
                   color="#657786"
                   fill="#666"
                   font-size="11"
-                  height="214"
+                  height="244"
                   orientation="left"
                   stroke="none"
                   text-anchor="end"
                   type="number"
                   width="60"
                   x="48"
-                  y="83.5"
+                  y="91"
                 >
                   <tspan
                     dy="0.355em"
@@ -659,7 +798,7 @@ exports[`<Content /> should render correctly 1`] = `
                   color="#657786"
                   fill="#666"
                   font-size="11"
-                  height="214"
+                  height="244"
                   orientation="left"
                   stroke="none"
                   text-anchor="end"
@@ -697,9 +836,9 @@ exports[`<Content /> should render correctly 1`] = `
                   stroke="none"
                   text-anchor="left"
                   type="category"
-                  width="642"
+                  width="805"
                   x="60"
-                  y="260"
+                  y="290"
                 >
                   <tspan
                     dy="0.71em"
@@ -722,13 +861,13 @@ exports[`<Content /> should render correctly 1`] = `
                   stroke="none"
                   text-anchor="left"
                   type="category"
-                  width="642"
-                  x="131.33333333333331"
-                  y="260"
+                  width="805"
+                  x="149.44444444444446"
+                  y="290"
                 >
                   <tspan
                     dy="0.71em"
-                    x="131.33333333333331"
+                    x="149.44444444444446"
                   >
                     10:00
                   </tspan>
@@ -747,13 +886,13 @@ exports[`<Content /> should render correctly 1`] = `
                   stroke="none"
                   text-anchor="left"
                   type="category"
-                  width="642"
-                  x="202.66666666666666"
-                  y="260"
+                  width="805"
+                  x="238.88888888888889"
+                  y="290"
                 >
                   <tspan
                     dy="0.71em"
-                    x="202.66666666666666"
+                    x="238.88888888888889"
                   >
                     10:30
                   </tspan>
@@ -772,13 +911,13 @@ exports[`<Content /> should render correctly 1`] = `
                   stroke="none"
                   text-anchor="left"
                   type="category"
-                  width="642"
-                  x="274"
-                  y="260"
+                  width="805"
+                  x="328.3333333333333"
+                  y="290"
                 >
                   <tspan
                     dy="0.71em"
-                    x="274"
+                    x="328.3333333333333"
                   >
                     11:00
                   </tspan>
@@ -797,13 +936,13 @@ exports[`<Content /> should render correctly 1`] = `
                   stroke="none"
                   text-anchor="left"
                   type="category"
-                  width="642"
-                  x="345.3333333333333"
-                  y="260"
+                  width="805"
+                  x="417.77777777777777"
+                  y="290"
                 >
                   <tspan
                     dy="0.71em"
-                    x="345.3333333333333"
+                    x="417.77777777777777"
                   >
                     12:00
                   </tspan>
@@ -822,13 +961,13 @@ exports[`<Content /> should render correctly 1`] = `
                   stroke="none"
                   text-anchor="left"
                   type="category"
-                  width="642"
-                  x="416.66666666666663"
-                  y="260"
+                  width="805"
+                  x="507.22222222222223"
+                  y="290"
                 >
                   <tspan
                     dy="0.71em"
-                    x="416.66666666666663"
+                    x="507.22222222222223"
                   >
                     13:00
                   </tspan>
@@ -847,13 +986,13 @@ exports[`<Content /> should render correctly 1`] = `
                   stroke="none"
                   text-anchor="left"
                   type="category"
-                  width="642"
-                  x="488"
-                  y="260"
+                  width="805"
+                  x="596.6666666666666"
+                  y="290"
                 >
                   <tspan
                     dy="0.71em"
-                    x="488"
+                    x="596.6666666666666"
                   >
                     14:00
                   </tspan>
@@ -872,13 +1011,13 @@ exports[`<Content /> should render correctly 1`] = `
                   stroke="none"
                   text-anchor="left"
                   type="category"
-                  width="642"
-                  x="559.3333333333333"
-                  y="260"
+                  width="805"
+                  x="686.1111111111111"
+                  y="290"
                 >
                   <tspan
                     dy="0.71em"
-                    x="559.3333333333333"
+                    x="686.1111111111111"
                   >
                     15:00
                   </tspan>
@@ -897,13 +1036,13 @@ exports[`<Content /> should render correctly 1`] = `
                   stroke="none"
                   text-anchor="left"
                   type="category"
-                  width="642"
-                  x="630.6666666666666"
-                  y="260"
+                  width="805"
+                  x="775.5555555555555"
+                  y="290"
                 >
                   <tspan
                     dy="0.71em"
-                    x="630.6666666666666"
+                    x="775.5555555555555"
                   >
                     16:30
                   </tspan>
@@ -922,13 +1061,13 @@ exports[`<Content /> should render correctly 1`] = `
                   stroke="none"
                   text-anchor="left"
                   type="category"
-                  width="642"
-                  x="702"
-                  y="260"
+                  width="805"
+                  x="865"
+                  y="290"
                 >
                   <tspan
                     dy="0.71em"
-                    x="702"
+                    x="865"
                   >
                     17:00
                   </tspan>
@@ -941,15 +1080,15 @@ exports[`<Content /> should render correctly 1`] = `
           >
             <path
               class="recharts-curve recharts-line-curve"
-              d="M60,244C83.77777777777777,195.85000000000002,107.55555555555554,147.70000000000002,131.33333333333331,115.60000000000001C155.1111111111111,83.5,178.88888888888889,51.39999999999999,202.66666666666666,51.39999999999999C226.44444444444443,51.39999999999999,250.22222222222223,72.79999999999998,274,72.79999999999998C297.77777777777777,72.79999999999998,321.55555555555554,51.39999999999999,345.3333333333333,51.39999999999999C369.1111111111111,51.39999999999999,392.88888888888886,244,416.66666666666663,244C440.4444444444444,244,464.22222222222223,199.06000000000003,488,199.06000000000003C511.77777777777777,199.06000000000003,535.5555555555555,211.9,559.3333333333333,211.9C583.1111111111111,211.9,606.8888888888888,179.79999999999998,630.6666666666666,179.79999999999998C654.4444444444445,179.79999999999998,678.2222222222222,188.35999999999999,702,196.92"
+              d="M60,274C89.81481481481482,219.50666666666666,119.62962962962963,165.01333333333335,149.44444444444446,127.60000000000001C179.25925925925927,90.1866666666667,209.07407407407408,49.51999999999999,238.88888888888889,49.51999999999999C268.7037037037037,49.51999999999999,298.5185185185185,78.79999999999998,328.3333333333333,78.79999999999998C358.14814814814815,78.79999999999998,387.96296296296293,54.39999999999999,417.77777777777777,54.39999999999999C447.5925925925926,54.39999999999999,477.4074074074074,271.56,507.22222222222223,271.56C537.0370370370371,271.56,566.8518518518518,222.76000000000002,596.6666666666666,222.76000000000002C626.4814814814814,222.76000000000002,656.2962962962963,237.4,686.1111111111111,237.4C715.9259259259259,237.4,745.7407407407408,200.79999999999998,775.5555555555555,200.79999999999998C805.3703703703703,200.79999999999998,835.1851851851852,210.56,865,220.32"
               fill="none"
-              height="214"
+              height="244"
               points="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
               stroke="#0047BB"
               stroke-dasharray="0px 0px"
               stroke-width="1"
               type="monotone"
-              width="642"
+              width="805"
             />
           </g>
           <g
@@ -963,7 +1102,7 @@ exports[`<Content /> should render correctly 1`] = `
                   id="animationClipPath-recharts-area-5"
                 >
                   <rect
-                    height="246"
+                    height="276"
                     width="0"
                     x="60"
                     y="0"
@@ -979,27 +1118,27 @@ exports[`<Content /> should render correctly 1`] = `
                 >
                   <path
                     class="recharts-curve recharts-area-area"
-                    d="M60,244C83.77777777777777,195.85000000000002,107.55555555555554,147.70000000000002,131.33333333333331,115.60000000000001C155.1111111111111,83.5,178.88888888888889,51.39999999999999,202.66666666666666,51.39999999999999C226.44444444444443,51.39999999999999,250.22222222222223,72.79999999999998,274,72.79999999999998C297.77777777777777,72.79999999999998,321.55555555555554,51.39999999999999,345.3333333333333,51.39999999999999C369.1111111111111,51.39999999999999,392.88888888888886,244,416.66666666666663,244C440.4444444444444,244,464.22222222222223,199.06000000000003,488,199.06000000000003C511.77777777777777,199.06000000000003,535.5555555555555,211.9,559.3333333333333,211.9C583.1111111111111,211.9,606.8888888888888,179.79999999999998,630.6666666666666,179.79999999999998C654.4444444444445,179.79999999999998,678.2222222222222,188.35999999999999,702,196.92L702,244C678.2222222222222,244,654.4444444444445,244,630.6666666666666,244C606.8888888888888,244,583.1111111111111,244,559.3333333333333,244C535.5555555555555,244,511.77777777777777,244,488,244C464.22222222222223,244,440.4444444444444,244,416.66666666666663,244C392.88888888888886,244,369.1111111111111,244,345.3333333333333,244C321.55555555555554,244,297.77777777777777,244,274,244C250.22222222222223,244,226.44444444444443,244,202.66666666666666,244C178.88888888888889,244,155.1111111111111,244,131.33333333333331,244C107.55555555555554,244,83.77777777777777,244,60,244Z"
+                    d="M60,274C89.81481481481482,219.50666666666666,119.62962962962963,165.01333333333335,149.44444444444446,127.60000000000001C179.25925925925927,90.1866666666667,209.07407407407408,49.51999999999999,238.88888888888889,49.51999999999999C268.7037037037037,49.51999999999999,298.5185185185185,78.79999999999998,328.3333333333333,78.79999999999998C358.14814814814815,78.79999999999998,387.96296296296293,54.39999999999999,417.77777777777777,54.39999999999999C447.5925925925926,54.39999999999999,477.4074074074074,271.56,507.22222222222223,271.56C537.0370370370371,271.56,566.8518518518518,222.76000000000002,596.6666666666666,222.76000000000002C626.4814814814814,222.76000000000002,656.2962962962963,237.4,686.1111111111111,237.4C715.9259259259259,237.4,745.7407407407408,200.79999999999998,775.5555555555555,200.79999999999998C805.3703703703703,200.79999999999998,835.1851851851852,210.56,865,220.32L865,274C835.1851851851852,274,805.3703703703703,274,775.5555555555555,274C745.7407407407408,274,715.9259259259259,274,686.1111111111111,274C656.2962962962963,274,626.4814814814814,274,596.6666666666666,274C566.8518518518518,274,537.0370370370371,274,507.22222222222223,274C477.4074074074074,274,447.5925925925926,274,417.77777777777777,274C387.96296296296293,274,358.14814814814815,274,328.3333333333333,274C298.5185185185185,274,268.7037037037037,274,238.88888888888889,274C209.07407407407408,274,179.25925925925927,274,149.44444444444446,274C119.62962962962963,274,89.81481481481482,274,60,274Z"
                     fill="url(#gradient)"
                     fill-opacity="1"
-                    height="214"
+                    height="244"
                     points="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
                     stroke="none"
                     stroke-width="2"
                     type="monotone"
-                    width="642"
+                    width="805"
                   />
                   <path
                     class="recharts-curve recharts-area-curve"
-                    d="M60,244C83.77777777777777,195.85000000000002,107.55555555555554,147.70000000000002,131.33333333333331,115.60000000000001C155.1111111111111,83.5,178.88888888888889,51.39999999999999,202.66666666666666,51.39999999999999C226.44444444444443,51.39999999999999,250.22222222222223,72.79999999999998,274,72.79999999999998C297.77777777777777,72.79999999999998,321.55555555555554,51.39999999999999,345.3333333333333,51.39999999999999C369.1111111111111,51.39999999999999,392.88888888888886,244,416.66666666666663,244C440.4444444444444,244,464.22222222222223,199.06000000000003,488,199.06000000000003C511.77777777777777,199.06000000000003,535.5555555555555,211.9,559.3333333333333,211.9C583.1111111111111,211.9,606.8888888888888,179.79999999999998,630.6666666666666,179.79999999999998C654.4444444444445,179.79999999999998,678.2222222222222,188.35999999999999,702,196.92"
+                    d="M60,274C89.81481481481482,219.50666666666666,119.62962962962963,165.01333333333335,149.44444444444446,127.60000000000001C179.25925925925927,90.1866666666667,209.07407407407408,49.51999999999999,238.88888888888889,49.51999999999999C268.7037037037037,49.51999999999999,298.5185185185185,78.79999999999998,328.3333333333333,78.79999999999998C358.14814814814815,78.79999999999998,387.96296296296293,54.39999999999999,417.77777777777777,54.39999999999999C447.5925925925926,54.39999999999999,477.4074074074074,271.56,507.22222222222223,271.56C537.0370370370371,271.56,566.8518518518518,222.76000000000002,596.6666666666666,222.76000000000002C626.4814814814814,222.76000000000002,656.2962962962963,237.4,686.1111111111111,237.4C715.9259259259259,237.4,745.7407407407408,200.79999999999998,775.5555555555555,200.79999999999998C805.3703703703703,200.79999999999998,835.1851851851852,210.56,865,220.32"
                     fill="none"
                     fill-opacity="1"
-                    height="214"
+                    height="244"
                     points="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
                     stroke="#3182bd"
                     stroke-width="2"
                     type="monotone"
-                    width="642"
+                    width="805"
                   />
                 </g>
               </g>
@@ -1010,6 +1149,210 @@ exports[`<Content /> should render correctly 1`] = `
           class="recharts-tooltip-wrapper"
           style="transform: translate(undefinedpx, undefinedpx); pointer-events: none; visibility: hidden; position: absolute; top: 0px; left: 0px;"
         />
+      </div>
+    </section>
+    <section
+      class="c8"
+    >
+      <header
+        class="c9"
+      >
+        <section>
+          <img
+            alt="Icon Company"
+            src="test-file-stub"
+          />
+          <h1>
+            Empresas recentes
+          </h1>
+        </section>
+        <nav>
+          <button>
+            <img
+              alt="Icon Arrow Left"
+              src="test-file-stub"
+            />
+          </button>
+          <button>
+            <img
+              alt="Icon Arrow Right"
+              src="test-file-stub"
+            />
+          </button>
+        </nav>
+      </header>
+      <div
+        class="BrainhubCarousel__container"
+      >
+        <div
+          class="BrainhubCarousel c10"
+        >
+          <div
+            class="BrainhubCarousel__trackContainer"
+          >
+            <ul
+              class="BrainhubCarousel__track BrainhubCarousel__track--draggable"
+              style="width: 0px; transform: translateX(0px); margin-left: 0px;"
+            >
+              <li
+                class="BrainhubCarouselItem BrainhubCarouselItem--active"
+                style="margin-right: 0px; margin-left: 0px; width: 338.3px; max-width: 338.3px; min-width: 338.3px;"
+              >
+                <li
+                  class="c11"
+                >
+                  <button>
+                    <img
+                      alt="Icon Star"
+                      src="test-file-stub"
+                    />
+                  </button>
+                  <img
+                    alt="Facebook"
+                    class="logo"
+                    src="test-file-stub"
+                  />
+                  <section>
+                    <span>
+                      FB
+                    </span>
+                    <span>
+                      Facebook
+                    </span>
+                  </section>
+                  <div
+                    class="pricing"
+                  >
+                    <strong>
+                      +2.3%
+                    </strong>
+                    <img
+                      alt="Icon Up Pricing"
+                      src="test-file-stub"
+                    />
+                  </div>
+                </li>
+              </li>
+              <li
+                class="BrainhubCarouselItem"
+                style="margin-right: 0px; margin-left: 0px; width: 338.3px; max-width: 338.3px; min-width: 338.3px;"
+              >
+                <li
+                  class="c11"
+                >
+                  <button>
+                    <img
+                      alt="Icon Star"
+                      src="test-file-stub"
+                    />
+                  </button>
+                  <img
+                    alt="Facebook"
+                    class="logo"
+                    src="test-file-stub"
+                  />
+                  <section>
+                    <span>
+                      FB
+                    </span>
+                    <span>
+                      Facebook
+                    </span>
+                  </section>
+                  <div
+                    class="pricing"
+                  >
+                    <strong>
+                      +2.3%
+                    </strong>
+                    <img
+                      alt="Icon Up Pricing"
+                      src="test-file-stub"
+                    />
+                  </div>
+                </li>
+              </li>
+              <li
+                class="BrainhubCarouselItem"
+                style="margin-right: 0px; margin-left: 0px; width: 338.3px; max-width: 338.3px; min-width: 338.3px;"
+              >
+                <li
+                  class="c11"
+                >
+                  <button>
+                    <img
+                      alt="Icon Star"
+                      src="test-file-stub"
+                    />
+                  </button>
+                  <img
+                    alt="Facebook"
+                    class="logo"
+                    src="test-file-stub"
+                  />
+                  <section>
+                    <span>
+                      FB
+                    </span>
+                    <span>
+                      Facebook
+                    </span>
+                  </section>
+                  <div
+                    class="pricing"
+                  >
+                    <strong>
+                      +2.3%
+                    </strong>
+                    <img
+                      alt="Icon Up Pricing"
+                      src="test-file-stub"
+                    />
+                  </div>
+                </li>
+              </li>
+              <li
+                class="BrainhubCarouselItem"
+                style="margin-right: 0px; margin-left: 0px; width: 338.3px; max-width: 338.3px; min-width: 338.3px;"
+              >
+                <li
+                  class="c11"
+                >
+                  <button>
+                    <img
+                      alt="Icon Star"
+                      src="test-file-stub"
+                    />
+                  </button>
+                  <img
+                    alt="Facebook"
+                    class="logo"
+                    src="test-file-stub"
+                  />
+                  <section>
+                    <span>
+                      FB
+                    </span>
+                    <span>
+                      Facebook
+                    </span>
+                  </section>
+                  <div
+                    class="pricing"
+                  >
+                    <strong>
+                      +2.3%
+                    </strong>
+                    <img
+                      alt="Icon Up Pricing"
+                      src="test-file-stub"
+                    />
+                  </div>
+                </li>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
   </main>

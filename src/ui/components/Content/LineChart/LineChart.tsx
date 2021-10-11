@@ -9,11 +9,13 @@ import {
   Line,
 } from 'recharts'
 
-import { theme, Dot, Tooltip } from 'ui'
+import { theme, Tooltip } from 'ui'
+
+import { Dot } from '../Dot'
 
 export function LineChart() {
   return (
-    <ComposedChart height={274} width={702} data={data} margin={{ top: 30 }}>
+    <ComposedChart height={304} width={865} data={data} margin={{ top: 30 }}>
       <defs>
         <linearGradient id='gradient' x1='100%' y1='0%' x2='0%' y2='100%'>
           <stop
@@ -78,7 +80,7 @@ const data = [
     hour: '10:00',
   },
   {
-    pricing: 900,
+    pricing: 920,
     hour: '10:30',
   },
   {
@@ -90,7 +92,7 @@ const data = [
     hour: '12:00',
   },
   {
-    pricing: 0,
+    pricing: 10,
     hour: '13:00',
   },
   {

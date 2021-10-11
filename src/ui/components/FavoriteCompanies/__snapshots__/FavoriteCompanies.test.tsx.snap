@@ -1,0 +1,313 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FavoriteCompanies /> should render correctly 1`] = `
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1.6rem;
+  border-radius: 0.8rem;
+  background: #ffffff;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.c4:hover {
+  -webkit-transform: translateY(-0.5rem);
+  -ms-transform: translateY(-0.5rem);
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0.8rem 2rem -0.2rem rgba(43,37,63,0.1);
+}
+
+.c4 button {
+  background: transparent;
+  border: 0;
+}
+
+.c4 button + .logo {
+  margin-left: 1.6rem;
+}
+
+.c4 section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 1.2rem;
+  min-width: 11.5rem;
+}
+
+.c4 section span {
+  color: #14171a;
+}
+
+.c4 section span:last-child {
+  color: #657786;
+}
+
+.c4 .pricing {
+  margin-left: 1.2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 .pricing strong {
+  font-weight: 500;
+  margin-right: 0.8rem;
+  color: #d64b45;
+  color: #79c300;
+}
+
+.c0 {
+  padding: 3.2rem 2rem;
+}
+
+.c0 header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border: 0.1rem solid rgba(0,71,187,0.2);
+  border-radius: 12rem;
+  padding: 0.4rem 1.7rem 0.4rem 0.4rem;
+}
+
+.c0 header span {
+  color: #0047BB;
+  font-weight: 500;
+}
+
+.c0 header button {
+  display: grid;
+  place-items: center;
+  background: transparent;
+  border: 0;
+}
+
+.c0 header .avatar {
+  width: 3.2rem;
+  height: 3.2rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.c1 {
+  margin-top: 4.8rem;
+}
+
+.c1 h1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.c1 h1 img {
+  margin-right: 1rem;
+}
+
+.c1 ul {
+  margin-top: 3.2rem;
+  display: grid;
+  grid-gap: 3.2rem;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 .c3 {
+  width: 100%;
+  box-shadow: 0 0.8rem 2rem -0.2rem rgba(43,37,63,0.1);
+}
+
+.c2 .c3 .pricing {
+  margin-left: auto;
+}
+
+.c2 > button {
+  margin-left: 0.8rem;
+  background: transparent;
+  border: 0;
+}
+
+<aside
+  class="c0"
+>
+  <header>
+    <img
+      alt="Gabriel Teodoro"
+      class="avatar"
+      src="https://github.com/oigabrielteodoro.png"
+    />
+    <span>
+      José Gabriel Cavalcante Teodoro
+    </span>
+    <button>
+      <img
+        alt="Icon Caret Down"
+        src="test-file-stub"
+      />
+    </button>
+  </header>
+  <section
+    class="c1"
+  >
+    <h1>
+      <img
+        alt="Icon Star"
+        src="test-file-stub"
+      />
+      Empresas favoritas
+    </h1>
+    <ul>
+      <li
+        class="c2"
+      >
+        <div
+          class="c3 c4"
+        >
+          <img
+            alt="Facebook"
+            class="logo"
+            src="test-file-stub"
+          />
+          <section>
+            <span>
+              FB
+            </span>
+            <span>
+              Facebook
+            </span>
+          </section>
+          <div
+            class="pricing"
+          >
+            <strong>
+              +2.3%
+            </strong>
+            <img
+              alt="Icon Up Pricing"
+              src="test-file-stub"
+            />
+          </div>
+        </div>
+        <button>
+          <img
+            alt="Icon Trash"
+            src="test-file-stub"
+          />
+        </button>
+      </li>
+      <li
+        class="c2"
+      >
+        <div
+          class="c3 c4"
+        >
+          <img
+            alt="Facebook"
+            class="logo"
+            src="test-file-stub"
+          />
+          <section>
+            <span>
+              FB
+            </span>
+            <span>
+              Facebook
+            </span>
+          </section>
+          <div
+            class="pricing"
+          >
+            <strong>
+              +2.3%
+            </strong>
+            <img
+              alt="Icon Up Pricing"
+              src="test-file-stub"
+            />
+          </div>
+        </div>
+        <button>
+          <img
+            alt="Icon Trash"
+            src="test-file-stub"
+          />
+        </button>
+      </li>
+      <li
+        class="c2"
+      >
+        <div
+          class="c3 c4"
+        >
+          <img
+            alt="Facebook"
+            class="logo"
+            src="test-file-stub"
+          />
+          <section>
+            <span>
+              FB
+            </span>
+            <span>
+              Facebook
+            </span>
+          </section>
+          <div
+            class="pricing"
+          >
+            <strong>
+              +2.3%
+            </strong>
+            <img
+              alt="Icon Up Pricing"
+              src="test-file-stub"
+            />
+          </div>
+        </div>
+        <button>
+          <img
+            alt="Icon Trash"
+            src="test-file-stub"
+          />
+        </button>
+      </li>
+    </ul>
+  </section>
+</aside>
+`;

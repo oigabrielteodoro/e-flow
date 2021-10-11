@@ -1,6 +1,8 @@
 import React from 'react'
 
-import { GlobalStyle, Sidebar, Content } from 'ui'
+import '@brainhubeu/react-carousel/lib/style.css'
+
+import { GlobalStyle, Sidebar, Content, FavoriteCompanies } from 'ui'
 
 import * as S from './App.styled'
 
@@ -10,6 +12,7 @@ export function App() {
       <S.Container>
         <Sidebar />
         <Content />
+        <FavoriteCompanies />
       </S.Container>
       <GlobalStyle />
     </>
