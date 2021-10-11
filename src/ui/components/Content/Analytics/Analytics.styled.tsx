@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components'
 import { theme } from 'ui/styles'
+import { Container as ShimmerEffectContainer } from 'ui/components/ShimmerEffect/ShimmerEffect.styled'
 
 type AssetPricingProps = {
   isUp?: boolean
@@ -7,7 +8,7 @@ type AssetPricingProps = {
 
 export const Container = styled.section`
   margin-top: 2.4rem;
-  padding: 3rem 2.3rem;
+  padding: 2.3rem;
   border-radius: 0.8rem;
   background: ${theme.colors.white};
   box-shadow: 0 0.5rem 1.2rem rgba(222, 222, 231, 0.4);
@@ -17,6 +18,10 @@ export const AnalyticsAssetArea = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  ${ShimmerEffectContainer} + ${ShimmerEffectContainer} {
+    margin-top: 0.8rem;
+  }
 `
 
 export const AssetInfo = styled.div`
