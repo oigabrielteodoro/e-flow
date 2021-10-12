@@ -57,6 +57,15 @@ const reducer: Reducer<CompaniesState> = (state = INITIAL_STATE, action) => {
 
         break
       }
+      case ActionTypes.removeFavoriteCompany: {
+        const { symbol } = action.payload
+
+        draft.favorites = draft.favorites.filter(
+          (symbolFavorited) => symbolFavorited !== symbol,
+        )
+
+        break
+      }
       default:
         break
     }
