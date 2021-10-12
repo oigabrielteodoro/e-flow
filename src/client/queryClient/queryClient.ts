@@ -24,7 +24,7 @@ const onError = (error: unknown) => {
   }
 }
 
-const queryCache = new QueryCache()
+export const queryCache = new QueryCache()
 
 export const queryClientOptions: DefaultOptions = {
   queries: {

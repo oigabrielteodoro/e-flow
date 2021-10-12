@@ -1,7 +1,7 @@
 import * as t from 'io-ts'
 import { withMessage } from 'io-ts-types'
 
-type PositiveBrand = {
+export type PositiveBrand = {
   readonly Positive: unique symbol
 }
 

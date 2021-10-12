@@ -13,7 +13,6 @@ export const Container = styled.div<ContainerProps>`
   border-radius: 0.8rem;
   background: ${theme.colors.white};
   transition: all 0.2s;
-  cursor: pointer;
 
   &:hover {
     transform: translateY(-0.5rem);
@@ -33,6 +32,7 @@ export const Container = styled.div<ContainerProps>`
     display: flex;
     flex-direction: column;
     margin-left: 1.2rem;
+    cursor: pointer;
 
     span {
       color: ${theme.colors.gray[900]};
@@ -52,12 +52,14 @@ export const Container = styled.div<ContainerProps>`
     height: 4rem;
     border: 0.2rem solid ${theme.colors.gray[300]};
     border-radius: 50%;
+    cursor: pointer;
   }
 
   .pricing {
     margin-left: auto;
     display: flex;
     align-items: center;
+    cursor: pointer;
 
     strong {
       font-weight: 500;

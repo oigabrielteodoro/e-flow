@@ -31,7 +31,9 @@ function* getCompany({ payload }: ReturnType<typeof getCompanyRequest>) {
       yield put(getCompanySuccess(response.data))
     } else {
       yield put(
-        getCompanyFailure('Os dados devoldidos da api estão inválidos!'),
+        getCompanyFailure(
+          'Os dados recebidos estão inválidos! Tente novamente mais tarde...',
+        ),
       )
     }
   } catch (error) {

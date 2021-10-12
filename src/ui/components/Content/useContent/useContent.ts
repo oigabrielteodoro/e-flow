@@ -47,7 +47,9 @@ export function useContent() {
           setHistory(data.map(normalizeCompanyPrice))
         }),
         mapLeft(() => {
-          toast.error('Os dados devolvidos da requisição estão inválidos!')
+          toast.error(
+            'Os dados recebidos estão inválidos! Tente novamente mais tarde...',
+          )
         }),
       )
     }

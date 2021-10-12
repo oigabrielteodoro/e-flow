@@ -15,6 +15,7 @@ import {
   ApplicationState,
   normalizeCompany,
   addFavoriteCompany,
+  getCompanyRequest,
 } from 'client'
 
 import {
@@ -54,7 +55,9 @@ export function Company({ symbol, as, disableFavorite = false }: Props) {
           setCompany(normalizeCompany(data))
         }),
         mapLeft(() => {
-          toast.error('Os dados devoldidos da api estão inválidos!')
+          toast.error(
+            'Os dados recebidos estão inválidos! Tente novamente mais tarde...',
+          )
         }),
       ),
   })
@@ -68,20 +71,29 @@ export function Company({ symbol, as, disableFavorite = false }: Props) {
     dispatch(addFavoriteCompany(symbol))
   }
 
+  function handleInspect() {
+    dispatch(getCompanyRequest(symbol))
+  }
+
   return (
     <S.Container as={as} isPricingUp={isPricingUp}>
       {!disableFavorite && (
         <button onClick={handleFavorite}>
           <img
             src={isFavorite ? ICON_STAR : ICON_STAR_OUTLINE}
-            alt='Icon Star'
+            alt={isFavorite ? 'Icon Star' : 'Icon Star Outline'}
           />
         </button>
       )}
 
-      <img className='logo' src={logo_url} alt={symbol} />
+      <img
+        className='logo'
+        src={logo_url}
+        alt={symbol}
+        onClick={handleInspect}
+      />
 
-      <section>
+      <section onClick={handleInspect}>
         <ShimmerEffect isLoading={isLoading} width='3rem' height='1rem'>
           <span>{company?.symbol}</span>
         </ShimmerEffect>
@@ -90,7 +102,7 @@ export function Company({ symbol, as, disableFavorite = false }: Props) {
         </ShimmerEffect>
       </section>
 
-      <div className='pricing'>
+      <div className='pricing' onClick={handleInspect}>
         <strong>{company?.change_percent}</strong>
         <img
           src={isPricingUp ? ICON_UP_PRICING : ICON_DOWN_PRICING}
