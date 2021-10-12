@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Company /> should render correctly 1`] = `
-.c1 {
+.c2 {
   -webkit-animation: ePEqAU 1.2s ease-in-out infinite;
   animation: ePEqAU 1.2s ease-in-out infinite;
   background-image: linear-gradient( 90deg,rgba(0,0,0,0),#fff,rgba(0,0,0,0) );
@@ -12,8 +12,23 @@ exports[`<Company /> should render correctly 1`] = `
   display: inline-block;
   line-height: 1;
   opacity: 0.1;
-  width: 100%;
-  height: 2rem;
+  width: 3rem;
+  height: 1rem;
+}
+
+.c3 {
+  -webkit-animation: ePEqAU 1.2s ease-in-out infinite;
+  animation: ePEqAU 1.2s ease-in-out infinite;
+  background-image: linear-gradient( 90deg,rgba(0,0,0,0),#fff,rgba(0,0,0,0) );
+  background-color: #b3b3b3;
+  background-size: 20rem 100%;
+  background-repeat: no-repeat;
+  border-radius: 0.313rem;
+  display: inline-block;
+  line-height: 1;
+  opacity: 0.1;
+  width: 6rem;
+  height: 1rem;
 }
 
 .c0 {
@@ -68,6 +83,10 @@ exports[`<Company /> should render correctly 1`] = `
   color: #657786;
 }
 
+.c0 .c1 + .c1 {
+  margin-top: 0.5rem;
+}
+
 .c0 .logo {
   width: 4rem;
   height: 4rem;
@@ -109,16 +128,16 @@ exports[`<Company /> should render correctly 1`] = `
   />
   <section>
     <div
-      class="c1"
+      class="c1 c2"
       color="#fff"
-      height="2rem"
-      width="100%"
+      height="1rem"
+      width="3rem"
     />
     <div
-      class="c1"
+      class="c1 c3"
       color="#fff"
-      height="2rem"
-      width="100%"
+      height="1rem"
+      width="6rem"
     />
   </section>
   <div

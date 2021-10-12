@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components'
 import { theme } from 'ui/styles'
+import { Container as ShimmerEffectContainer } from 'ui/components/ShimmerEffect/ShimmerEffect.styled'
 
 type ContainerProps = {
   isPricingUp?: boolean
@@ -40,6 +41,10 @@ export const Container = styled.div<ContainerProps>`
         color: ${theme.colors.gray[500]};
       }
     }
+  }
+
+  ${ShimmerEffectContainer} + ${ShimmerEffectContainer} {
+    margin-top: 0.5rem;
   }
 
   .logo {
