@@ -1,16 +1,32 @@
-import React from 'react'
-import { useSelector } from 'react-redux'
+import React, { useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 
-import { Company } from 'ui'
-import { ApplicationState } from 'client'
-import { ICON_CARET_DOWN, ICON_STAR, ICON_TRASH } from 'assets'
+import { Company, Modal } from 'ui'
+import { ApplicationState, removeFavoriteCompany } from 'client'
+import { ICON_ALERT, ICON_CARET_DOWN, ICON_STAR, ICON_TRASH } from 'assets'
 
 import * as S from './FavoriteCompanies.styled'
 
 export function FavoriteCompanies() {
+  const dispatch = useDispatch()
+
   const favorites = useSelector<ApplicationState, string[]>(
     (state) => state.companies.favorites,
   )
+
+  const [selectedCompany, setSelectedCompany] = useState<string>()
+
+  function handleClose() {
+    setSelectedCompany(undefined)
+  }
+
+  function handleRemoveFavorite() {
+    if (!selectedCompany) return
+
+    dispatch(removeFavoriteCompany(selectedCompany))
+
+    handleClose()
+  }
 
   return (
     <S.Container>
@@ -37,13 +53,30 @@ export function FavoriteCompanies() {
           {favorites.map((company) => (
             <S.CompanyItem key={company}>
               <Company disableFavorite symbol={company} />
-              <button>
+              <button onClick={() => setSelectedCompany(company)}>
                 <img src={ICON_TRASH} alt='Icon Trash' />
               </button>
             </S.CompanyItem>
           ))}
         </ul>
       </S.CompaniesArea>
+
+      <Modal isOpen={!!selectedCompany} onClose={handleClose}>
+        <S.ModalBody>
+          <img src={ICON_ALERT} alt='Icon Alert' />
+          <h1>Tem certeza que deseja excluir essa empresa?</h1>
+          <p>
+            Você tem certeza que deseja excluir a empresa{' '}
+            <strong>{selectedCompany}</strong> de suas empresas favoritas?
+          </p>
+          <button className='confirm' onClick={handleRemoveFavorite}>
+            Sim, excluir!
+          </button>
+          <button className='cancel' onClick={handleClose}>
+            Cancelar
+          </button>
+        </S.ModalBody>
+      </Modal>
     </S.Container>
   )
 }
