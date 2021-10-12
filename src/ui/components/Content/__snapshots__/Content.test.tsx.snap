@@ -1,48 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Content /> should render correctly 1`] = `
-.c6 {
-  position: relative;
-}
-
-.c6:hover span {
-  opacity: 1;
-  visibility: visible;
-}
-
-.c6 > span {
-  color: #ffffff;
-  background: #0047BB;
-  border-radius: 0.4rem;
-  padding: 0.5rem 1.2rem;
-  white-space: nowrap;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  top: calc(-100% + -1.7rem);
-  z-index: 1;
-}
-
-.c6 > span::before {
-  content: '';
-  position: absolute;
-  border-style: solid;
-  border-width: 0.9rem 0.9rem 0 0.9rem;
-  border-color: #0047BB transparent transparent transparent;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  bottom: -0.9rem;
-}
-
-.c9 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -51,182 +10,6 @@ exports[`<Content /> should render correctly 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   margin-top: 4rem;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.c10 section {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c10 button {
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
-  background: transparent;
-  border: 0;
-}
-
-.c10 button:hover {
-  opacity: 0.5;
-}
-
-.c10 button + button {
-  margin-left: 2rem;
-}
-
-.c10 button img {
-  width: 1.6rem;
-  height: 1.6rem;
-}
-
-.c11 {
-  max-width: 90.5rem;
-  margin-top: 1.6rem;
-}
-
-.c11 li {
-  padding-left: 1.6rem;
-}
-
-.c14 {
-  -webkit-animation: ePEqAU 1.2s ease-in-out infinite;
-  animation: ePEqAU 1.2s ease-in-out infinite;
-  background-image: linear-gradient( 90deg,rgba(0,0,0,0),#fff,rgba(0,0,0,0) );
-  background-color: #b3b3b3;
-  background-size: 20rem 100%;
-  background-repeat: no-repeat;
-  border-radius: 0.313rem;
-  display: inline-block;
-  line-height: 1;
-  opacity: 0.1;
-  width: 3rem;
-  height: 1rem;
-}
-
-.c15 {
-  -webkit-animation: ePEqAU 1.2s ease-in-out infinite;
-  animation: ePEqAU 1.2s ease-in-out infinite;
-  background-image: linear-gradient( 90deg,rgba(0,0,0,0),#fff,rgba(0,0,0,0) );
-  background-color: #b3b3b3;
-  background-size: 20rem 100%;
-  background-repeat: no-repeat;
-  border-radius: 0.313rem;
-  display: inline-block;
-  line-height: 1;
-  opacity: 0.1;
-  width: 6rem;
-  height: 1rem;
-}
-
-.c12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 1.6rem;
-  border-radius: 0.8rem;
-  background: #ffffff;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.c12:hover {
-  -webkit-transform: translateY(-0.5rem);
-  -ms-transform: translateY(-0.5rem);
-  transform: translateY(-0.5rem);
-  box-shadow: 0 0.8rem 2rem -0.2rem rgba(43,37,63,0.1);
-}
-
-.c12 button {
-  background: transparent;
-  border: 0;
-}
-
-.c12 button + .logo {
-  margin-left: 1rem;
-}
-
-.c12 section {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-left: 1.2rem;
-  cursor: pointer;
-}
-
-.c12 section span {
-  color: #14171a;
-}
-
-.c12 section span:last-child {
-  color: #657786;
-}
-
-.c12 .c13 + .c13 {
-  margin-top: 0.5rem;
-}
-
-.c12 .logo {
-  width: 4rem;
-  height: 4rem;
-  border: 0.2rem solid #acacac;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.c12 .pricing {
-  margin-left: auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.c12 .pricing strong {
-  font-weight: 500;
-  margin-right: 0.8rem;
-  color: #d64b45;
-}
-
-.c3 {
-  margin-top: 2.4rem;
-  padding: 2.3rem;
-  border-radius: 0.8rem;
-  background: #ffffff;
-  box-shadow: 0 0.5rem 1.2rem rgba(222,222,231,0.4);
 }
 
 .c4 {
@@ -244,11 +27,7 @@ exports[`<Content /> should render correctly 1`] = `
   justify-content: space-between;
 }
 
-.c4 .c13 + .c13 {
-  margin-top: 0.8rem;
-}
-
-.c5 {
+.c4 section {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -259,57 +38,33 @@ exports[`<Content /> should render correctly 1`] = `
   align-items: center;
 }
 
-.c5 button {
+.c4 button {
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
   background: transparent;
   border: 0;
 }
 
-.c5 section {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 1.2rem;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
+.c4 button:hover {
+  opacity: 0.5;
 }
 
-.c5 section strong {
-  font-weight: 500;
+.c4 button + button {
+  margin-left: 2rem;
 }
 
-.c5 section span {
-  color: #acacac;
-  font-size: 1.4rem;
+.c4 button img {
+  width: 1.6rem;
+  height: 1.6rem;
 }
 
-.c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
+.c5 {
+  max-width: 90.5rem;
+  margin-top: 1.6rem;
 }
 
-.c7 img {
-  margin-right: 0.8rem;
-}
-
-.c7 span {
-  margin-top: 0.8rem;
-  color: #d64b45;
-  font-weight: 500;
+.c5 li {
+  padding-left: 1.6rem;
 }
 
 .c0 {
@@ -408,43 +163,6 @@ exports[`<Content /> should render correctly 1`] = `
   filter: brightness(0.85);
 }
 
-.c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 30.4rem;
-}
-
-.c8 strong {
-  margin-top: 2rem;
-  font-weight: 500;
-  color: #657786;
-}
-
-.c8 small {
-  max-width: 30rem;
-  text-align: center;
-  margin-top: 0.8rem;
-  color: #657786;
-}
-
-.c8 img {
-  -webkit-animation: hRqNHh 1s infinite;
-  animation: hRqNHh 1s infinite;
-}
-
 <div
   class="c0"
 >
@@ -479,76 +197,8 @@ exports[`<Content /> should render correctly 1`] = `
     <section
       class="c3"
     >
-      <div
-        class="c4"
-      >
-        <div
-          class="c5"
-        >
-          <div
-            class="c6"
-          >
-            <span>
-              Adicionar aos favoritos
-            </span>
-            <button>
-              <img
-                alt="Icon Star"
-                src="/img/icon-star-outline.svg"
-              />
-            </button>
-          </div>
-          <section>
-            <strong>
-              MSFT
-            </strong>
-            <span>
-              Microsoft Corporation
-            </span>
-          </section>
-        </div>
-        <div
-          class="c7"
-        >
-          <div>
-            <img
-              alt="Icon Pricing"
-              src="/img/icon-down-pricing.svg"
-            />
-            <strong>
-              $294.23
-            </strong>
-          </div>
-          <span>
-            -$0.01
-             (
-            -0.02%
-            )
-          </span>
-        </div>
-      </div>
-      <div
-        class="c8"
-      >
-        <img
-          alt="Icon Loading"
-          height="50"
-          src="/img/icon-loading.svg"
-          width="50"
-        />
-        <strong>
-          Carregando dados...
-        </strong>
-        <small>
-          Caso esse processo esteja demorando, verifique a sua conexão com a internet!
-        </small>
-      </div>
-    </section>
-    <section
-      class="c9"
-    >
       <header
-        class="c10"
+        class="c4"
       >
         <section>
           <img
@@ -575,58 +225,12 @@ exports[`<Content /> should render correctly 1`] = `
         </nav>
       </header>
       <div
-        class="react-multi-carousel-list  c11"
+        class="react-multi-carousel-list  c5"
       >
         <ul
           class="react-multi-carousel-track "
           style="transition: none; overflow: hidden; transform: translate3d(-16px,0,0);"
-        >
-          <li
-            aria-hidden="false"
-            class="react-multi-carousel-item react-multi-carousel-item--active "
-            data-index="0"
-            style="flex: 1 0 33.3%; position: relative; width: auto;"
-          >
-            <div
-              class="c12"
-            >
-              <button>
-                <img
-                  alt="Icon Star Outline"
-                  src="/img/icon-star-outline.svg"
-                />
-              </button>
-              <img
-                alt="MSFT"
-                class="logo"
-                src="https://storage.googleapis.com/iex/api/logos/MSFT.png"
-              />
-              <section>
-                <div
-                  class="c13 c14"
-                  color="#fff"
-                  height="1rem"
-                  width="3rem"
-                />
-                <div
-                  class="c13 c15"
-                  color="#fff"
-                  height="1rem"
-                  width="6rem"
-                />
-              </section>
-              <div
-                class="pricing"
-              >
-                <strong />
-                <img
-                  alt="Icon Pricing"
-                  src="/img/icon-down-pricing.svg"
-                />
-              </div>
-            </div>
-          </li>
-        </ul>
+        />
       </div>
     </section>
   </main>

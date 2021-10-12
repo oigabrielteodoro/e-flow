@@ -12,7 +12,10 @@ import { Company } from './Company'
 
 server.use(
   rest.get(`${API_URL}/stock/msft/quote`, (_, response, context) =>
-    response(context.status(200), context.json(companyRawMocked)),
+    response(
+      context.status(200),
+      context.json(companyRawMocked('Microsoft Corporation', 'MSFT')),
+    ),
   ),
 )
 
