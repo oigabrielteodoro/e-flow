@@ -68,7 +68,7 @@ describe('<Company />', () => {
     await waitFor(() =>
       expect(
         screen.getByText(
-          'Os dados recebidos estão inválidos! Tente novamente mais tarde...',
+          /os dados recebidos estão inválidos! tente novamente mais tarde.../i,
         ),
       ).toBeInTheDocument(),
     )

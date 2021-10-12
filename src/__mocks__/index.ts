@@ -1,6 +1,10 @@
-import { CompanyRaw } from 'types'
+import {
+  CompanyPriceHistoryNormalized,
+  CompanyPriceHistoryRaw,
+  CompanyRaw,
+} from 'types'
 import { unsafe } from '__helpers__'
-import { normalizeCompany } from 'client'
+import { normalizeCompany, normalizeCompanyPrice } from 'client'
 
 export const companyRawMocked: CompanyRaw = {
   latestPrice: unsafe(294.23),
@@ -11,3 +15,13 @@ export const companyRawMocked: CompanyRaw = {
 }
 
 export const companyNormalizedMocked = normalizeCompany(companyRawMocked)
+
+export const companyPriceHistoryRawMocked: CompanyPriceHistoryRaw = [
+  {
+    close: 321,
+    updated: new Date().getTime(),
+  },
+]
+
+export const companyPriceHistoryNormalizedMocked: CompanyPriceHistoryNormalized =
+  companyPriceHistoryRawMocked.map(normalizeCompanyPrice)

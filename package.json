@@ -7,7 +7,7 @@
     "start": "next start",
     "lint": "eslint --max-warnings=0",
     "lint:next": "next lint",
-    "test": "NODE_ENV=test && jest -i --silent",
+    "test": "NODE_ENV=test && jest -i",
     "test:watch": "jest --maxWorkers=25% --watch",
     "typecheck": "tsc --project tsconfig.json --noEmit",
     "prettier": "prettier --write '**/*.{ts,tsx,json,md}'",

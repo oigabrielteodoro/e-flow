@@ -1,4 +1,4 @@
-import React, { FormEvent, useCallback, useEffect } from 'react'
+import React, { FormEvent, useCallback, useEffect, useRef } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
 import { isSome } from 'fp-ts/Option'
@@ -13,6 +13,7 @@ import * as S from './Content.styled'
 
 export function Content() {
   const dispatch = useDispatch()
+  const inputRef = useRef<HTMLInputElement>(null)
 
   const { company, loading } = useSelector<ApplicationState, CompaniesState>(
     (state) => state.companies,
@@ -28,9 +29,9 @@ export function Content() {
     (event: FormEvent<HTMLFormElement>) => {
       event.preventDefault()
 
-      const { value } = event.currentTarget[0] as HTMLInputElement
+      if (!inputRef.current) return
 
-      dispatch(getCompanyRequest(value))
+      dispatch(getCompanyRequest(inputRef.current.value))
 
       event.currentTarget.reset()
     },
@@ -46,8 +47,8 @@ export function Content() {
 
       <S.Container>
         <S.SearchArea onSubmit={handleSubmit}>
-          <input placeholder='Buscar empresa' />
-          <button type='submit'>
+          <input ref={inputRef} placeholder='Buscar empresa' />
+          <button type='submit' aria-label='search button'>
             <img src={ICON_SEARCH} alt='Icon Search' />
           </button>
         </S.SearchArea>
