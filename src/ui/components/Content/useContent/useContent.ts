@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 import { useQuery } from 'react-query'
 import { toast } from 'react-toastify'
@@ -30,16 +30,13 @@ export function useContent() {
 
   const symbol = isSome(company) ? company.value.symbol : ''
 
-  const { data, isLoading } = useQuery({
+  const { isLoading } = useQuery({
     queryKey: `/stock/${symbol}/chart`,
     queryFn: () =>
       api
         .get<CompanyPriceHistoryRaw>(`/stock/${symbol}/chart`)
         .then((response) => response.data),
-  })
-
-  useEffect(() => {
-    if (data) {
+    onSuccess: (data) =>
       pipe(
         data,
         companyPriceHistoryRaw.decode,
@@ -51,9 +48,8 @@ export function useContent() {
             'Os dados recebidos estão inválidos! Tente novamente mais tarde...',
           )
         }),
-      )
-    }
-  }, [data])
+      ),
+  })
 
   return {
     history,

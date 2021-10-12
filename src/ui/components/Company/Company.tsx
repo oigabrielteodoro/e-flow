@@ -1,22 +1,6 @@
-import React, { ElementType, useState } from 'react'
-
-import { useQuery } from 'react-query'
-import { toast } from 'react-toastify'
-import { useDispatch, useSelector } from 'react-redux'
-
-import { pipe } from 'fp-ts/function'
-import { map, mapLeft } from 'fp-ts/Either'
+import React, { ElementType } from 'react'
 
 import { ShimmerEffect } from 'ui'
-import { CompanyNormalized, CompanyRaw, companyRawCodec } from 'types'
-
-import {
-  api,
-  ApplicationState,
-  normalizeCompany,
-  addFavoriteCompany,
-  getCompanyRequest,
-} from 'client'
 
 import {
   ICON_DOWN_PRICING,
@@ -24,6 +8,8 @@ import {
   ICON_STAR_OUTLINE,
   ICON_UP_PRICING,
 } from 'assets'
+
+import { useCompany } from './useCompany'
 
 import * as S from './Company.styled'
 
@@ -34,51 +20,20 @@ type Props = {
 }
 
 export function Company({ symbol, as, disableFavorite = false }: Props) {
-  const logo_url = `https://storage.googleapis.com/iex/api/logos/${symbol}.png`
-
-  const dispatch = useDispatch()
-  const [company, setCompany] = useState<CompanyNormalized>()
-
-  const favorites = useSelector<ApplicationState, string[]>(
-    (state) => state.companies.favorites,
-  )
-
-  const { isLoading } = useQuery<CompanyRaw>({
-    queryKey: `/stock/${symbol}/quote`,
-    queryFn: () =>
-      api.get(`/stock/${symbol}/quote`).then((response) => response.data),
-    onSuccess: (data) =>
-      pipe(
-        data,
-        companyRawCodec.decode,
-        map((data) => {
-          setCompany(normalizeCompany(data))
-        }),
-        mapLeft(() => {
-          toast.error(
-            'Os dados recebidos estão inválidos! Tente novamente mais tarde...',
-          )
-        }),
-      ),
-  })
-
-  const isFavorite = favorites.includes(symbol)
-  const isPricingUp = company?.price_direction === 'up'
-
-  function handleFavorite() {
-    if (isFavorite) return
-
-    dispatch(addFavoriteCompany(symbol))
-  }
-
-  function handleInspect() {
-    dispatch(getCompanyRequest(symbol))
-  }
+  const {
+    company,
+    logo_url,
+    isLoading,
+    isFavorite,
+    isPricingUp,
+    favoriteCompany,
+    inspectCompany,
+  } = useCompany(symbol)
 
   return (
     <S.Container as={as} isPricingUp={isPricingUp}>
       {!disableFavorite && (
-        <button onClick={handleFavorite}>
+        <button onClick={favoriteCompany}>
           <img
             src={isFavorite ? ICON_STAR : ICON_STAR_OUTLINE}
             alt={isFavorite ? 'Icon Star' : 'Icon Star Outline'}
@@ -90,10 +45,10 @@ export function Company({ symbol, as, disableFavorite = false }: Props) {
         className='logo'
         src={logo_url}
         alt={symbol}
-        onClick={handleInspect}
+        onClick={inspectCompany}
       />
 
-      <section onClick={handleInspect}>
+      <section onClick={inspectCompany}>
         <ShimmerEffect isLoading={isLoading} width='3rem' height='1rem'>
           <span>{company?.symbol}</span>
         </ShimmerEffect>
@@ -102,7 +57,7 @@ export function Company({ symbol, as, disableFavorite = false }: Props) {
         </ShimmerEffect>
       </section>
 
-      <div className='pricing' onClick={handleInspect}>
+      <div className='pricing' onClick={inspectCompany}>
         <strong>{company?.change_percent}</strong>
         <img
           src={isPricingUp ? ICON_UP_PRICING : ICON_DOWN_PRICING}
