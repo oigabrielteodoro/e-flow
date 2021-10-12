@@ -24,7 +24,7 @@ export const Container = styled.div<ContainerProps>`
     border: 0;
 
     & + .logo {
-      margin-left: 1.6rem;
+      margin-left: 1rem;
     }
   }
 
@@ -40,6 +40,13 @@ export const Container = styled.div<ContainerProps>`
         color: ${theme.colors.gray[500]};
       }
     }
+  }
+
+  .logo {
+    width: 4rem;
+    height: 4rem;
+    border: 0.2rem solid ${theme.colors.gray[300]};
+    border-radius: 50%;
   }
 
   .pricing {

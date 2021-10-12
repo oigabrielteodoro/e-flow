@@ -29,7 +29,6 @@ const queryCache = new QueryCache()
 export const queryClientOptions: DefaultOptions = {
   queries: {
     onError,
-    refetchOnWindowFocus: false,
   },
   mutations: {
     onError,

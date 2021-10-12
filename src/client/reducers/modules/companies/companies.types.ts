@@ -11,4 +11,5 @@ export enum ActionTypes {
 export type CompaniesState = {
   loading: boolean
   company: Option<CompanyNormalized>
+  storaged: CompanyNormalized[]
 }

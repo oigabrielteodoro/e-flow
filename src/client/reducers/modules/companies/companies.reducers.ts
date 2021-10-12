@@ -1,15 +1,17 @@
 import { Reducer } from 'redux'
-import produce from 'immer'
-
 import { toast } from 'react-toastify'
+
+import produce from 'immer'
 import { none, some } from 'fp-ts/Option'
 
 import { normalizeCompany } from 'client'
+
 import { ActionTypes, CompaniesState } from './companies.types'
 
 const INITIAL_STATE: CompaniesState = {
-  loading: true,
+  loading: false,
   company: none,
+  storaged: [],
 }
 
 const reducer: Reducer<CompaniesState> = (state = INITIAL_STATE, action) => {
@@ -25,13 +27,25 @@ const reducer: Reducer<CompaniesState> = (state = INITIAL_STATE, action) => {
         draft.loading = false
         draft.company = some(normalizeCompany(company))
 
+        const foundedCompany = draft.storaged.find(
+          ({ symbol }) => symbol === company.symbol,
+        )
+
+        if (foundedCompany) {
+          draft.storaged = draft.storaged.filter(
+            ({ symbol }) => symbol !== company.symbol,
+          )
+        }
+
+        draft.storaged = [company, ...draft.storaged]
+
         break
       }
       case ActionTypes.getCompanyFailure: {
         const { error } = action.payload
 
-        toast.error(error)
         draft.loading = false
+        toast.error(error)
 
         break
       }

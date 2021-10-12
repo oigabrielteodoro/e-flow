@@ -1,10 +1,11 @@
-import React, { FormEvent, useCallback } from 'react'
-import { useDispatch } from 'react-redux'
+import React, { FormEvent, useCallback, useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 
-import { ICON_DASHBOARD, ICON_SEARCH } from 'assets'
+import { isSome } from 'fp-ts/Option'
 
 import { RecentCompanies } from 'ui'
-import { getCompanyRequest } from 'client'
+import { ICON_DASHBOARD, ICON_SEARCH } from 'assets'
+import { ApplicationState, CompaniesState, getCompanyRequest } from 'client'
 
 import { Analytics } from './Analytics'
 
@@ -13,6 +14,16 @@ import * as S from './Content.styled'
 export function Content() {
   const dispatch = useDispatch()
 
+  const { company, loading } = useSelector<ApplicationState, CompaniesState>(
+    (state) => state.companies,
+  )
+
+  useEffect(() => {
+    if (!isSome(company) && !loading) {
+      dispatch(getCompanyRequest('MSFT'))
+    }
+  }, [loading, company, dispatch])
+
   const handleSubmit = useCallback(
     (event: FormEvent<HTMLFormElement>) => {
       event.preventDefault()
@@ -20,6 +31,8 @@ export function Content() {
       const { value } = event.currentTarget[0] as HTMLInputElement
 
       dispatch(getCompanyRequest(value))
+
+      event.currentTarget.reset()
     },
     [dispatch],
   )
