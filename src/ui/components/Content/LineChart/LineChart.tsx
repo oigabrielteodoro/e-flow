@@ -20,7 +20,7 @@ import { useContent } from '../useContent'
 export default function LineChart() {
   const { history, isLoading } = useContent()
 
-  if (!isLoading) {
+  if (isLoading) {
     return <Loading />
   }
 
