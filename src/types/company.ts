@@ -37,12 +37,12 @@ export const companyPriceNormalized = t.type({
 
 export type CompanyPriceNormalized = t.TypeOf<typeof companyPriceNormalized>
 
-export const companyHistoryPriceRaw = t.array(companyPriceRaw)
+export const companyPriceHistoryRaw = t.array(companyPriceRaw)
 
-export type CompanyHistoryPriceRaw = t.TypeOf<typeof companyHistoryPriceRaw>
+export type CompanyPriceHistoryRaw = t.TypeOf<typeof companyPriceHistoryRaw>
 
-export const companyHistoryPriceNormalized = t.array(companyPriceNormalized)
+export const companyPriceHistoryNormalized = t.array(companyPriceNormalized)
 
-export type CompanyHistoryPriceNormalized = t.TypeOf<
-  typeof companyHistoryPriceNormalized
+export type CompanyPriceHistoryNormalized = t.TypeOf<
+  typeof companyPriceHistoryNormalized
 >

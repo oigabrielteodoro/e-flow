@@ -14,7 +14,7 @@ import * as S from './Analytics.styled'
 const LineChart = dynamic(() => import('../LineChart'), { ssr: false })
 
 export function Analytics() {
-  const { company, isLoading } = useSelector<ApplicationState, CompaniesState>(
+  const { company, loading } = useSelector<ApplicationState, CompaniesState>(
     (state) => state.companies,
   )
 
@@ -28,7 +28,7 @@ export function Analytics() {
     <S.Container>
       <S.AnalyticsAssetArea>
         <S.AssetInfo>
-          <ShimmerEffect width='10rem' isLoading={isLoading}>
+          <ShimmerEffect width='10rem' isLoading={loading}>
             <Tooltip title='Adicionar aos favoritos'>
               <button>
                 <img src={ICON_STAR_OUTLINE} alt='Icon Star' />
@@ -41,7 +41,7 @@ export function Analytics() {
           </ShimmerEffect>
         </S.AssetInfo>
         <S.AssetPricing isUp={isPricingUp}>
-          <ShimmerEffect width='10rem' isLoading={isLoading}>
+          <ShimmerEffect width='10rem' isLoading={loading}>
             <div>
               <img
                 src={isPricingUp ? ICON_UP_PRICING : ICON_DOWN_PRICING}
@@ -50,7 +50,7 @@ export function Analytics() {
               <strong>{company.value.latest_price}</strong>
             </div>
           </ShimmerEffect>
-          <ShimmerEffect width='15rem' isLoading={isLoading}>
+          <ShimmerEffect width='15rem' isLoading={loading}>
             <span>
               {company.value.change} ({company.value.change_percent})
             </span>

@@ -8,7 +8,7 @@ import { normalizeCompany } from 'client'
 import { ActionTypes, CompaniesState } from './companies.types'
 
 const INITIAL_STATE: CompaniesState = {
-  isLoading: true,
+  loading: true,
   company: none,
 }
 
@@ -16,13 +16,13 @@ const reducer: Reducer<CompaniesState> = (state = INITIAL_STATE, action) => {
   return produce(state, (draft) => {
     switch (action.type) {
       case ActionTypes.getCompanyRequest: {
-        draft.isLoading = true
+        draft.loading = true
         break
       }
       case ActionTypes.getCompanySuccess: {
         const { company } = action.payload
 
-        draft.isLoading = false
+        draft.loading = false
         draft.company = some(normalizeCompany(company))
 
         break
@@ -31,7 +31,7 @@ const reducer: Reducer<CompaniesState> = (state = INITIAL_STATE, action) => {
         const { error } = action.payload
 
         toast.error(error)
-        draft.isLoading = false
+        draft.loading = false
 
         break
       }

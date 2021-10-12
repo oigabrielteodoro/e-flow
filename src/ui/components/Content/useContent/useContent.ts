@@ -4,9 +4,9 @@ import { useQuery } from 'react-query'
 import { toast } from 'react-toastify'
 import { useSelector } from 'react-redux'
 
-import { map, mapLeft } from 'fp-ts/Either'
 import { pipe } from 'fp-ts/function'
 import { isSome } from 'fp-ts/Option'
+import { map, mapLeft } from 'fp-ts/Either'
 
 import {
   api,
@@ -16,9 +16,9 @@ import {
 } from 'client'
 
 import {
-  CompanyHistoryPriceNormalized,
-  companyHistoryPriceRaw,
-  CompanyHistoryPriceRaw,
+  CompanyPriceHistoryNormalized,
+  companyPriceHistoryRaw,
+  CompanyPriceHistoryRaw,
 } from 'types'
 
 export function useContent() {
@@ -26,7 +26,7 @@ export function useContent() {
     (state) => state.companies,
   )
 
-  const [history, setHistory] = useState<CompanyHistoryPriceNormalized>([])
+  const [history, setHistory] = useState<CompanyPriceHistoryNormalized>([])
 
   const symbol = isSome(company) ? company.value.symbol : ''
 
@@ -34,7 +34,7 @@ export function useContent() {
     queryKey: `/stock/${symbol}/chart`,
     queryFn: () =>
       api
-        .get<CompanyHistoryPriceRaw>(`/stock/${symbol}/chart`)
+        .get<CompanyPriceHistoryRaw>(`/stock/${symbol}/chart`)
         .then((response) => response.data),
   })
 
@@ -42,7 +42,7 @@ export function useContent() {
     if (data) {
       pipe(
         data,
-        companyHistoryPriceRaw.decode,
+        companyPriceHistoryRaw.decode,
         map(() => {
           setHistory(data.map(normalizeCompanyPrice))
         }),
