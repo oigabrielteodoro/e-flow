@@ -2,14 +2,27 @@ import React, { ElementType, useState } from 'react'
 
 import { useQuery } from 'react-query'
 import { toast } from 'react-toastify'
+import { useDispatch, useSelector } from 'react-redux'
 
 import { pipe } from 'fp-ts/function'
 import { map, mapLeft } from 'fp-ts/Either'
 
 import { ShimmerEffect } from 'ui'
-import { api, normalizeCompany } from 'client'
 import { CompanyNormalized, CompanyRaw, companyRawCodec } from 'types'
-import { ICON_DOWN_PRICING, ICON_STAR_OUTLINE, ICON_UP_PRICING } from 'assets'
+
+import {
+  api,
+  ApplicationState,
+  normalizeCompany,
+  addFavoriteCompany,
+} from 'client'
+
+import {
+  ICON_DOWN_PRICING,
+  ICON_STAR,
+  ICON_STAR_OUTLINE,
+  ICON_UP_PRICING,
+} from 'assets'
 
 import * as S from './Company.styled'
 
@@ -20,9 +33,14 @@ type Props = {
 }
 
 export function Company({ symbol, as, disableFavorite = false }: Props) {
+  const logo_url = `https://storage.googleapis.com/iex/api/logos/${symbol}.png`
+
+  const dispatch = useDispatch()
   const [company, setCompany] = useState<CompanyNormalized>()
 
-  const logo_url = `https://storage.googleapis.com/iex/api/logos/${symbol}.png`
+  const favorites = useSelector<ApplicationState, string[]>(
+    (state) => state.companies.favorites,
+  )
 
   const { isLoading } = useQuery<CompanyRaw>({
     queryKey: `/stock/${symbol}/quote`,
@@ -41,13 +59,23 @@ export function Company({ symbol, as, disableFavorite = false }: Props) {
       ),
   })
 
+  const isFavorite = favorites.includes(symbol)
   const isPricingUp = company?.price_direction === 'up'
+
+  function handleFavorite() {
+    if (isFavorite) return
+
+    dispatch(addFavoriteCompany(symbol))
+  }
 
   return (
     <S.Container as={as} isPricingUp={isPricingUp}>
       {!disableFavorite && (
-        <button>
-          <img src={ICON_STAR_OUTLINE} alt='Icon Star' />
+        <button onClick={handleFavorite}>
+          <img
+            src={isFavorite ? ICON_STAR : ICON_STAR_OUTLINE}
+            alt='Icon Star'
+          />
         </button>
       )}
 

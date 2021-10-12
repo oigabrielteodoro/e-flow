@@ -1,13 +1,14 @@
 import React, { useCallback, useRef } from 'react'
 import Carousel, { ResponsiveType } from 'react-multi-carousel'
+import { useSelector } from 'react-redux'
 
 import { ICON_COMPANY, ICON_ARROW_LEFT, ICON_ARROW_RIGHT } from 'assets'
 
 import { Company } from 'ui'
 
-import { useSelector } from 'react-redux'
 import { ApplicationState } from 'client'
 import { CompanyNormalized } from 'types'
+
 import * as S from './RecentCompanies.styled'
 
 const responsive: ResponsiveType = {

@@ -12,6 +12,7 @@ const INITIAL_STATE: CompaniesState = {
   loading: false,
   company: none,
   storaged: [],
+  favorites: [],
 }
 
 const reducer: Reducer<CompaniesState> = (state = INITIAL_STATE, action) => {
@@ -46,6 +47,13 @@ const reducer: Reducer<CompaniesState> = (state = INITIAL_STATE, action) => {
 
         draft.loading = false
         toast.error(error)
+
+        break
+      }
+      case ActionTypes.addFavoriteCompany: {
+        const { symbol } = action.payload
+
+        draft.favorites = [symbol, ...draft.favorites]
 
         break
       }

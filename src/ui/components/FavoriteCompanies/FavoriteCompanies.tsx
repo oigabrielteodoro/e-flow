@@ -1,12 +1,17 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 
-import { ICON_CARET_DOWN, ICON_STAR } from 'assets'
-
-// import { Company } from 'ui'
+import { Company } from 'ui'
+import { ApplicationState } from 'client'
+import { ICON_CARET_DOWN, ICON_STAR, ICON_TRASH } from 'assets'
 
 import * as S from './FavoriteCompanies.styled'
 
 export function FavoriteCompanies() {
+  const favorites = useSelector<ApplicationState, string[]>(
+    (state) => state.companies.favorites,
+  )
+
   return (
     <S.Container>
       <header>
@@ -29,12 +34,14 @@ export function FavoriteCompanies() {
         </h1>
 
         <ul>
-          {/* <S.CompanyItem>
-            <Company disableFavorite />
-            <button>
-              <img src={ICON_TRASH} alt='Icon Trash' />
-            </button>
-          </S.CompanyItem> */}
+          {favorites.map((company) => (
+            <S.CompanyItem key={company}>
+              <Company disableFavorite symbol={company} />
+              <button>
+                <img src={ICON_TRASH} alt='Icon Trash' />
+              </button>
+            </S.CompanyItem>
+          ))}
         </ul>
       </S.CompaniesArea>
     </S.Container>

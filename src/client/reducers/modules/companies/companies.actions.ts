@@ -21,3 +21,17 @@ export const getCompanyFailure = (error: string) => ({
     error,
   },
 })
+
+export const addFavoriteCompany = (symbol: string) => ({
+  type: ActionTypes.addFavoriteCompany,
+  payload: {
+    symbol,
+  },
+})
+
+export const removeFavoriteCompany = (symbol: string) => ({
+  type: ActionTypes.removeFavoriteCompany,
+  payload: {
+    symbol,
+  },
+})
