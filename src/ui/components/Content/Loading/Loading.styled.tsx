@@ -19,7 +19,7 @@ export const Container = styled.div`
   height: 30.4rem;
 
   strong {
-    margin-top: 3rem;
+    margin-top: 2rem;
     font-weight: 500;
     color: ${theme.colors.gray[500]};
   }
@@ -31,7 +31,7 @@ export const Container = styled.div`
     color: ${theme.colors.gray[500]};
   }
 
-  svg {
+  img {
     animation: ${rotate} 1s infinite;
   }
 `

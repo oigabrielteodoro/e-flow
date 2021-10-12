@@ -32,16 +32,19 @@ export function useContent() {
 
   const { data, isLoading } = useQuery({
     queryKey: `/stock/${symbol}/chart`,
-    queryFn: () => api.get<CompanyHistoryPriceRaw>(`/stock/${symbol}/chart`),
+    queryFn: () =>
+      api
+        .get<CompanyHistoryPriceRaw>(`/stock/${symbol}/chart`)
+        .then((response) => response.data),
   })
 
   useEffect(() => {
     if (data) {
       pipe(
-        data.data,
+        data,
         companyHistoryPriceRaw.decode,
         map(() => {
-          setHistory(data.data.map(normalizeCompanyPrice))
+          setHistory(data.map(normalizeCompanyPrice))
         }),
         mapLeft(() => {
           toast.error('Os dados devolvidos da requisição estão inválidos!')
