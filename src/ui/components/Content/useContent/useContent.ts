@@ -34,7 +34,9 @@ export function useContent() {
     queryKey: `/stock/${symbol}/chart`,
     queryFn: () =>
       api
-        .get<CompanyPriceHistoryRaw>(`/stock/${symbol}/chart`)
+        .get<CompanyPriceHistoryRaw>('/chart', {
+          params: { symbol },
+        })
         .then((response) => response.data),
     onSuccess: (data) =>
       pipe(

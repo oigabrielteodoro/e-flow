@@ -11,7 +11,7 @@ import { companyRawMocked } from '__mocks__'
 import { Company } from './Company'
 
 server.use(
-  rest.get(`${API_URL}/stock/msft/quote`, (_, response, context) =>
+  rest.get(`${API_URL}/quote`, (_, response, context) =>
     response(
       context.status(200),
       context.json(companyRawMocked('Microsoft Corporation', 'MSFT')),
@@ -61,7 +61,7 @@ describe('<Company />', () => {
 
   it('should render error when response data is invalid', async () => {
     server.use(
-      rest.get(`${API_URL}/stock/msft/quote`, (_, response, context) =>
+      rest.get(`${API_URL}/quote`, (_, response, context) =>
         response(context.status(200), context.json({})),
       ),
     )

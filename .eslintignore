@@ -1,2 +1,3 @@
 !.storybook
 !src/setupTests.ts
+!src/public
