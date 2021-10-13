@@ -31,7 +31,7 @@ export function useContent() {
   const symbol = isSome(company) ? company.value.symbol : ''
 
   const { isLoading } = useQuery({
-    queryKey: `/stock/${symbol}/chart`,
+    queryKey: `${symbol}/chart`,
     queryFn: () =>
       api
         .get<CompanyPriceHistoryRaw>('/chart', {

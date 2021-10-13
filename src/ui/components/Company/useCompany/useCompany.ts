@@ -28,7 +28,7 @@ export function useCompany(symbol: string) {
   )
 
   const { isLoading } = useQuery<CompanyRaw>({
-    queryKey: `/stock/${symbol}/quote`,
+    queryKey: `${symbol}/quote`,
     queryFn: () =>
       api
         .get('quote', { params: { symbol } })
