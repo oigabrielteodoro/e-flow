@@ -17,7 +17,7 @@ export const Container = styled.aside`
 
     span {
       color: ${theme.colors.blue[500]};
-      font-weight: 500;
+      font-weight: ${theme.font.weights.medium};
     }
 
     button {
@@ -41,7 +41,7 @@ export const CompaniesArea = styled.section`
 
   h1 {
     display: inline-flex;
-    font-weight: 500;
+    font-weight: ${theme.font.weights.medium};
     font-size: ${theme.font.sizes.subtitle};
 
     img {
@@ -89,7 +89,7 @@ export const ModalBody = styled.main`
 
   h1 {
     max-width: 23rem;
-    font-weight: 500;
+    font-weight: ${theme.font.weights.medium};
     margin: 4rem 0 1.6rem;
   }
 
@@ -98,7 +98,7 @@ export const ModalBody = styled.main`
     margin-bottom: 2rem;
 
     strong {
-      font-weight: 500;
+      font-weight: ${theme.font.weights.medium};
     }
   }
 
@@ -111,7 +111,7 @@ export const ModalBody = styled.main`
     border-radius: ${theme.radius.input};
     color: ${theme.colors.white};
     transition: filter 0.2s;
-    font-weight: 500;
+    font-weight: ${theme.font.weights.medium};
     padding: 1.6rem;
     width: 100%;
 
@@ -125,7 +125,7 @@ export const ModalBody = styled.main`
     transition: opacity 0.2s;
     background: transparent;
     margin-top: 1.6rem;
-    font-weight: 500;
+    font-weight: ${theme.font.weights.medium};
 
     &:hover {
       opacity: 0.8;

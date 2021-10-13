@@ -18,7 +18,7 @@ export const Wrapper = styled.div`
     h1 {
       margin-left: 1.1rem;
       font-size: ${theme.font.sizes.title};
-      font-weight: 600;
+      font-weight: ${theme.font.weights.semibold};
     }
   }
 `

@@ -36,11 +36,11 @@ export const Container = styled.div<ContainerProps>`
 
     span {
       color: ${theme.colors.gray[900]};
-      font-weight: 500;
+      font-weight: ${theme.font.weights.medium};
 
       &:last-child {
         color: ${theme.colors.gray[500]};
-        font-weight: 400;
+        font-weight: ${theme.font.weights.normal};
       }
     }
   }
@@ -64,7 +64,7 @@ export const Container = styled.div<ContainerProps>`
     cursor: pointer;
 
     strong {
-      font-weight: 500;
+      font-weight: ${theme.font.weights.medium};
       margin-right: 0.8rem;
       color: ${theme.colors.red[500]};
 

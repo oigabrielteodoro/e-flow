@@ -40,7 +40,7 @@ export const AssetInfo = styled.div`
     align-items: flex-start;
 
     strong {
-      font-weight: 500;
+      font-weight: ${theme.font.weights.medium};
     }
 
     span {
@@ -60,13 +60,13 @@ export const AssetPricing = styled.div<AssetPricingProps>`
   }
 
   strong {
-    font-weight: 600;
+    font-weight: ${theme.font.weights.semibold};
   }
 
   span {
     margin-top: 0.8rem;
     color: ${theme.colors.red[500]};
-    font-weight: 500;
+    font-weight: ${theme.font.weights.medium};
 
     ${({ isUp }) =>
       isUp &&
