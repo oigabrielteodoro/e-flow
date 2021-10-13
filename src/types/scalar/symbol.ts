@@ -8,7 +8,7 @@ export type SymbolBrand = {
 export const symbolCodec = withMessage(
   t.brand(
     t.string,
-    (value): value is t.Branded<string, SymbolBrand> => value.length <= 4,
+    (value): value is t.Branded<string, SymbolBrand> => value.length <= 5,
     'Symbol',
   ),
   () => 'Invalid symbol',
