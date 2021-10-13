@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+
+import { toast } from 'react-toastify'
 import { useDispatch, useSelector } from 'react-redux'
 
 import { Company, Modal } from 'ui'
@@ -24,6 +26,8 @@ export function FavoriteCompanies() {
     if (!selectedCompany) return
 
     dispatch(removeFavoriteCompany(selectedCompany))
+
+    toast.success('Empresa removida dos favoritos!')
 
     handleClose()
   }
@@ -53,7 +57,10 @@ export function FavoriteCompanies() {
           {favorites.map((company) => (
             <S.CompanyItem key={company}>
               <Company disableFavorite symbol={company} />
-              <button onClick={() => setSelectedCompany(company)}>
+              <button
+                onClick={() => setSelectedCompany(company)}
+                aria-label='delete button'
+              >
                 <img src={ICON_TRASH} alt='Icon Trash' />
               </button>
             </S.CompanyItem>

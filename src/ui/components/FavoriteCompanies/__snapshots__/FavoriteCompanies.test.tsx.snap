@@ -1,7 +1,120 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<FavoriteCompanies /> should render correctly 1`] = `
-.c2 {
+.c6 {
+  -webkit-animation: ePEqAU 1.2s ease-in-out infinite;
+  animation: ePEqAU 1.2s ease-in-out infinite;
+  background-image: linear-gradient( 90deg,rgba(0,0,0,0),#fff,rgba(0,0,0,0) );
+  background-color: #b3b3b3;
+  background-size: 20rem 100%;
+  background-repeat: no-repeat;
+  border-radius: 0.313rem;
+  display: inline-block;
+  line-height: 1;
+  opacity: 0.1;
+  width: 3rem;
+  height: 1rem;
+}
+
+.c7 {
+  -webkit-animation: ePEqAU 1.2s ease-in-out infinite;
+  animation: ePEqAU 1.2s ease-in-out infinite;
+  background-image: linear-gradient( 90deg,rgba(0,0,0,0),#fff,rgba(0,0,0,0) );
+  background-color: #b3b3b3;
+  background-size: 20rem 100%;
+  background-repeat: no-repeat;
+  border-radius: 0.313rem;
+  display: inline-block;
+  line-height: 1;
+  opacity: 0.1;
+  width: 6rem;
+  height: 1rem;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1.6rem;
+  border-radius: 0.8rem;
+  background: #ffffff;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.c4:hover {
+  -webkit-transform: translateY(-0.5rem);
+  -ms-transform: translateY(-0.5rem);
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0.8rem 2rem -0.2rem rgba(43,37,63,0.1);
+}
+
+.c4 button {
+  background: transparent;
+  border: 0;
+}
+
+.c4 button + .logo {
+  margin-left: 1rem;
+}
+
+.c4 section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 1.2rem;
+  cursor: pointer;
+}
+
+.c4 section span {
+  color: #14171a;
+}
+
+.c4 section span:last-child {
+  color: #657786;
+}
+
+.c4 .c5 + .c5 {
+  margin-top: 0.5rem;
+}
+
+.c4 .logo {
+  width: 4rem;
+  height: 4rem;
+  border: 0.2rem solid #acacac;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.c4 .pricing {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.c4 .pricing strong {
+  font-weight: 500;
+  margin-right: 0.8rem;
+  color: #d64b45;
+}
+
+.c8 {
   background: rgba(20,23,26,0.4);
   position: fixed;
   top: 0;
@@ -29,7 +142,7 @@ exports[`<FavoriteCompanies /> should render correctly 1`] = `
   pointer-events: none;
 }
 
-.c3 {
+.c9 {
   min-width: 40rem;
   max-height: 70rem;
   border-radius: 0.8rem;
@@ -37,7 +150,7 @@ exports[`<FavoriteCompanies /> should render correctly 1`] = `
   box-shadow: 0 0.4rem 2.5rem rgba(0,0,0,0.1);
 }
 
-.c4 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -54,13 +167,13 @@ exports[`<FavoriteCompanies /> should render correctly 1`] = `
   padding: 1.6rem 1.6rem 0 0;
 }
 
-.c6 {
+.c12 {
   padding: 0 4rem 4rem;
   max-height: 60rem;
   overflow-y: auto;
 }
 
-.c5 {
+.c11 {
   border-radius: 0.8rem;
   color: #657786;
   cursor: pointer;
@@ -68,7 +181,7 @@ exports[`<FavoriteCompanies /> should render correctly 1`] = `
   background: transparent;
 }
 
-.c5:hover {
+.c11:hover {
   opacity: 0.7;
 }
 
@@ -136,7 +249,39 @@ exports[`<FavoriteCompanies /> should render correctly 1`] = `
   grid-gap: 3.2rem;
 }
 
-.c7 {
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 .c3 {
+  width: 100%;
+  box-shadow: 0 0.8rem 2rem -0.2rem rgba(43,37,63,0.1);
+}
+
+.c2 .c3 .pricing {
+  margin-left: auto;
+}
+
+.c2 > button {
+  margin-left: 0.8rem;
+  background: transparent;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  border: 0;
+}
+
+.c2 > button:hover {
+  opacity: 0.8;
+}
+
+.c13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -151,26 +296,26 @@ exports[`<FavoriteCompanies /> should render correctly 1`] = `
   text-align: center;
 }
 
-.c7 h1 {
+.c13 h1 {
   max-width: 23rem;
   font-weight: 500;
   margin: 4rem 0 1.6rem;
 }
 
-.c7 p {
+.c13 p {
   max-width: 23rem;
   margin-bottom: 2rem;
 }
 
-.c7 p strong {
+.c13 p strong {
   font-weight: 500;
 }
 
-.c7 button {
+.c13 button {
   border: 0;
 }
 
-.c7 .confirm {
+.c13 .confirm {
   background: #e33f49;
   color: #ffffff;
   -webkit-transition: filter 0.2s;
@@ -181,12 +326,12 @@ exports[`<FavoriteCompanies /> should render correctly 1`] = `
   width: 100%;
 }
 
-.c7 .confirm:hover {
+.c13 .confirm:hover {
   -webkit-filter: brightness(0.9);
   filter: brightness(0.9);
 }
 
-.c7 .cancel {
+.c13 .cancel {
   color: #657786;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
@@ -195,7 +340,7 @@ exports[`<FavoriteCompanies /> should render correctly 1`] = `
   font-weight: 500;
 }
 
-.c7 .cancel:hover {
+.c13 .cancel:hover {
   opacity: 0.8;
 }
 
@@ -228,20 +373,65 @@ exports[`<FavoriteCompanies /> should render correctly 1`] = `
       />
       Empresas favoritas
     </h1>
-    <ul />
+    <ul>
+      <li
+        class="c2"
+      >
+        <div
+          class="c3 c4"
+        >
+          <img
+            alt="MSFT"
+            class="logo"
+            src="https://storage.googleapis.com/iex/api/logos/MSFT.png"
+          />
+          <section>
+            <div
+              class="c5 c6"
+              color="#fff"
+              height="1rem"
+              width="3rem"
+            />
+            <div
+              class="c5 c7"
+              color="#fff"
+              height="1rem"
+              width="6rem"
+            />
+          </section>
+          <div
+            class="pricing"
+          >
+            <strong />
+            <img
+              alt="Icon Pricing"
+              src="/img/icon-down-pricing.svg"
+            />
+          </div>
+        </div>
+        <button
+          aria-label="delete button"
+        >
+          <img
+            alt="Icon Trash"
+            src="/img/icon-trash.svg"
+          />
+        </button>
+      </li>
+    </ul>
   </section>
   <div
-    class="c2"
+    class="c8"
   >
     <div
-      class="c3"
+      class="c9"
     >
       <div
-        class="c4"
+        class="c10"
       >
         <button
           aria-label="close button"
-          class="c5"
+          class="c11"
         >
           <img
             alt="Icon Close"
@@ -250,10 +440,10 @@ exports[`<FavoriteCompanies /> should render correctly 1`] = `
         </button>
       </div>
       <div
-        class="c6"
+        class="c12"
       >
         <main
-          class="c7"
+          class="c13"
         >
           <img
             alt="Icon Alert"
