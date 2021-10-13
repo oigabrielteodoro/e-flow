@@ -27,7 +27,7 @@ export function useCompany(symbol: string) {
     (state) => state.companies.favorites,
   )
 
-  const { isLoading } = useQuery<CompanyRaw>({
+  const { isLoading, isFetchedAfterMount } = useQuery<CompanyRaw>({
     queryKey: `${symbol}/quote`,
     queryFn: () =>
       api
@@ -64,7 +64,7 @@ export function useCompany(symbol: string) {
   return {
     company,
     logo_url,
-    isLoading,
+    isLoading: isLoading || !isFetchedAfterMount,
     isFavorite,
     isPricingUp,
     favoriteCompany,
