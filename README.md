@@ -16,14 +16,17 @@
 ## Run with Docker
 
 **Prerequisites**
+
 - You need to have [docker-compose](https://docs.docker.com/compose/install/) installed.
 
 **Commands**
+
 - Run `docker-compose up`. You can force rebuild the image using `docker-compose up --build`
 
 ## Run without Docker
 
 **Commands**
+
 - Run `yarn` or `npm install`.
 - Run `yarn dev` or `npm run dev`
 
