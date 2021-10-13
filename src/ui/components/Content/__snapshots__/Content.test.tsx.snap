@@ -54,8 +54,8 @@ exports[`<Content /> should render correctly 1`] = `
 }
 
 .c4 button img {
-  width: 1.6rem;
-  height: 1.6rem;
+  max-width: 1.6rem;
+  max-height: 1.6rem;
 }
 
 .c5 {

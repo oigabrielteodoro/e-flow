@@ -31,8 +31,8 @@ export const Header = styled.header`
     }
 
     img {
-      width: 1.6rem;
-      height: 1.6rem;
+      max-width: 1.6rem;
+      max-height: 1.6rem;
     }
   }
 `

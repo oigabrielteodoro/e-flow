@@ -3,11 +3,11 @@ import { useDispatch, useSelector } from 'react-redux'
 
 import { isSome } from 'fp-ts/Option'
 
-import { RecentCompanies } from 'ui'
 import { ICON_DASHBOARD, ICON_SEARCH } from 'assets'
 import { ApplicationState, CompaniesState, getCompanyRequest } from 'client'
 
 import { Analytics } from './Analytics'
+import { RecentCompanies } from './RecentCompanies'
 
 import * as S from './Content.styled'
 
