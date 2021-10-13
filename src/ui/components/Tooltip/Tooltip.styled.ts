@@ -1,21 +1,12 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { theme } from 'ui/styles'
 
-export const Container = styled.div`
-  position: relative;
+type ContainerProps = {
+  variant: 'default' | 'chart'
+}
 
-  &:hover span {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  > span {
-    color: ${theme.colors.white};
-    background: ${theme.colors.blue[500]};
-    border-radius: 0.4rem;
-    padding: 0.5rem 1.2rem;
-    white-space: nowrap;
-    transition: all 0.5s;
+const modifiers = {
+  default: css`
     opacity: 0;
     visibility: hidden;
     position: absolute;
@@ -35,5 +26,26 @@ export const Container = styled.div`
       transform: translateX(-50%);
       bottom: -0.9rem;
     }
+  `,
+  chart: css``,
+}
+
+export const Container = styled.div<ContainerProps>`
+  position: relative;
+
+  &:hover span {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  > span {
+    color: ${theme.colors.white};
+    background: ${theme.colors.blue[500]};
+    border-radius: 0.4rem;
+    padding: 0.5rem 1.2rem;
+    white-space: nowrap;
+    transition: all 0.5s;
+
+    ${({ variant }) => modifiers[variant]}
   }
 `
