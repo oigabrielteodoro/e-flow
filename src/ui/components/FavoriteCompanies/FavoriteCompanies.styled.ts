@@ -42,7 +42,7 @@ export const CompaniesArea = styled.section`
   h1 {
     display: inline-flex;
     font-weight: 500;
-    font-size: 1.8rem;
+    font-size: ${theme.font.sizes.subtitle};
 
     img {
       margin-right: 1rem;

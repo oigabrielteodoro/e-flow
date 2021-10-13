@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import { theme } from './theme'
 
 export const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -61,8 +62,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: 'Graphik', 'Rubik', sans-serif;
-    font-size: 1.6rem;
+    font-family: ${theme.font.family}, 'Rubik', sans-serif;
+    font-size: ${theme.font.sizes.paragraph};
   }
 
   input,

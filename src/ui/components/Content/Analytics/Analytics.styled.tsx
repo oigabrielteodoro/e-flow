@@ -45,7 +45,7 @@ export const AssetInfo = styled.div`
 
     span {
       color: ${theme.colors.gray[300]};
-      font-size: 1.4rem;
+      font-size: ${theme.font.sizes.small};
     }
   }
 `

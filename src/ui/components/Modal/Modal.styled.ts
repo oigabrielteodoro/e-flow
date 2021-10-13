@@ -27,7 +27,7 @@ export const Container = styled.div<ModalProps>`
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1;
+  z-index: ${theme.layers.modal};
   transition: opacity 0.2s;
   backdrop-filter: blur(1px);
 
