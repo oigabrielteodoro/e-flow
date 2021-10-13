@@ -9,8 +9,8 @@ type AssetPricingProps = {
 export const Container = styled.section`
   margin-top: 2.4rem;
   padding: 2.3rem;
-  border-radius: 0.8rem;
   background: ${theme.colors.white};
+  border-radius: ${theme.radius.card};
   box-shadow: 0 0.5rem 1.2rem rgba(222, 222, 231, 0.4);
 `
 

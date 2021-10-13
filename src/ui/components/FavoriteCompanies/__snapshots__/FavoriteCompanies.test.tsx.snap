@@ -176,7 +176,6 @@ exports[`<FavoriteCompanies /> should render correctly 1`] = `
 }
 
 .c11 {
-  border-radius: 0.8rem;
   color: #657786;
   cursor: pointer;
   border: 0;
@@ -319,10 +318,10 @@ exports[`<FavoriteCompanies /> should render correctly 1`] = `
 
 .c13 .confirm {
   background: #e33f49;
+  border-radius: 0.8rem;
   color: #ffffff;
   -webkit-transition: filter 0.2s;
   transition: filter 0.2s;
-  border-radius: 0.5rem;
   font-weight: 500;
   padding: 1.6rem;
   width: 100%;

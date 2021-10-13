@@ -40,7 +40,7 @@ export const Container = styled.div<ModalProps>`
 export const Dialog = styled.div`
   min-width: 40rem;
   max-height: 70rem;
-  border-radius: 0.8rem;
+  border-radius: ${theme.radius.card};
   background: ${theme.colors.white};
   box-shadow: 0 0.4rem 2.5rem rgba(0, 0, 0, 0.1);
 `
@@ -60,7 +60,6 @@ export const Body = styled.div`
 `
 
 export const Close = styled.button`
-  border-radius: 0.8rem;
   color: ${theme.colors.gray[500]};
   cursor: pointer;
 

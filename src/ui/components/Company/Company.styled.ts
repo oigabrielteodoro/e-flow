@@ -10,7 +10,7 @@ export const Container = styled.div<ContainerProps>`
   display: flex;
   align-items: center;
   padding: 1.6rem;
-  border-radius: 0.8rem;
+  border-radius: ${theme.radius.card};
   background: ${theme.colors.white};
   transition: all 0.2s;
 
@@ -53,7 +53,7 @@ export const Container = styled.div<ContainerProps>`
     width: 4rem;
     height: 4rem;
     border: 0.2rem solid ${theme.colors.gray[300]};
-    border-radius: 50%;
+    border-radius: ${theme.radius.rounded};
     cursor: pointer;
   }
 

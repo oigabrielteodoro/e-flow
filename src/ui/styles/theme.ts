@@ -1,4 +1,10 @@
 export const theme = {
+  radius: {
+    input: '0.8rem',
+    card: '0.8rem',
+    background: '2.4rem',
+    rounded: '50%',
+  },
   colors: {
     white: '#ffffff',
     blue: {

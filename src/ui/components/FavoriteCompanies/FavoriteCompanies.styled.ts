@@ -31,7 +31,7 @@ export const Container = styled.aside`
       width: 3.2rem;
       height: 3.2rem;
       object-fit: cover;
-      border-radius: 50%;
+      border-radius: ${theme.radius.rounded};
     }
   }
 `
@@ -108,9 +108,9 @@ export const ModalBody = styled.main`
 
   .confirm {
     background: ${theme.colors.red[400]};
+    border-radius: ${theme.radius.input};
     color: ${theme.colors.white};
     transition: filter 0.2s;
-    border-radius: 0.5rem;
     font-weight: 500;
     padding: 1.6rem;
     width: 100%;
