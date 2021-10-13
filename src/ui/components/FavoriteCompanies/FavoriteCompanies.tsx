@@ -1,12 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-import { ICON_CARET_DOWN, ICON_STAR, ICON_TRASH } from 'assets'
+import { toast } from 'react-toastify'
+import { useDispatch, useSelector } from 'react-redux'
 
-import { Company } from 'ui'
+import { Company, Modal } from 'ui'
+import { ApplicationState, removeFavoriteCompany } from 'client'
+import { ICON_ALERT, ICON_CARET_DOWN, ICON_STAR, ICON_TRASH } from 'assets'
 
 import * as S from './FavoriteCompanies.styled'
 
 export function FavoriteCompanies() {
+  const dispatch = useDispatch()
+
+  const favorites = useSelector<ApplicationState, string[]>(
+    (state) => state.companies.favorites,
+  )
+
+  const [selectedCompany, setSelectedCompany] = useState<string>()
+
+  function handleClose() {
+    setSelectedCompany(undefined)
+  }
+
+  function handleRemoveFavorite() {
+    if (!selectedCompany) return
+
+    dispatch(removeFavoriteCompany(selectedCompany))
+
+    toast.success('Empresa removida dos favoritos!')
+
+    handleClose()
+  }
+
   return (
     <S.Container>
       <header>
@@ -29,26 +54,36 @@ export function FavoriteCompanies() {
         </h1>
 
         <ul>
-          <S.CompanyItem>
-            <Company disableFavorite />
-            <button>
-              <img src={ICON_TRASH} alt='Icon Trash' />
-            </button>
-          </S.CompanyItem>
-          <S.CompanyItem>
-            <Company disableFavorite />
-            <button>
-              <img src={ICON_TRASH} alt='Icon Trash' />
-            </button>
-          </S.CompanyItem>
-          <S.CompanyItem>
-            <Company disableFavorite />
-            <button>
-              <img src={ICON_TRASH} alt='Icon Trash' />
-            </button>
-          </S.CompanyItem>
+          {favorites.map((company) => (
+            <S.CompanyItem key={company}>
+              <Company disableFavorite symbol={company} />
+              <button
+                onClick={() => setSelectedCompany(company)}
+                aria-label='delete button'
+              >
+                <img src={ICON_TRASH} alt='Icon Trash' />
+              </button>
+            </S.CompanyItem>
+          ))}
         </ul>
       </S.CompaniesArea>
+
+      <Modal isOpen={!!selectedCompany} onClose={handleClose}>
+        <S.ModalBody>
+          <img src={ICON_ALERT} alt='Icon Alert' />
+          <h1>Tem certeza que deseja excluir essa empresa?</h1>
+          <p>
+            Você tem certeza que deseja excluir a empresa{' '}
+            <strong>{selectedCompany}</strong> de suas empresas favoritas?
+          </p>
+          <button className='confirm' onClick={handleRemoveFavorite}>
+            Sim, excluir!
+          </button>
+          <button className='cancel' onClick={handleClose}>
+            Cancelar
+          </button>
+        </S.ModalBody>
+      </Modal>
     </S.Container>
   )
 }

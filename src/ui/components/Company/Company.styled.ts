@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components'
 import { theme } from 'ui/styles'
+import { Container as ShimmerEffectContainer } from 'ui/components/ShimmerEffect/ShimmerEffect.styled'
 
 type ContainerProps = {
   isPricingUp?: boolean
@@ -12,7 +13,6 @@ export const Container = styled.div<ContainerProps>`
   border-radius: 0.8rem;
   background: ${theme.colors.white};
   transition: all 0.2s;
-  cursor: pointer;
 
   &:hover {
     transform: translateY(-0.5rem);
@@ -24,7 +24,7 @@ export const Container = styled.div<ContainerProps>`
     border: 0;
 
     & + .logo {
-      margin-left: 1.6rem;
+      margin-left: 1rem;
     }
   }
 
@@ -32,6 +32,7 @@ export const Container = styled.div<ContainerProps>`
     display: flex;
     flex-direction: column;
     margin-left: 1.2rem;
+    cursor: pointer;
 
     span {
       color: ${theme.colors.gray[900]};
@@ -42,10 +43,23 @@ export const Container = styled.div<ContainerProps>`
     }
   }
 
+  ${ShimmerEffectContainer} + ${ShimmerEffectContainer} {
+    margin-top: 0.5rem;
+  }
+
+  .logo {
+    width: 4rem;
+    height: 4rem;
+    border: 0.2rem solid ${theme.colors.gray[300]};
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
   .pricing {
     margin-left: auto;
     display: flex;
     align-items: center;
+    cursor: pointer;
 
     strong {
       font-weight: 500;

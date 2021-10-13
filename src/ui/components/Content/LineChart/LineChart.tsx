@@ -8,15 +8,24 @@ import {
   Area,
   Line,
 } from 'recharts'
+
 import { v4 } from 'uuid'
 
 import { theme, Tooltip } from 'ui'
 
 import { Dot } from '../Dot'
+import { Loading } from '../Loading'
+import { useContent } from '../useContent'
 
 export default function LineChart() {
+  const { history, isLoading } = useContent()
+
+  if (isLoading) {
+    return <Loading />
+  }
+
   return (
-    <ComposedChart height={304} width={865} data={data} margin={{ top: 30 }}>
+    <ComposedChart height={304} width={865} data={history} margin={{ top: 30 }}>
       <defs>
         <linearGradient id='gradient' x1='100%' y1='0%' x2='0%' y2='100%'>
           <stop
@@ -37,12 +46,11 @@ export default function LineChart() {
         axisLine={false}
       />
       <XAxis
-        dataKey='hour'
+        dataKey='updated_at'
         tick={{ color: theme.colors.gray[500], fontSize: 11 }}
         tickMargin={10}
         tickLine={false}
         axisLine={false}
-        textAnchor='left'
       />
       <RechartTooltip
         content={({ payload, active }) => {
@@ -71,45 +79,3 @@ export default function LineChart() {
     </ComposedChart>
   )
 }
-const data = [
-  {
-    pricing: 0,
-    hour: '09:00',
-  },
-  {
-    pricing: 600,
-    hour: '10:00',
-  },
-  {
-    pricing: 920,
-    hour: '10:30',
-  },
-  {
-    pricing: 800,
-    hour: '11:00',
-  },
-  {
-    pricing: 900,
-    hour: '12:00',
-  },
-  {
-    pricing: 10,
-    hour: '13:00',
-  },
-  {
-    pricing: 210,
-    hour: '14:00',
-  },
-  {
-    pricing: 150,
-    hour: '15:00',
-  },
-  {
-    pricing: 300,
-    hour: '16:30',
-  },
-  {
-    pricing: 220,
-    hour: '17:00',
-  },
-]

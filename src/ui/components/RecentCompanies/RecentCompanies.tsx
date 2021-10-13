@@ -1,9 +1,13 @@
 import React, { useCallback, useRef } from 'react'
 import Carousel, { ResponsiveType } from 'react-multi-carousel'
+import { useSelector } from 'react-redux'
 
 import { ICON_COMPANY, ICON_ARROW_LEFT, ICON_ARROW_RIGHT } from 'assets'
 
 import { Company } from 'ui'
+
+import { ApplicationState } from 'client'
+import { CompanyNormalized } from 'types'
 
 import * as S from './RecentCompanies.styled'
 
@@ -18,8 +22,12 @@ const responsive: ResponsiveType = {
 }
 
 export function RecentCompanies() {
-  const companiesList = useRef<Carousel>(null)
   const page = useRef<number>(0)
+  const companiesList = useRef<Carousel>(null)
+
+  const companies = useSelector<ApplicationState, CompanyNormalized[]>(
+    (state) => state.companies.storaged,
+  )
 
   const handleNext = useCallback(() => {
     companiesList.current?.next(page.current + 1)
@@ -54,14 +62,12 @@ export function RecentCompanies() {
         arrows={false}
         responsive={responsive}
         deviceType='desktop'
+        additionalTransfrom={-16}
         ssr
       >
-        <Company />
-        <Company />
-        <Company />
-        <Company />
-        <Company />
-        <Company />
+        {companies.map((company) => (
+          <Company key={company.symbol} symbol={company.symbol} />
+        ))}
       </S.CompaniesList>
     </S.Container>
   )

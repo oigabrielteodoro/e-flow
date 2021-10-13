@@ -1,14 +1,43 @@
-import React from 'react'
+import React, { FormEvent, useCallback, useEffect, useRef } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 
-import { ICON_DASHBOARD, ICON_SEARCH } from 'assets'
+import { isSome } from 'fp-ts/Option'
 
 import { RecentCompanies } from 'ui'
+import { ICON_DASHBOARD, ICON_SEARCH } from 'assets'
+import { ApplicationState, CompaniesState, getCompanyRequest } from 'client'
 
 import { Analytics } from './Analytics'
 
 import * as S from './Content.styled'
 
 export function Content() {
+  const dispatch = useDispatch()
+  const inputRef = useRef<HTMLInputElement>(null)
+
+  const { company, loading } = useSelector<ApplicationState, CompaniesState>(
+    (state) => state.companies,
+  )
+
+  useEffect(() => {
+    if (!isSome(company) && !loading) {
+      dispatch(getCompanyRequest('MSFT'))
+    }
+  }, [loading, company, dispatch])
+
+  const handleSubmit = useCallback(
+    (event: FormEvent<HTMLFormElement>) => {
+      event.preventDefault()
+
+      if (!inputRef.current) return
+
+      dispatch(getCompanyRequest(inputRef.current.value))
+
+      event.currentTarget.reset()
+    },
+    [dispatch],
+  )
+
   return (
     <S.Wrapper>
       <header>
@@ -17,9 +46,9 @@ export function Content() {
       </header>
 
       <S.Container>
-        <S.SearchArea>
-          <input placeholder='Buscar empresa' />
-          <button>
+        <S.SearchArea onSubmit={handleSubmit}>
+          <input ref={inputRef} placeholder='Buscar empresa' />
+          <button type='submit' aria-label='search button'>
             <img src={ICON_SEARCH} alt='Icon Search' />
           </button>
         </S.SearchArea>

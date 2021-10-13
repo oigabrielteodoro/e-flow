@@ -41,7 +41,7 @@ export const CompaniesList = styled(Carousel)`
   max-width: 90.5rem;
   margin-top: 1.6rem;
 
-  li + li {
+  li {
     padding-left: 1.6rem;
   }
 `

@@ -1,33 +1,68 @@
 import React, { ElementType } from 'react'
 
-import { ICON_STAR_OUTLINE, ICON_UP_PRICING, LOGO_FACEBOOK } from 'assets'
+import { ShimmerEffect } from 'ui'
+
+import {
+  ICON_DOWN_PRICING,
+  ICON_STAR,
+  ICON_STAR_OUTLINE,
+  ICON_UP_PRICING,
+} from 'assets'
+
+import { useCompany } from './useCompany'
 
 import * as S from './Company.styled'
 
 type Props = {
+  symbol: string
   disableFavorite?: boolean
   as?: ElementType
 }
 
-export function Company({ as, disableFavorite = false }: Props) {
+export function Company({ symbol, as, disableFavorite = false }: Props) {
+  const {
+    company,
+    logo_url,
+    isLoading,
+    isFavorite,
+    isPricingUp,
+    favoriteCompany,
+    inspectCompany,
+  } = useCompany(symbol)
+
   return (
-    <S.Container as={as} isPricingUp>
+    <S.Container as={as} isPricingUp={isPricingUp}>
       {!disableFavorite && (
-        <button>
-          <img src={ICON_STAR_OUTLINE} alt='Icon Star' />
+        <button onClick={favoriteCompany}>
+          <img
+            src={isFavorite ? ICON_STAR : ICON_STAR_OUTLINE}
+            alt={isFavorite ? 'Icon Star' : 'Icon Star Outline'}
+          />
         </button>
       )}
 
-      <img className='logo' src={LOGO_FACEBOOK} alt='Facebook' />
+      <img
+        className='logo'
+        src={logo_url}
+        alt={symbol}
+        onClick={inspectCompany}
+      />
 
-      <section>
-        <span>FB</span>
-        <span>Facebook</span>
+      <section onClick={inspectCompany}>
+        <ShimmerEffect isLoading={isLoading} width='3rem' height='1rem'>
+          <span>{company?.symbol}</span>
+        </ShimmerEffect>
+        <ShimmerEffect isLoading={isLoading} width='6rem' height='1rem'>
+          <span>{company?.company_name.split(' ')[0]}</span>
+        </ShimmerEffect>
       </section>
 
-      <div className='pricing'>
-        <strong>+2.3%</strong>
-        <img src={ICON_UP_PRICING} alt='Icon Up Pricing' />
+      <div className='pricing' onClick={inspectCompany}>
+        <strong>{company?.change_percent}</strong>
+        <img
+          src={isPricingUp ? ICON_UP_PRICING : ICON_DOWN_PRICING}
+          alt='Icon Pricing'
+        />
       </div>
     </S.Container>
   )

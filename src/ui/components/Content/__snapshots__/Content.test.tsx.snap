@@ -1,48 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Content /> should render correctly 1`] = `
-.c6 {
-  position: relative;
-}
-
-.c6:hover span {
-  opacity: 1;
-  visibility: visible;
-}
-
-.c6 > span {
-  color: #ffffff;
-  background: #0047BB;
-  border-radius: 0.4rem;
-  padding: 0.5rem 1.2rem;
-  white-space: nowrap;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  top: calc(-100% + -1.7rem);
-  z-index: 1;
-}
-
-.c6 > span::before {
-  content: '';
-  position: absolute;
-  border-style: solid;
-  border-width: 0.9rem 0.9rem 0 0.9rem;
-  border-color: #0047BB transparent transparent transparent;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  bottom: -0.9rem;
-}
-
-.c8 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -51,140 +10,6 @@ exports[`<Content /> should render correctly 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   margin-top: 4rem;
-}
-
-.c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.c9 section {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c9 button {
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
-  background: transparent;
-  border: 0;
-}
-
-.c9 button:hover {
-  opacity: 0.5;
-}
-
-.c9 button + button {
-  margin-left: 2rem;
-}
-
-.c9 button img {
-  width: 1.6rem;
-  height: 1.6rem;
-}
-
-.c10 {
-  max-width: 90.5rem;
-  margin-top: 1.6rem;
-}
-
-.c10 li + li {
-  padding-left: 1.6rem;
-}
-
-.c11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 1.6rem;
-  border-radius: 0.8rem;
-  background: #ffffff;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  cursor: pointer;
-}
-
-.c11:hover {
-  -webkit-transform: translateY(-0.5rem);
-  -ms-transform: translateY(-0.5rem);
-  transform: translateY(-0.5rem);
-  box-shadow: 0 0.8rem 2rem -0.2rem rgba(43,37,63,0.1);
-}
-
-.c11 button {
-  background: transparent;
-  border: 0;
-}
-
-.c11 button + .logo {
-  margin-left: 1.6rem;
-}
-
-.c11 section {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-left: 1.2rem;
-}
-
-.c11 section span {
-  color: #14171a;
-}
-
-.c11 section span:last-child {
-  color: #657786;
-}
-
-.c11 .pricing {
-  margin-left: auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c11 .pricing strong {
-  font-weight: 500;
-  margin-right: 0.8rem;
-  color: #d64b45;
-  color: #79c300;
-}
-
-.c3 {
-  margin-top: 2.4rem;
-  padding: 3rem 2.3rem;
-  border-radius: 0.8rem;
-  background: #ffffff;
-  box-shadow: 0 0.5rem 1.2rem rgba(222,222,231,0.4);
 }
 
 .c4 {
@@ -202,7 +27,7 @@ exports[`<Content /> should render correctly 1`] = `
   justify-content: space-between;
 }
 
-.c5 {
+.c4 section {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -213,57 +38,33 @@ exports[`<Content /> should render correctly 1`] = `
   align-items: center;
 }
 
-.c5 button {
+.c4 button {
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
   background: transparent;
   border: 0;
 }
 
-.c5 section {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 1.2rem;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
+.c4 button:hover {
+  opacity: 0.5;
 }
 
-.c5 section strong {
-  font-weight: 500;
+.c4 button + button {
+  margin-left: 2rem;
 }
 
-.c5 section span {
-  color: #acacac;
-  font-size: 1.4rem;
+.c4 button img {
+  width: 1.6rem;
+  height: 1.6rem;
 }
 
-.c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
+.c5 {
+  max-width: 90.5rem;
+  margin-top: 1.6rem;
 }
 
-.c7 img {
-  margin-right: 0.8rem;
-}
-
-.c7 span {
-  margin-top: 0.8rem;
-  color: #d64b45;
-  font-weight: 500;
+.c5 li {
+  padding-left: 1.6rem;
 }
 
 .c0 {
@@ -326,6 +127,7 @@ exports[`<Content /> should render correctly 1`] = `
   border: 0.1rem solid #e1e0e7;
   border-right-color: transparent;
   padding: 0 1.6rem;
+  min-width: 32.4rem;
 }
 
 .c2 input::-webkit-input-placeholder {
@@ -376,73 +178,27 @@ exports[`<Content /> should render correctly 1`] = `
   <main
     class="c1"
   >
-    <div
+    <form
       class="c2"
     >
       <input
         placeholder="Buscar empresa"
       />
-      <button>
+      <button
+        aria-label="search button"
+        type="submit"
+      >
         <img
           alt="Icon Search"
           src="/img/icon-search.svg"
         />
       </button>
-    </div>
+    </form>
     <section
       class="c3"
     >
-      <div
-        class="c4"
-      >
-        <div
-          class="c5"
-        >
-          <div
-            class="c6"
-          >
-            <span>
-              Adicionar aos favoritos
-            </span>
-            <button>
-              <img
-                alt="Icon Star"
-                src="/img/icon-star-outline.svg"
-              />
-            </button>
-          </div>
-          <section>
-            <strong>
-              MSFT
-            </strong>
-            <span>
-              Microsoft
-            </span>
-          </section>
-        </div>
-        <div
-          class="c7"
-        >
-          <div>
-            <img
-              alt="Icon Down Pricing"
-              src="/img/icon-down-pricing.svg"
-            />
-            <strong>
-              $265,42
-            </strong>
-          </div>
-          <span>
-            $-0.09 (-0.03%)
-          </span>
-        </div>
-      </div>
-    </section>
-    <section
-      class="c8"
-    >
       <header
-        class="c9"
+        class="c4"
       >
         <section>
           <img
@@ -469,259 +225,12 @@ exports[`<Content /> should render correctly 1`] = `
         </nav>
       </header>
       <div
-        class="react-multi-carousel-list  c10"
+        class="react-multi-carousel-list  c5"
       >
         <ul
           class="react-multi-carousel-track "
-          style="transition: none; overflow: hidden; transform: translate3d(0px,0,0);"
-        >
-          <li
-            aria-hidden="false"
-            class="react-multi-carousel-item react-multi-carousel-item--active "
-            data-index="0"
-            style="flex: 1 0 33.3%; position: relative; width: auto;"
-          >
-            <div
-              class="c11"
-            >
-              <button>
-                <img
-                  alt="Icon Star"
-                  src="/img/icon-star-outline.svg"
-                />
-              </button>
-              <img
-                alt="Facebook"
-                class="logo"
-                src="/img/logo-facebook.svg"
-              />
-              <section>
-                <span>
-                  FB
-                </span>
-                <span>
-                  Facebook
-                </span>
-              </section>
-              <div
-                class="pricing"
-              >
-                <strong>
-                  +2.3%
-                </strong>
-                <img
-                  alt="Icon Up Pricing"
-                  src="/img/icon-up-pricing.svg"
-                />
-              </div>
-            </div>
-          </li>
-          <li
-            aria-hidden="false"
-            class="react-multi-carousel-item react-multi-carousel-item--active "
-            data-index="1"
-            style="flex: 1 0 33.3%; position: relative; width: auto;"
-          >
-            <div
-              class="c11"
-            >
-              <button>
-                <img
-                  alt="Icon Star"
-                  src="/img/icon-star-outline.svg"
-                />
-              </button>
-              <img
-                alt="Facebook"
-                class="logo"
-                src="/img/logo-facebook.svg"
-              />
-              <section>
-                <span>
-                  FB
-                </span>
-                <span>
-                  Facebook
-                </span>
-              </section>
-              <div
-                class="pricing"
-              >
-                <strong>
-                  +2.3%
-                </strong>
-                <img
-                  alt="Icon Up Pricing"
-                  src="/img/icon-up-pricing.svg"
-                />
-              </div>
-            </div>
-          </li>
-          <li
-            aria-hidden="false"
-            class="react-multi-carousel-item react-multi-carousel-item--active "
-            data-index="2"
-            style="flex: 1 0 33.3%; position: relative; width: auto;"
-          >
-            <div
-              class="c11"
-            >
-              <button>
-                <img
-                  alt="Icon Star"
-                  src="/img/icon-star-outline.svg"
-                />
-              </button>
-              <img
-                alt="Facebook"
-                class="logo"
-                src="/img/logo-facebook.svg"
-              />
-              <section>
-                <span>
-                  FB
-                </span>
-                <span>
-                  Facebook
-                </span>
-              </section>
-              <div
-                class="pricing"
-              >
-                <strong>
-                  +2.3%
-                </strong>
-                <img
-                  alt="Icon Up Pricing"
-                  src="/img/icon-up-pricing.svg"
-                />
-              </div>
-            </div>
-          </li>
-          <li
-            aria-hidden="true"
-            class="react-multi-carousel-item  "
-            data-index="3"
-            style="flex: 1 0 33.3%; position: relative; width: auto;"
-          >
-            <div
-              class="c11"
-            >
-              <button>
-                <img
-                  alt="Icon Star"
-                  src="/img/icon-star-outline.svg"
-                />
-              </button>
-              <img
-                alt="Facebook"
-                class="logo"
-                src="/img/logo-facebook.svg"
-              />
-              <section>
-                <span>
-                  FB
-                </span>
-                <span>
-                  Facebook
-                </span>
-              </section>
-              <div
-                class="pricing"
-              >
-                <strong>
-                  +2.3%
-                </strong>
-                <img
-                  alt="Icon Up Pricing"
-                  src="/img/icon-up-pricing.svg"
-                />
-              </div>
-            </div>
-          </li>
-          <li
-            aria-hidden="true"
-            class="react-multi-carousel-item  "
-            data-index="4"
-            style="flex: 1 0 33.3%; position: relative; width: auto;"
-          >
-            <div
-              class="c11"
-            >
-              <button>
-                <img
-                  alt="Icon Star"
-                  src="/img/icon-star-outline.svg"
-                />
-              </button>
-              <img
-                alt="Facebook"
-                class="logo"
-                src="/img/logo-facebook.svg"
-              />
-              <section>
-                <span>
-                  FB
-                </span>
-                <span>
-                  Facebook
-                </span>
-              </section>
-              <div
-                class="pricing"
-              >
-                <strong>
-                  +2.3%
-                </strong>
-                <img
-                  alt="Icon Up Pricing"
-                  src="/img/icon-up-pricing.svg"
-                />
-              </div>
-            </div>
-          </li>
-          <li
-            aria-hidden="true"
-            class="react-multi-carousel-item  "
-            data-index="5"
-            style="flex: 1 0 33.3%; position: relative; width: auto;"
-          >
-            <div
-              class="c11"
-            >
-              <button>
-                <img
-                  alt="Icon Star"
-                  src="/img/icon-star-outline.svg"
-                />
-              </button>
-              <img
-                alt="Facebook"
-                class="logo"
-                src="/img/logo-facebook.svg"
-              />
-              <section>
-                <span>
-                  FB
-                </span>
-                <span>
-                  Facebook
-                </span>
-              </section>
-              <div
-                class="pricing"
-              >
-                <strong>
-                  +2.3%
-                </strong>
-                <img
-                  alt="Icon Up Pricing"
-                  src="/img/icon-up-pricing.svg"
-                />
-              </div>
-            </div>
-          </li>
-        </ul>
+          style="transition: none; overflow: hidden; transform: translate3d(-16px,0,0);"
+        />
       </div>
     </section>
   </main>

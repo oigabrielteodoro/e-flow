@@ -1,9 +1,14 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { theme } from 'ui/styles'
+import { Container as ShimmerEffectContainer } from 'ui/components/ShimmerEffect/ShimmerEffect.styled'
+
+type AssetPricingProps = {
+  isUp?: boolean
+}
 
 export const Container = styled.section`
   margin-top: 2.4rem;
-  padding: 3rem 2.3rem;
+  padding: 2.3rem;
   border-radius: 0.8rem;
   background: ${theme.colors.white};
   box-shadow: 0 0.5rem 1.2rem rgba(222, 222, 231, 0.4);
@@ -13,6 +18,10 @@ export const AnalyticsAssetArea = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  ${ShimmerEffectContainer} + ${ShimmerEffectContainer} {
+    margin-top: 0.8rem;
+  }
 `
 
 export const AssetInfo = styled.div`
@@ -41,7 +50,7 @@ export const AssetInfo = styled.div`
   }
 `
 
-export const AssetPricing = styled.div`
+export const AssetPricing = styled.div<AssetPricingProps>`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -54,5 +63,11 @@ export const AssetPricing = styled.div`
     margin-top: 0.8rem;
     color: ${theme.colors.red[500]};
     font-weight: 500;
+
+    ${({ isUp }) =>
+      isUp &&
+      css`
+        color: ${theme.colors.green[500]};
+      `}
   }
 `
