@@ -13,7 +13,7 @@ import { useCompany } from './useCompany'
 
 import * as S from './Company.styled'
 
-type Props = {
+export type Props = {
   symbol: string
   disableFavorite?: boolean
   as?: ElementType
