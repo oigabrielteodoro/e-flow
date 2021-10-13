@@ -36,9 +36,11 @@ export const Container = styled.div<ContainerProps>`
 
     span {
       color: ${theme.colors.gray[900]};
+      font-weight: 500;
 
       &:last-child {
         color: ${theme.colors.gray[500]};
+        font-weight: 400;
       }
     }
   }

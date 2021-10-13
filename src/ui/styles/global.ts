@@ -1,6 +1,38 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
+  @font-face {
+    font-family: "Graphik";
+    src: url("/fonts/Graphik/GraphikRegular.otf");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Graphik";
+    src: url("/fonts/Graphik/GraphikMedium.otf");
+    font-style: medium;
+    font-weight: 500;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Graphik";
+    src: url("/fonts/Graphik/GraphikSemibold.otf");
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Graphik";
+    src: url("/fonts/Graphik/GraphikBold.otf");
+    font-style: bold;
+    font-weight: 700;
+    font-display: swap;
+  }
+
   * {
     margin: 0;
     padding: 0;
@@ -29,7 +61,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Graphik', 'Rubik', sans-serif;
     font-size: 1.6rem;
   }
 
@@ -51,4 +83,6 @@ export const GlobalStyle = createGlobalStyle`
   ul {
     list-style: none;
   }
+
+
 `

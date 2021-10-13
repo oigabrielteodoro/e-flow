@@ -59,6 +59,10 @@ export const AssetPricing = styled.div<AssetPricingProps>`
     margin-right: 0.8rem;
   }
 
+  strong {
+    font-weight: 600;
+  }
+
   span {
     margin-top: 0.8rem;
     color: ${theme.colors.red[500]};
