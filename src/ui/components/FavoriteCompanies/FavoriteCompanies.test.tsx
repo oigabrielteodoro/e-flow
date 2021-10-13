@@ -24,7 +24,7 @@ describe('<FavoriteCompanies />', () => {
     useSelectorMocked.mockReturnValue(['MSFT'])
 
     server.use(
-      rest.get(`${API_URL}/stock/MSFT/quote`, (_, response, context) =>
+      rest.get(`${API_URL}/quote`, (_, response, context) =>
         response(
           context.json(companyRawMocked('Microsoft Corporation', 'MSFT')),
         ),

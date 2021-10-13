@@ -10,7 +10,7 @@ export const Container = styled.div<ContainerProps>`
   display: flex;
   align-items: center;
   padding: 1.6rem;
-  border-radius: 0.8rem;
+  border-radius: ${theme.radius.card};
   background: ${theme.colors.white};
   transition: all 0.2s;
 
@@ -36,9 +36,11 @@ export const Container = styled.div<ContainerProps>`
 
     span {
       color: ${theme.colors.gray[900]};
+      font-weight: ${theme.font.weights.medium};
 
       &:last-child {
         color: ${theme.colors.gray[500]};
+        font-weight: ${theme.font.weights.normal};
       }
     }
   }
@@ -51,7 +53,7 @@ export const Container = styled.div<ContainerProps>`
     width: 4rem;
     height: 4rem;
     border: 0.2rem solid ${theme.colors.gray[300]};
-    border-radius: 50%;
+    border-radius: ${theme.radius.rounded};
     cursor: pointer;
   }
 
@@ -62,7 +64,7 @@ export const Container = styled.div<ContainerProps>`
     cursor: pointer;
 
     strong {
-      font-weight: 500;
+      font-weight: ${theme.font.weights.medium};
       margin-right: 0.8rem;
       color: ${theme.colors.red[500]};
 

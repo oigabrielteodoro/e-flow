@@ -20,7 +20,7 @@ export const Container = styled.div`
 
   strong {
     margin-top: 2rem;
-    font-weight: 500;
+    font-weight: ${theme.font.weights.medium};
     color: ${theme.colors.gray[500]};
   }
 

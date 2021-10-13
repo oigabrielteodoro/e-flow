@@ -13,18 +13,20 @@ import { Content } from '.'
 describe('<Content />', () => {
   beforeEach(() => {
     server.use(
-      rest.get(`${API_URL}/stock/MSFT/quote`, (_, response, context) =>
-        response(
-          context.json(companyRawMocked('Microsoft Corporation', 'MSFT')),
-        ),
-      ),
-      rest.get(`${API_URL}/stock/AAPL/quote`, (_, response, context) =>
-        response(context.json(companyRawMocked('Apple Inc', 'AAPL'))),
-      ),
-      rest.get(`${API_URL}/stock/MSFT/chart`, (_, response, context) =>
+      rest.get(`${API_URL}/quote`, (request, response, context) => {
+        const symbol = request.url.searchParams.get('symbol')
+
+        const data =
+          symbol === 'MSFT'
+            ? companyRawMocked('Microsoft Corporation', 'MSFT')
+            : companyRawMocked('Apple Inc', 'AAPL')
+
+        return response(context.json(data))
+      }),
+      rest.get(`${API_URL}/chart`, (_, response, context) =>
         response(context.json(companyPriceHistoryRawMocked)),
       ),
-      rest.get(`${API_URL}/stock/AAPL/chart`, (_, response, context) =>
+      rest.get(`${API_URL}/chart`, (_, response, context) =>
         response(context.json(companyPriceHistoryRawMocked)),
       ),
     )

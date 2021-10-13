@@ -22,10 +22,11 @@ function* getCompany({ payload }: ReturnType<typeof getCompanyRequest>) {
   const { inputValue } = payload
 
   try {
-    const response: AxiosResponse<CompanyRaw> = yield call(
-      api.get,
-      `/stock/${inputValue}/quote`,
-    )
+    const response: AxiosResponse<CompanyRaw> = yield call(api.get, 'quote', {
+      params: {
+        symbol: inputValue,
+      },
+    })
 
     if (isValid(response.data)) {
       yield put(getCompanySuccess(response.data))

@@ -9,8 +9,8 @@ type AssetPricingProps = {
 export const Container = styled.section`
   margin-top: 2.4rem;
   padding: 2.3rem;
-  border-radius: 0.8rem;
   background: ${theme.colors.white};
+  border-radius: ${theme.radius.card};
   box-shadow: 0 0.5rem 1.2rem rgba(222, 222, 231, 0.4);
 `
 
@@ -40,12 +40,12 @@ export const AssetInfo = styled.div`
     align-items: flex-start;
 
     strong {
-      font-weight: 500;
+      font-weight: ${theme.font.weights.medium};
     }
 
     span {
       color: ${theme.colors.gray[300]};
-      font-size: 1.4rem;
+      font-size: ${theme.font.sizes.small};
     }
   }
 `
@@ -59,10 +59,14 @@ export const AssetPricing = styled.div<AssetPricingProps>`
     margin-right: 0.8rem;
   }
 
+  strong {
+    font-weight: ${theme.font.weights.semibold};
+  }
+
   span {
     margin-top: 0.8rem;
     color: ${theme.colors.red[500]};
-    font-weight: 500;
+    font-weight: ${theme.font.weights.medium};
 
     ${({ isUp }) =>
       isUp &&

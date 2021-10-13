@@ -1,4 +1,27 @@
 export const theme = {
+  radius: {
+    input: '0.8rem',
+    card: '0.8rem',
+    background: '2.4rem',
+    rounded: '50%',
+  },
+  font: {
+    family: 'Graphik',
+    weights: {
+      normal: 400,
+      medium: 500,
+      semibold: 600,
+      bold: 700,
+    },
+    sizes: {
+      disclaimer: '1.2rem',
+      small: '1.4rem',
+      paragraph: '1.6rem',
+      subtitle: '1.8rem',
+      title: '2.4rem',
+      headline: '3.2rem',
+    },
+  },
   colors: {
     white: '#ffffff',
     blue: {
@@ -21,5 +44,10 @@ export const theme = {
       500: '#657786',
       900: '#14171a',
     },
+  },
+  layers: {
+    base: 0,
+    modal: 1,
+    alwaysOnTop: 2,
   },
 }

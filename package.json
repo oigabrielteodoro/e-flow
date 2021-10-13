@@ -21,8 +21,7 @@
       "yarn lint --fix",
       "yarn prettier --write",
       "yarn jest --findRelatedTests --bail"
-    ],
-    "*.js": "eslint --cache --fix"
+    ]
   },
   "dependencies": {
     "@brainhubeu/react-carousel": "2.0.4",
@@ -30,6 +29,7 @@
     "date-fns": "2.25.0",
     "immer": "9.0.6",
     "next": "11.1.2",
+    "next-connect": "0.10.2",
     "next-pwa": "5.3.1",
     "next-redux-wrapper": "7.0.5",
     "polished": "4.1.3",
