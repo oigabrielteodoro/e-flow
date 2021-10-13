@@ -5,7 +5,6 @@ import { useSelector } from 'react-redux'
 import { ICON_COMPANY, ICON_ARROW_LEFT, ICON_ARROW_RIGHT } from 'assets'
 
 import { Company } from 'ui'
-
 import { ApplicationState } from 'client'
 import { CompanyNormalized } from 'types'
 
